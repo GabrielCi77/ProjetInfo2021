@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+from progress.bar import Bar
 """
 Donne un csv avec tous les bateaux LNG Tanker dans data.csv
 On peut obtenir le MMSI et le IMO aussi grâce à l'url
@@ -24,12 +25,14 @@ def BoatInPage(url):
     -------
     >>> df = BoatInPage(https://www.vesselfinder.com/fr/vessels?page=1&type=601)
     """
-    #user_agent permet de ne pas avoir un accès bloqué
-    user_agent = {'User-agent': 'Mozilla/5.0'}
-    requete = requests.get(url, headers=user_agent)
-    soup = BeautifulSoup(requete.content, features="html.parser")
-    liste_liens = soup.find_all('a', class_ = "ship-link")
     df_bateau = pd.DataFrame(columns=["Nom Bateau", "IMO", "MMSI", "Lien"])
+    try:
+        requete = requests.get(url, headers={'User-agent': 'Mozilla/5.0'})
+    except requests.exceptions.ConnectionError:
+        return df_bateau
+    else:
+        soup = BeautifulSoup(requete.content, features="html.parser")
+        liste_liens = soup.find_all('a', class_ = "ship-link")
     
     for item in liste_liens:
         type_bateau = item.find('div', class_ = "slty") #slty = Ship List TYpe
@@ -47,9 +50,7 @@ def BoatInPage(url):
                                         "MMSI": mmsi,
                                         "Lien": "vesselfinder.com"+url_bateau },
                                         ignore_index=True)
-
     return df_bateau
-
 
 def allBoat():
     """
@@ -62,13 +63,20 @@ def allBoat():
     """
     boat_type = "601" #LNG/LPG/CO2 Tanker
     allBoat_df = pd.DataFrame(columns=["Nom Bateau", "IMO", "MMSI", "Lien"])
-
-    for i in range(1, 130): #Il y a 130 pages de bateaux de type LNG Tanker sur VesselFinder
+    bar = Bar('Processing', max=130)
+    for i in range(1, 131): #Il y a 130 pages de bateaux de type LNG Tanker sur VesselFinder
         url_page="https://www.vesselfinder.com/fr/vessels?page=" + str(i) + "&type=" + str(boat_type)
         allBoat_df = allBoat_df.append( BoatInPage(url_page), ignore_index=True)
-    
+        bar.next()
+    bar.finish()
     return allBoat_df
-
-
-df = allBoat()
-df.to_csv("data.csv", index=False)
+ 
+new_boat_list = allBoat()
+old_boat_list = pd.read_csv("data.csv")
+x1, x2 = new_boat_list.shape[0], old_boat_list.shape[0]
+if x1-x2:
+    print(f"{x1-x2} nouveau(x) bateau(x) ajouté(s) à la liste")
+    # lancer le programme pour récupérer la taille des navires
+    new_boat_list.to_csv("data.csv", index=False)
+else:
+    print("Aucun nouveau bateau ajouté à la liste")
