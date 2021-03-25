@@ -10,7 +10,7 @@ requete = requests.get(url, headers={'User-agent': 'Mozilla/5.0'})
 all_data = json.loads(requete.content)
 
 #Données déjà stockées
-with open('eurPrice.csv', 'r') as file:
+with open('SpotEur.csv', 'r') as file:
         LastDate = file.readlines()[-1].split(',')[0] #si on a un week end la dernière date est forcément le dimanche
         LastDate = datetime.datetime.strptime(LastDate, '%Y-%m-%d')
 
@@ -53,7 +53,7 @@ while LastDate < price_date:
 
 #Ecriture dans le fichier
 if diff != datetime.timedelta(0,0,0):
-    with open('eurPrice.csv', 'a') as file:
+    with open('SpotEur.csv', 'a') as file:
         data.reverse()
         for elem in data:
             file.write(elem)
