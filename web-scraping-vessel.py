@@ -8,6 +8,10 @@ import contextlib
 import pandas as pd
 
 df = pd.DataFrame(columns=["Nom Bateau", "IMO", "MMSI", "Pavillon", "Longueur", "Largeur", "GT", "DWT", "Destination", "ETA", "Tirant d'eau actuel", "Coordonnees", "Direction", "Vitesse", "Date scraping", "Date position"])
+today = date.today()
+
+
+# Fonctions qui servent au formatage des données brutes
 
 def separate_slash(string):
     i = 0
@@ -15,7 +19,68 @@ def separate_slash(string):
         if car == '/':
             ind = i
         i+=1
-    return string[:ind-1], string[ind+1:]
+    return string[:ind-1], string[ind+2:]
+
+def findmonth(string):
+    if string == 'Jan':
+        convmonth = '01'
+    elif string == 'Feb':
+        convmonth = '02'
+    elif string == 'Mar':
+        convmonth = '03'
+    elif string == 'Apr':
+        convmonth = '04'
+    elif string == 'May':
+        convmonth = '05'
+    elif string == 'Jun':
+        convmonth = '06'
+    elif string == 'Jul':
+        convmonth = '07'
+    elif string == 'Aug':
+        convmonth = '08'
+    elif string == 'Sep':
+        convmonth = '09'
+    elif string == 'Oct':
+        convmonth = '10'
+    elif string == 'Nov':
+        convmonth = '11'
+    elif string == 'Dec':
+        convmonth = '12'
+    return convmonth
+
+def convertdate(string):
+    if string == '-':
+        return string
+    convmonth = findmonth(string[:3])
+    i = 0
+    ind = 0
+    for car in string :
+        if car == ',':
+            ind = i
+        i+=1
+    convday = string[4:ind]
+    if len(convday)==1:
+        convday = '0'+convday
+    convhour = string[ind+2:]
+    return f'2021-{convmonth}-{convday}-{convhour}'
+
+def convertdatewithyear(string):
+    if string == '-':
+        return string
+    convmonth = findmonth(string[:3])
+    i = 0
+    ind = 0
+    for car in string :
+        if car == ',':
+            ind = i
+        i+=1
+    convday = string[4:ind]
+    if len(convday)==1:
+        convday = '0'+ convday
+    convyear = string[ind+2:ind+6]
+    convhour = string[ind+7:ind+12]
+    return f'{convyear}-{convmonth}-{convday}-{convhour}'
+
 
 with open('data.csv', newline='') as csvfile:
     content = csv.reader(csvfile)
@@ -49,13 +114,14 @@ with open('data.csv', newline='') as csvfile:
                     gt = values1[5].text
                     dwt = values1[6].text
                     destination = values2[2].text
-                    ETA = values2[3].text # à convertir
+                    ETA = values2[3].text
+                    ETA = convertdate(ETA) # on convertit la date dans le bon format
                     tirant = values2[7].text
-                    tirant = tirant[:-2] # il faut enlever l'unité
+                    tirant = tirant[:-2] # on enlève l'unité
                     coordonnees = values2[9].text
                     direction, vitesse = separate_slash(values2[8].text)
                     date_position = soup.find(id='lastrep')['data-title']
-                    today = date.today()
+                    date_position = convertdatewithyear(date_position) # on convertit la date dans le bon format
 
                     df = df.append({"Nom Bateau" : nom_bateau,
                                         "IMO": imo,
@@ -78,8 +144,6 @@ with open('data.csv', newline='') as csvfile:
                     
                     
             except IndexError :
-                pass
-            except TypeError :
                 pass
 
 df.to_csv(f'./vessel-list-{today}.csv', index=False, mode='a')
