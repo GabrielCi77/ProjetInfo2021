@@ -2,6 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from progress.bar import Bar
+import numpy as np
+pd.options.mode.chained_assignment = None  # default='warn'
+
 """
 Donne un csv avec tous les bateaux LNG Tanker dans data.csv
 On peut obtenir le MMSI et le IMO aussi grâce à l'url
@@ -33,6 +36,8 @@ def BoatInPage(url):
     else:
         soup = BeautifulSoup(requete.content, features="html.parser")
         liste_liens = soup.find_all('a', class_ = "ship-link")
+    "polar spirit       GT = 66174  dwt = 48817  Ll = 239 / 40 m capa =88100"
+    "AL GHUWAIRIYA GT = 168189 dwt = 154940 Ll = 345 / 55 m capa =257984"
     
     for item in liste_liens:
         type_bateau = item.find('div', class_ = "slty") #slty = Ship List TYpe
@@ -70,13 +75,30 @@ def allBoat():
         bar.next()
     bar.finish()
     return allBoat_df
- 
+
 new_boat_list = allBoat()
+new_boat_list['MMSI'] = new_boat_list['MMSI'].astype(int)
 old_boat_list = pd.read_csv("data.csv")
-x1, x2 = new_boat_list.shape[0], old_boat_list.shape[0]
-if x1-x2:
-    print(f"{x1-x2} nouveau(x) bateau(x) ajouté(s) à la liste")
-    # lancer le programme pour récupérer la taille des navires
+
+diff = new_boat_list.merge(old_boat_list, how = 'outer' ,indicator=True).loc[lambda x : x['_merge'] != 'both']
+
+if diff.size:
+    diff['_merge'] = np.where(diff['_merge'] == 'left_only', 'ajout', 'suppression')
+    new = diff.loc[lambda x : x['_merge'] == 'ajout']
+    old = diff.loc[lambda x : x['_merge'] == 'suppression']
+
+    for old_i, old_row in old.iterrows():
+        if old_row['IMO'] in new.values:
+            new['_merge'] = np.where(new['IMO'] == old_row['IMO'] , f"remplace {old_row['Nom Bateau']}", new['_merge'])
+            old.drop(old_i, inplace=True)
+    diff = pd.concat([new, old], ignore_index=True)
+
+    print(f"{diff.loc[lambda x : x['_merge'] == 'ajout'].shape[0]} bateau(x) ajouté(s) à la liste")
+    print(f"{old.shape[0]} bateau(x) supprimé(s) de la liste")
+    print(f"{new.loc[lambda x : x['_merge'] != 'ajout'].shape[0]} actualisation(s) de nom")
+
+    print(diff)
     new_boat_list.to_csv("data.csv", index=False)
+    new.loc[lambda x : x['_merge'] != 'ajout'].to_csv("remplacement.csv", mode='a', header=False, index=False)
 else:
     print("Aucun nouveau bateau ajouté à la liste")
