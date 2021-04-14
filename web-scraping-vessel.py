@@ -109,15 +109,19 @@ with open('data.csv', newline='') as csvfile:
 
                     # Informations sur le navire
 
-                    section_ship_info_all = soup.find_all('table', class_='tparams')
-                    section_ship_info = section_ship_info_all[3]
+                    section_ship_info_all1 = soup.find_all('table', class_='tparams')
+                    section_ship_info = section_ship_info_all1[0]
                     values1 = section_ship_info.find_all('td', class_='v3')
-                    section_ship_info = section_ship_info_all[2]
+                    section_ship_info_all2 = soup.find_all('table', class_='aparams')
+                    section_ship_info = section_ship_info_all2[0]
                     values2 = section_ship_info.find_all('td', class_='v3')
 
-                    section_ship_info_alt1 = soup.find_all('table', class_='tparams npctable')
+                    section_ship_info_alt1 = soup.find_all('div', id='port-calls')
                     section_ship_info = section_ship_info_alt1[0]
-                    value3 = section_ship_info.find('a')
+                    section_ship_info = section_ship_info.find_all('div')
+                    # section_ship_info_alt1 = soup.find_all('table', class_='tparams npctable')
+                    # section_ship_info = section_ship_info_alt1[0]
+                    # value3 = section_ship_info.find('a')
 
                     nom_bateau = values1[1].text
                     imo = values1[0].text
@@ -128,16 +132,16 @@ with open('data.csv', newline='') as csvfile:
                     largeur = values1[8].text
                     gt = values1[5].text
                     dwt = values1[6].text
-                    destination = values2[2].text
-                    destination2 = value3.text
-                    destination2 = extractdestination2(destination2)
-                    ETA = values2[3].text
-                    ETA = convertdate(ETA) # on convertit la date dans le bon format
-                    tirant = values2[7].text
+                    # destination = values2[2].text
+                    # destination2 = value3.text
+                    # destination2 = extractdestination2(destination2)
+                    # ETA = values2[3].text
+                    # ETA = convertdate(ETA) # on convertit la date dans le bon format
+                    tirant = values2[1].text
                     tirant = tirant[:-2] # on enlève l'unité
-                    coordonnees = values2[9].text
-                    direction, vitesse = separate_slash(values2[8].text)
-                    statut = values2[10].text
+                    # coordonnees = values2[9].text
+                    direction, vitesse = separate_slash(values2[0].text)
+                    statut = values2[2].text
                     date_position = soup.find(id='lastrep')['data-title']
                     date_position = convertdatewithyear(date_position) # on convertit la date dans le bon format
 
@@ -149,11 +153,11 @@ with open('data.csv', newline='') as csvfile:
                                         "Largeur" : largeur,
                                         "GT" : gt,
                                         "DWT" : dwt,
-                                        "Destination" : destination,
-                                        "Destination2" : destination2,
-                                        "ETA" : ETA,
+                                        # "Destination" : destination,
+                                        # "Destination2" : destination2,
+                                        # "ETA" : ETA,
                                         "Tirant d'eau actuel" : tirant,
-                                        "Coordonnees" : coordonnees,
+                                        # "Coordonnees" : coordonnees,
                                         "Direction" : direction,
                                         "Vitesse" : vitesse,
                                         "Statut" : statut,
@@ -180,9 +184,9 @@ with open('data.csv', newline='') as csvfile:
                     section_ship_info = section_ship_info_all[2]
                     values2 = section_ship_info.find_all('td', class_='v3')
 
-                    section_ship_info_alt1 = soup.find_all('table', class_='tparams npctable')
-                    section_ship_info = section_ship_info_alt1[0]
-                    value3 = section_ship_info.find('td', class_='n3ata')
+                    # section_ship_info_alt1 = soup.find_all('table', class_='tparams npctable')
+                    # section_ship_info = section_ship_info_alt1[0]
+                    # value3 = section_ship_info.find('td', class_='n3ata')
 
                     nom_bateau = values1[1].text
                     imo = values1[0].text
@@ -193,16 +197,16 @@ with open('data.csv', newline='') as csvfile:
                     largeur = values1[8].text
                     gt = values1[5].text
                     dwt = values1[6].text
-                    destination = values2[2].text
-                    destination2 = value3.text
-                    destination2 = extractdestination2(destination2)
-                    ETA = values2[3].text # à convertir
-                    ETA = convertdate(ETA)
-                    tirant = values2[7].text
+                    # destination = values2[2].text
+                    # destination2 = value3.text
+                    # destination2 = extractdestination2(destination2)
+                    # ETA = values2[3].text # à convertir
+                    # ETA = convertdate(ETA)
+                    tirant = values2[1].text
                     tirant = tirant[:-2] # il faut enlever l'unité
-                    coordonnees = values2[9].text
-                    direction, vitesse = separate_slash(values2[8].text)
-                    statut = values2[10].text
+                    # coordonnees = values2[9].text
+                    direction, vitesse = separate_slash(values2[0].text)
+                    statut = values2[2].text
                     date_position = soup.find(id='lastrep')['data-title'] # à convertir
                     date_position = convertdatewithyear(date_position)
 
@@ -214,11 +218,11 @@ with open('data.csv', newline='') as csvfile:
                                         "Largeur" : largeur,
                                         "GT" : gt,
                                         "DWT" : dwt,
-                                        "Destination" : destination,
-                                        "Destination2" : destination2,
-                                        "ETA" : ETA,
+                                        # "Destination" : destination,
+                                        # "Destination2" : destination2,
+                                        # "ETA" : ETA,
                                         "Tirant d'eau actuel" : tirant,
-                                        "Coordonnees" : coordonnees,
+                                        # "Coordonnees" : coordonnees,
                                         "Direction" : direction,
                                         "Vitesse" : vitesse,
                                         "Statut" : statut,
