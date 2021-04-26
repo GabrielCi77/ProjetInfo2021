@@ -44,7 +44,7 @@ def BoatInPage(url):
         if type_bateau.string == "LNG Tanker":
             url_bateau = item.get('href') #Lien vers la page VesselFinder du bateau
             nom_bateau = item.find('div', class_ = "slna") # slna = Ship List NAme
-            indice_imo = url_bateau.find("IMO-")+4 #On cherche la position de l'IMO dans
+            indice_imo = url_bateau.rfind("IMO-")+4 #On cherche la position de l'IMO dans
             imo = url_bateau[indice_imo:indice_imo+7] # l'url pour l'extraire
             indice_mmsi = url_bateau.find("MMSI-")+5
             mmsi = url_bateau[indice_mmsi:]
