@@ -12,9 +12,11 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait as Dwait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, WebDriverException
 import csv
 from progress.bar import Bar
+import pandas as pd
+import numpy as np
 
 """TOUTES LES OPTIONS UTILES POUR CHROMEDRIVER"""
 options = webdriver.ChromeOptions()
@@ -39,12 +41,16 @@ def GetData2(url, driver):
     """
     driver.get(url)
     try:
+        #Liens vers les derniers ports visités
         Dwait(driver, 4).until( EC.presence_of_element_located((By.CLASS_NAME, "flx._rLk.t5UW5")) )
     except TimeoutException:
+        #Il n'y a pas les liens disponibles
         print(f"Timeout no port calls, url: {url}")
         try:
+            #Premier cas : Aucun appel de ports détectés
             Dwait(driver, 2).until( EC.presence_of_element_located((By.ID, "port-calls")) )
         except Exception as e:
+            #2nd cas : il n'y a pas la section des derniers ports (bateaux peu utiles ?)
             print(f"error with {url} : {e}")
             data = []
         except:
@@ -63,7 +69,10 @@ def TraitData(data, imo):
     res = ''
     for i in range(len(data)):
         if data[i] == 'Arrival (UTC)':
-            res = res + imo + ',' + data[i-1] + ',"' + data[i+1] + '","' + data[i+3] + '","' + data[i+5] + '"\n'
+            tab = data[i-1].split(',') # [ Port, Country ] (good) or [ Port, Region, Country ] (bad)
+            if len(tab)==3:
+                tab = [tab[0], '"' + tab[1].strip() + ',' + tab[2] + '"'] #[ Port, (Region)+Country ]
+            res = res + imo + ',' + tab[0] + ',' + tab[1] + ',"' + data[i+1] + '","' + data[i+3] + '","' + data[i+5] + '"\n'
     return res
 
 def AllBoat2(name):
@@ -73,11 +82,14 @@ def AllBoat2(name):
     Elle copie ensuite les données traitées dans le csv final
     """
     driver = webdriver.Chrome(options=options)
+    
+    #Permet d'avoir la taille pour utiliser la barre de chargement
     with open('data.csv') as f:
         taille = len(f.readlines())
+    
     with open('data.csv', newline='') as csvfile:
         with open(name, 'a') as scraping:
-            scraping.write('IMO, Port, Country, Arrival, Departure, In Port\n')
+            scraping.write('IMO,Port,Country,Arrival,Departure,In Port\n')
             bar = Bar('Processing', max=taille)
             content = csv.reader(csvfile)
             for row in content:
@@ -90,10 +102,49 @@ def AllBoat2(name):
                     bar.next()
             bar.finish()
 
+def Ajout(name):
+    """
+    Ajoute le nouveau fichier au grand fichier en supprimant les doublons
+    1 . Les lignes qui sont toutes pareilles :Arrival, Departure, In Port
+    1'. D'autres bateaux ont une donnée manquante a :déja qu'une
+    2 . Certains bateaux ne sont pas encore partis : arrival, -, - : il faut a la fin garder seulement a, d, ip
+        a, -, - // a,d,ip :sur date arrivée
+    3 . Enfin seul d manque : il reste dans les filets mais une seule deja
+    """
+    df = pd.read_csv(name, index_col=['IMO'])
+    df_load = pd.read_csv('./PortCalls/PortCalls.csv', index_col=['IMO'])
+    df = df.append(df_load)
+    taille1 = df_load.shape[0]
+    
+
+    # Etape 1 et 1'
+    df.drop_duplicates(inplace = True)
+
+    # Etape 2
+    df = df.replace('-', np.nan)
+    df.sort_values(by = ['IMO', 'Departure'], na_position = 'first', inplace = True)
+    df.drop_duplicates(subset = ['Port', 'Country', 'Arrival'], keep = 'last', inplace = True)
+    taille2 = df.shape[0]
+    df.to_csv('./PortCalls/PortCalls.csv')
+    print(f'{taille2 - taille1} appels de ports ajoutés')
+    return None
+
 if __name__ == '__main__':
     today = date.today()
-    AllBoat2(f'PortCalls-{today}.csv')
+    name = f'./PortCalls/PortCalls-{today}.csv'
+    AllBoat2(name)
+    Ajout(name)
 
+
+
+
+""" Test formatage pays region port :
+    driver = webdriver.Chrome(options=options)
+    imo = '9743875'
+    url = 'https://www.vesselfinder.com/fr/vessels/PACIFIC-MIMOSA-IMO-9743875-MMSI-431778000'
+    data = GetData2(url, driver)
+    data = TraitData(data, imo)
+    print(data) """
 
 #D'autres fonctions qui ne sont plus utiles
 """ def GetData(url):
