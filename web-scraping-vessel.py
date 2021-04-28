@@ -7,11 +7,9 @@ from datetime import date
 import contextlib
 import pandas as pd
 
-df = pd.DataFrame(columns=["Nom Bateau", "IMO", "MMSI", "Pavillon", "Longueur", "Largeur", "GT", "DWT", "Destination", "Destination2", "ETA", "Tirant d'eau actuel", "Coordonnees", "Direction", "Vitesse", "Statut", "Date scraping", "Date position"])
+df = pd.DataFrame(columns=["Nom Bateau", "IMO", "MMSI", "Pavillon", "Longueur", "Largeur", "GT", "DWT", "Origine", "ATD", "Destination", "Destination2", "ETA", "Tirant d'eau actuel", "Coordonnees", "Direction", "Vitesse", "Statut", "Date scraping", "Date position"])
 today = date.today()
 
-
-# Fonctions qui servent au formatage des données brutes
 
 def separate_slash(string):
     i = 0
@@ -92,6 +90,26 @@ def extractdestination2(string):
                 dest2 += car
         return dest2
 
+def extract_destination_eta(string):
+    i = 0
+    for i in range(len(string)) :
+        if string[i:i+4] == "ETA:" or string[i:i+4] == "ATA:" :
+            ind = i
+        i+=1
+    destination = string[1:ind-2]
+    eta = string[ind+5:-2]
+    return destination, eta
+
+def extract_origin_atd(string):
+    i = 0
+    for i in range(len(string)) :
+        if string[i:i+4] == "ATD:" or string[i:i+4] == "ATA:" :
+            ind = i
+        i+=1
+    origin = string[1:ind-1]
+    atd = string[ind+5:-1]
+    return origin, atd
+
 
 with open('data.csv', newline='') as csvfile:
     content = csv.reader(csvfile)
@@ -119,9 +137,6 @@ with open('data.csv', newline='') as csvfile:
                     section_ship_info_alt1 = soup.find_all('div', id='port-calls')
                     section_ship_info = section_ship_info_alt1[0]
                     section_ship_info = section_ship_info.find_all('div')
-                    # section_ship_info_alt1 = soup.find_all('table', class_='tparams npctable')
-                    # section_ship_info = section_ship_info_alt1[0]
-                    # value3 = section_ship_info.find('a')
 
                     nom_bateau = values1[1].text
                     imo = values1[0].text
@@ -132,18 +147,21 @@ with open('data.csv', newline='') as csvfile:
                     largeur = values1[8].text
                     gt = values1[5].text
                     dwt = values1[6].text
-                    # destination = values2[2].text
+                    origin_brut = soup.find('div', class_= 'vi__r1 vi__stp')
+                    origin_brut = origin_brut.text
+                    origin, ATD = extract_origin_atd(origin_brut)
+                    destination_brut = soup.find('div', class_= 'vi__r1 vi__sbt')
+                    destination_brut = destination_brut.text
+                    destination, ETA = extract_destination_eta(destination_brut)
                     # destination2 = value3.text
                     # destination2 = extractdestination2(destination2)
-                    # ETA = values2[3].text
-                    # ETA = convertdate(ETA) # on convertit la date dans le bon format
                     tirant = values2[1].text
-                    tirant = tirant[:-2] # on enlève l'unité
+                    tirant = tirant[:-2] # il faut enlever l'unité
                     # coordonnees = values2[9].text
                     direction, vitesse = separate_slash(values2[0].text)
                     statut = values2[2].text
-                    date_position = soup.find(id='lastrep')['data-title']
-                    date_position = convertdatewithyear(date_position) # on convertit la date dans le bon format
+                    date_position = soup.find(id='lastrep')['data-title'] # à convertir
+                    date_position = convertdatewithyear(date_position)
 
                     df = df.append({"Nom Bateau" : nom_bateau,
                                         "IMO": imo,
@@ -153,9 +171,11 @@ with open('data.csv', newline='') as csvfile:
                                         "Largeur" : largeur,
                                         "GT" : gt,
                                         "DWT" : dwt,
-                                        # "Destination" : destination,
+                                        "Origine" : origin,
+                                        "ATD" : ATD,
+                                        "Destination" : destination,
                                         # "Destination2" : destination2,
-                                        # "ETA" : ETA,
+                                        "ETA" : ETA,
                                         "Tirant d'eau actuel" : tirant,
                                         # "Coordonnees" : coordonnees,
                                         "Direction" : direction,
@@ -178,60 +198,71 @@ with open('data.csv', newline='') as csvfile:
 
                     # Informations sur le navire
 
-                    section_ship_info_all = soup.find_all('table', class_='tparams')
-                    section_ship_info = section_ship_info_all[3]
-                    values1 = section_ship_info.find_all('td', class_='v3')
-                    section_ship_info = section_ship_info_all[2]
-                    values2 = section_ship_info.find_all('td', class_='v3')
+                    try :
+                        section_ship_info_all = soup.find_all('table', class_='tparams')
+                        section_ship_info = section_ship_info_all[3]
+                        values1 = section_ship_info.find_all('td', class_='v3')
+                        section_ship_info = section_ship_info_all[2]
+                        values2 = section_ship_info.find_all('td', class_='v3')
 
-                    # section_ship_info_alt1 = soup.find_all('table', class_='tparams npctable')
-                    # section_ship_info = section_ship_info_alt1[0]
-                    # value3 = section_ship_info.find('td', class_='n3ata')
+                        destination_test = soup.find('div', class_= 'vi__r1 vi__sbt')
+                        destination_test = destination_test.text
+                        destination, ETA = extract_destination_eta(destination_test)
 
-                    nom_bateau = values1[1].text
-                    imo = values1[0].text
-                    mmsi = values2[4].text
-                    mmsi = mmsi[10:] # on garde que le mmsi et pas l'imo
-                    pavillon = values1[3].text
-                    longueur = values1[7].text
-                    largeur = values1[8].text
-                    gt = values1[5].text
-                    dwt = values1[6].text
-                    # destination = values2[2].text
-                    # destination2 = value3.text
-                    # destination2 = extractdestination2(destination2)
-                    # ETA = values2[3].text # à convertir
-                    # ETA = convertdate(ETA)
-                    tirant = values2[1].text
-                    tirant = tirant[:-2] # il faut enlever l'unité
-                    # coordonnees = values2[9].text
-                    direction, vitesse = separate_slash(values2[0].text)
-                    statut = values2[2].text
-                    date_position = soup.find(id='lastrep')['data-title'] # à convertir
-                    date_position = convertdatewithyear(date_position)
+                        nom_bateau = values1[1].text
+                        imo = values1[0].text
+                        mmsi = values2[4].text
+                        mmsi = mmsi[10:] # on garde que le mmsi et pas l'imo
+                        pavillon = values1[3].text
+                        longueur = values1[7].text
+                        largeur = values1[8].text
+                        gt = values1[5].text
+                        dwt = values1[6].text
+                        destination_test = soup.find('div', class_= 'vi__r1 vi__sbt')
+                        destination_test = destination_test.text
+                        destination, ETA = extract_destination_eta(destination_test)
+                        # destination2 = value3.text
+                        # destination2 = extractdestination2(destination2)
+                        tirant = values2[1].text
+                        tirant = tirant[:-2] # il faut enlever l'unité
+                        # coordonnees = values2[9].text
+                        direction, vitesse = separate_slash(values2[0].text)
+                        statut = values2[2].text
+                        date_position = soup.find(id='lastrep')['data-title'] # à convertir
+                        date_position = convertdatewithyear(date_position)
 
-                    df = df.append({"Nom Bateau" : nom_bateau,
-                                        "IMO": imo,
-                                        "MMSI": mmsi,
-                                        "Pavillon": pavillon,
-                                        "Longueur" : longueur,
-                                        "Largeur" : largeur,
-                                        "GT" : gt,
-                                        "DWT" : dwt,
-                                        # "Destination" : destination,
-                                        # "Destination2" : destination2,
-                                        # "ETA" : ETA,
-                                        "Tirant d'eau actuel" : tirant,
-                                        # "Coordonnees" : coordonnees,
-                                        "Direction" : direction,
-                                        "Vitesse" : vitesse,
-                                        "Statut" : statut,
-                                        "Date scraping" : today,
-                                        "Date position" : date_position
-                                        },
-                                        ignore_index=True)
+                        df = df.append({"Nom Bateau" : nom_bateau,
+                                            "IMO": imo,
+                                            "MMSI": mmsi,
+                                            "Pavillon": pavillon,
+                                            "Longueur" : longueur,
+                                            "Largeur" : largeur,
+                                            "GT" : gt,
+                                            "DWT" : dwt,
+                                            # "Origine" : origin,
+                                            # "ATD" : ATD,
+                                            "Destination" : destination,
+                                            # "Destination2" : destination2,
+                                            "ETA" : ETA,
+                                            "Tirant d'eau actuel" : tirant,
+                                            # "Coordonnees" : coordonnees,
+                                            "Direction" : direction,
+                                            "Vitesse" : vitesse,
+                                            "Statut" : statut,
+                                            "Date scraping" : today,
+                                            "Date position" : date_position
+                                            },
+                                            ignore_index=True)
+
+                    except IndexError :
+                        print("IndexError int")
+                        print(row[3])
+                        pass
 
             except IndexError :
-                pass
+                    print("IndexError ext")
+                    print(row[3])
+                    pass
 
-df.to_csv(f'./vessel-list-{today}.csv', index=False, mode='a')
+
+df.to_csv(f'./list-vessels-{today}.csv', index=False, mode='a')
