@@ -19,37 +19,24 @@ def separate_slash(string):
         i+=1
     return string[:ind-1], string[ind+2:]
 
-def findmonth(string):
-    if string == 'Jan':
-        convmonth = '01'
-    elif string == 'Feb':
-        convmonth = '02'
-    elif string == 'Mar':
-        convmonth = '03'
-    elif string == 'Apr':
-        convmonth = '04'
-    elif string == 'May':
-        convmonth = '05'
-    elif string == 'Jun':
-        convmonth = '06'
-    elif string == 'Jul':
-        convmonth = '07'
-    elif string == 'Aug':
-        convmonth = '08'
-    elif string == 'Sep':
-        convmonth = '09'
-    elif string == 'Oct':
-        convmonth = '10'
-    elif string == 'Nov':
-        convmonth = '11'
-    elif string == 'Dec':
-        convmonth = '12'
-    return convmonth
+dict_month = {}
+dict_month['Jan']= '01'
+dict_month['Feb']= '02'
+dict_month['Mar']= '03'
+dict_month['Apr']= '04'
+dict_month['May']= '05'
+dict_month['Jun']= '06'
+dict_month['Jul']= '07'
+dict_month['Aug']= '08'
+dict_month['Sep']= '09'
+dict_month['Oct']= '10'
+dict_month['Nov']= '11'
+dict_month['Dec']= '12'
 
 def convertdate(string):
     if string == '-':
         return string
-    convmonth = findmonth(string[:3])
+    convmonth = dict_month[string[:3]]
     i = 0
     ind = 0
     for car in string :
@@ -65,7 +52,7 @@ def convertdate(string):
 def convertdatewithyear(string):
     if string == '-':
         return string
-    convmonth = findmonth(string[:3])
+    convmonth = dict_month[string[:3]]
     i = 0
     ind = 0
     for car in string :
