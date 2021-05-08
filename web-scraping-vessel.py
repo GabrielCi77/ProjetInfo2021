@@ -34,8 +34,8 @@ dict_month['Nov']= '11'
 dict_month['Dec']= '12'
 
 def convertdate(string):
-    if string == '-':
-        return string
+    if string[0] == '-':
+        return '-'
     convmonth = dict_month[string[:3]]
     i = 0
     ind = 0
@@ -46,12 +46,12 @@ def convertdate(string):
     convday = string[4:ind]
     if len(convday)==1:
         convday = '0'+convday
-    convhour = string[ind+2:]
+    convhour = string[ind+2:ind+7]
     return f'2021-{convmonth}-{convday}-{convhour}'
 
 def convertdatewithyear(string):
-    if string == '-':
-        return string
+    if string[0] == '-':
+        return '-'
     convmonth = dict_month[string[:3]]
     i = 0
     ind = 0
@@ -137,9 +137,11 @@ with open('data.csv', newline='') as csvfile:
                     origin_brut = soup.find('div', class_= 'vi__r1 vi__stp')
                     origin_brut = origin_brut.text
                     origin, ATD = extract_origin_atd(origin_brut)
+                    ATD = convertdate(ATD)
                     destination_brut = soup.find('div', class_= 'vi__r1 vi__sbt')
                     destination_brut = destination_brut.text
                     destination, ETA = extract_destination_eta(destination_brut)
+                    ETA = convertdate(ETA)
                     # destination2 = value3.text
                     # destination2 = extractdestination2(destination2)
                     tirant = values2[1].text
@@ -208,6 +210,7 @@ with open('data.csv', newline='') as csvfile:
                         destination_test = soup.find('div', class_= 'vi__r1 vi__sbt')
                         destination_test = destination_test.text
                         destination, ETA = extract_destination_eta(destination_test)
+                        ETA = convertdate(ETA)
                         # destination2 = value3.text
                         # destination2 = extractdestination2(destination2)
                         tirant = values2[1].text
