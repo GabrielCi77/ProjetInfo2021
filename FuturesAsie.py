@@ -4,6 +4,17 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import pandas as pd
 
+'''
+Commentaires E-CUBE (Marwane) : 
+- Commenter les grandes étapes du code (toutes les deux ou trois lignes)
+- Eviter d'entrer en dur plusieurs fois les mêmes choses (ex. : 'Month', 'Prior Settle' et 'Update date' en l.38 et 46)
+- Un dataframe n'est pas fait pour grossir au fur et à mesure (ajout ligne par ligne avec append) : c'est non-optimisé et 
+ chronophage. Je suggère plutôt de créer autant de dataframes que d'éléments dans "lignes", puis de les concaténer d'un coup
+ avec pd.concat([liste de tous les dataframes]). 
+'''
+
+###########################
+
 """TOUTES LES OPTIONS UTILES POUR CHROMEDRIVER"""
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
