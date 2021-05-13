@@ -1,65 +1,73 @@
+# Cherche et stocke dans le fichier SpotEur.csv les prix Spots de l'Europe
+
 import requests
 import json
 import datetime
-#il faut le lancer en fin de journée pour que le prix soit marqué
-#met à jour le fichier eurPrice.csv
 
-#Importation du fichier json web
-url = "https://www.powernext.com/data-feed/132735/139/17" #EGSI TTF
-requete = requests.get(url, headers={'User-agent': 'Mozilla/5.0'})
-all_data = json.loads(requete.content)
+# Importation du fichier json contenant les prix EGSI de la place de marché TTF
+url = "https://www.powernext.com/data-feed/132735/139/17"
+request = requests.get(url, headers={'User-agent': 'Mozilla/5.0'})
+all_data = json.loads(request.content)
 
-#Données déjà stockées
+# On regarde quelle est la dernière date déjà enregistré dans le csv
 with open('SpotEur.csv', 'r') as file:
-        LastDate = file.readlines()[-1].split(',')[0] #si on a un week end la dernière date est forcément le dimanche
-        LastDate = datetime.datetime.strptime(LastDate, '%Y-%m-%d')
+    last_date = file.readlines()[-1].split(',')[0]  # si on a un week-end la dernière date est forcément le dimanche
+    last_date = datetime.datetime.strptime(last_date, '%Y-%m-%d')
 
-#Première itération des prix
-price = all_data['values'][0]['data'][-1]['y']
-price_date = all_data['values'][0]['data'][-1]['name'][3:]   #WE 2021-03-22/23
-type = all_data['values'][0]['data'][-1]['name'][:2]
 
-if type == 'WE': #price_date : WE 2021-03-21/22
-    samedi = price_date[0:10]
-    price_date = price_date[0:8] + price_date[11:13] #on se place sur le dimanche
-price_date = datetime.datetime.strptime(price_date, '%Y-%m-%d')
+def updateDateAndPrice(i):
+    price = all_data['values'][0]['data'][-i]['y']
+    price_date = all_data['values'][0]['data'][-i]['name'][3:]   # WE 2021-03-22/23
+    type = all_data['values'][0]['data'][-i]['name'][:2]
 
-#Différence:
-diff = price_date - LastDate
+    if type == 'WE':  # price_date : WE 2021-03-21/22
+        samedi = price_date[0:10]
+        price_date = price_date[0:8] + price_date[11:13]  # on se place sur le dimanche
+    price_date = datetime.datetime.strptime(price_date, '%Y-%m-%d')
+    return price_date, samedi, price, type
 
-#Itération jusqu'à la dernière valeur stockée
+
+# Première itération des prix : on stocke la dernière valeur du site
+price_date, samedi, price, type = updateDateAndPrice(1)
+diff_date = price_date - last_date
+
+# Itération jusqu'à la valeur enregistrée dans le fichier
 data = []
 i = 2
-while LastDate < price_date:
-    if type=='WE':
-        data.append( '\n' + price_date.strftime('%Y-%m-%d') + ',' + str(price) )
-        data.append( '\n' + samedi + ',' + str(price) )
-    elif type == 'DA':
-        data.append('\n' + price_date.strftime('%Y-%m-%d') + ',' + str(price) )
-
-    price = all_data['values'][0]['data'][-i]['y']
-    price_date = all_data['values'][0]['data'][-i]['name'][3:]
-    type = all_data['values'][0]['data'][-i]['name'][:2] 
-
-    if type == 'WE': #price_date : WE 2021-03-21/22
-        samedi = price_date[0:10]
-        price_date = price_date[0:8] + price_date[11:13] #on se place sur le dimanche
-    price_date = datetime.datetime.strptime(price_date, '%Y-%m-%d')
-    
+while last_date < price_date:
+    """On ajoute à la liste data la ligne correspondant à une ou deux journées
+    selon que la donnée de prix correspondent à un week-end ou un jour de semaine
+    Le week end price_date s'écrit : WE 2021-03-21/22"""
     if type == 'WE':
-        i+=2 #On a stocké samedi et dimanche donc on saute une étape
-    else:
-        i+=1
+        data.append('\n' + price_date.strftime('%Y-%m-%d') + ',' + str(price))
+        data.append('\n' + samedi + ',' + str(price))
+    elif type == 'DA':
+        data.append('\n' + price_date.strftime('%Y-%m-%d') + ',' + str(price))
 
-#Ecriture dans le fichier
-if diff != datetime.timedelta(0,0,0):
+    # On met à jour les variables
+    price_date, samedi, price, type = updateDateAndPrice(i)
+    if type == 'WE':
+        samedi = price_date[0:10]
+        price_date = price_date[0:8] + price_date[11:13]  # on se place sur le dimanche
+    price_date = datetime.datetime.strptime(price_date, '%Y-%m-%d')
+
+    # Mise à jour de l'itérateur
+    if type == 'WE':
+        i += 2  # On a stocké samedi et dimanche donc on saute une étape
+    else:
+        i += 1
+
+# Ecriture dans le fichier
+if diff_date != datetime.timedelta(0, 0, 0):
     with open('SpotEur.csv', 'a') as file:
+        # Il faut inverser la liste pour conserver l'ordre chronologique
+        # avant de pouvoir écrire dans le fichier
         data.reverse()
         for elem in data:
             file.write(elem)
-    print(f"{diff} ont (a) été ajouté(s) :")
-    print(f"de {LastDate} \nà  {LastDate + diff}")
-
+    # Interaction dans le terminal
+    print(f"{diff_date} ont (a) été ajouté(s) :")
+    print(f"de {last_date} \nà  {last_date + diff_date}")
 else:
     print("Pas de nouvelle valeur")
-    print(f"dernière date : {LastDate}")
+    print(f"dernière date : {last_date}")
