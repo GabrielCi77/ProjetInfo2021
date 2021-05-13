@@ -16,19 +16,23 @@ with open('SpotEur.csv', 'r') as file:
 
 
 def updateDateAndPrice(i):
+    # On attribue les valeurs du json à nos variables
     price = all_data['values'][0]['data'][-i]['y']
     price_date = all_data['values'][0]['data'][-i]['name'][3:]   # WE 2021-03-22/23
     type = all_data['values'][0]['data'][-i]['name'][:2]
+    # N'est utile que si type == 'WE'
+    saturday = None
 
     if type == 'WE':  # price_date : WE 2021-03-21/22
-        samedi = price_date[0:10]
+        saturday = price_date[0:10]
         price_date = price_date[0:8] + price_date[11:13]  # on se place sur le dimanche
+    # On convertit la date dans un format qui permet de les comparer
     price_date = datetime.datetime.strptime(price_date, '%Y-%m-%d')
-    return price_date, samedi, price, type
+    return price_date, saturday, price, type
 
 
 # Première itération des prix : on stocke la dernière valeur du site
-price_date, samedi, price, type = updateDateAndPrice(1)
+price_date, saturday, price, type = updateDateAndPrice(1)
 diff_date = price_date - last_date
 
 # Itération jusqu'à la valeur enregistrée dans le fichier
@@ -40,16 +44,12 @@ while last_date < price_date:
     Le week end price_date s'écrit : WE 2021-03-21/22"""
     if type == 'WE':
         data.append('\n' + price_date.strftime('%Y-%m-%d') + ',' + str(price))
-        data.append('\n' + samedi + ',' + str(price))
+        data.append('\n' + saturday + ',' + str(price))
     elif type == 'DA':
         data.append('\n' + price_date.strftime('%Y-%m-%d') + ',' + str(price))
 
     # On met à jour les variables
-    price_date, samedi, price, type = updateDateAndPrice(i)
-    if type == 'WE':
-        samedi = price_date[0:10]
-        price_date = price_date[0:8] + price_date[11:13]  # on se place sur le dimanche
-    price_date = datetime.datetime.strptime(price_date, '%Y-%m-%d')
+    price_date, saturday, price, type = updateDateAndPrice(i)
 
     # Mise à jour de l'itérateur
     if type == 'WE':

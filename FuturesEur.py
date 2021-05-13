@@ -43,10 +43,3 @@ if len(data):
 else:
     print("Pas de nouvelles données")
     print(f"Dernière date : {LastDate}")
-
-# Récupération en-tête et mise en forme
-""" entete = soupe.find('thead').find_all('th')
-beau_entete = []
-for item in entete:
-    beau_entete.append(item.string)
-print(beau_entete) """

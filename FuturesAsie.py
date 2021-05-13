@@ -30,27 +30,28 @@ options.add_argument("--disable-dev-shm-usage")  # https://stackoverflow.com/a/5
 options.add_argument("--disable-browser-side-navigation")  # https://stackoverflow.com/a/49123152/1689770
 options.add_argument("--disable-gpu")  # https://stackoverflow.com/questions/51959986/how-to-solve-selenium-chromedriver-timed-out-receiving-message-from-renderer-exc
 
+
+def extractInfos(list_data, row):
+    # Toutes les données sont stockées dans le tableau element
+    element = row.find_elements_by_tag_name('td')
+    # On met à jour la liste de données
+    list_data.append((element[0].text, element[4].text, element[-1].text.replace('CT\n', '')))
+
+
 # Connexion à la page des futures Asie par chromedriver pour charger les données du tableau des prix
 url_asia_price = 'https://www.cmegroup.com/trading/energy/natural-gas/lng-japan-korea-marker-platts-swap.html'
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(executable_path='../chromedriver', options=options)
 driver.get(url_asia_price)
 
 # Création de trois listes vides qui contiendrons nos trois colonnes
 list_data = []
-
-# On attend que la table charge pour itérer ensuite sur chaque ligne
+# On attend que la table soit chargé pour extraire les informations
 table = Dwait(driver, 10).until(EC.presence_of_element_located((By.ID, "quotesFuturesProductTable1")))
-rows = table.find_element_by_tag_name('tbody').find_elements_by_tag_name('row')
-
+rows = table.find_element_by_tag_name('tbody').find_elements_by_tag_name('tr')
 for row in rows:
-    # Toutes les données sont stockées dans le tableau element
-    element = row.find_elements_by_tag_name('td')
-    # On met à jour la liste de données
-    list_data.append([element[0].text, element[4].text, element[-1].text])
-    # On peut modifier la date/ne pas la marquer peut-être
+    extractInfos(list_data, row)
 
 driver.quit()
-
 # Stockage des informations dans le fichier FuturesAsie.csv
 df_columns = ['Month', 'Prior Settle', 'Update date (CT)']
 df_price = pd.DataFrame(data=list_data, columns=df_columns)
