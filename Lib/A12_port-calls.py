@@ -109,13 +109,24 @@ def getAndWritePortCalls():
             bar.finish()
 
 
-def change_date(x):
+def convertPcDate(x):
     # On convertit les dates pour trier par mois puis jour
     if isinstance(x, str) and x != '-':
-        # May 4, 21:16 -> 05/04, 21:16
-        return datetime.strptime(x, "%b %d, %H:%M").strftime("%m/%d, %H:%M")
+        try:
+            # May 4, 21:16 -> 05/04, 21:16
+            date = datetime.strptime(x, "%b %d, %H:%M").strftime("%m/%d, %H:%M")
+        except ValueError:
+            try:
+                # La date est déjà au bon format
+                date = datetime.strptime(x, "%m/%d, %H:%M").strftime("%m/%d, %H:%M")
+            # Si rien ne marche, on renvoie '-' qui sera converti en nan
+            except Exception:
+                date = '-'
+        except Exception:
+            date = '-'
     else:
-        return x
+        date = '-'
+    return date
 
 
 def appendAndSelect(name):
@@ -138,8 +149,8 @@ def appendAndSelect(name):
     size_before_add = csv_all_pc.shape[0]
 
     # On convertit les dates pour pouvoir trier le fichier
-    csv_pc['Departure'] = csv_pc['Departure'].apply(change_date)
-    csv_pc['Arrival'] = csv_pc['Arrival'].apply(change_date)
+    csv_pc['Departure'] = csv_pc['Departure'].apply(convertPcDate)
+    csv_pc['Arrival'] = csv_pc['Arrival'].apply(convertPcDate)
 
     # Gestion des nan + remplissage des dates d'arrivées manquantes
     csv_pc = csv_pc.replace('-', np.nan)
