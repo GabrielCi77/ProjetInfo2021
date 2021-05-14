@@ -40,7 +40,7 @@ def extractInfos(list_data, row):
 
 # Connexion à la page des futures Asie par chromedriver pour charger les données du tableau des prix
 url_asia_price = 'https://www.cmegroup.com/trading/energy/natural-gas/lng-japan-korea-marker-platts-swap.html'
-driver = webdriver.Chrome(executable_path='../chromedriver', options=options)
+driver = webdriver.Chrome(options=options)
 driver.get(url_asia_price)
 
 # Création de trois listes vides qui contiendrons nos trois colonnes
