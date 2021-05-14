@@ -7,11 +7,19 @@ from datetime import date
 import contextlib
 import pandas as pd
 
-# df = pd.DataFrame(columns=["Nom Bateau", "IMO", "MMSI", "Pavillon", "Longueur", "Largeur", "GT", "DWT", "Origine", "ATD", "Destination", "Destination2", "ETA", "Tirant d'eau actuel", "Coordonnees", "Direction", "Vitesse", "Statut", "Date scraping", "Date position"])
 # df_columns=["Nom Bateau", "IMO", "MMSI", "Pavillon", "Longueur", "Largeur", "GT", "DWT", "Origine", "ATD", "Destination", "Destination2", "ETA", "Tirant d'eau actuel", "Coordonnees", "Direction", "Vitesse", "Statut", "Date scraping", "Date position"]
 today = date.today()
 list_df = []
 
+
+'''
+Commentaires E-CUBE (Marwane) : 
+- Reprendre les commentaires des autres scripts
+- separate_slash(string) : remplacer par string.split('/'), fonction native de Python --> FAIT
+- S'il y a des copier-coller, il y a de fortes chances qu'il faille écrire des fonctions supplémentaires 
+    Ex : convertdatewithyear et convertdate sont très similaires, peut-être appeler convertdate dans convertdatewithyear 
+    plutôt que de copier-coller
+'''
 
 def separateSlash(string) :
     stringlist = string.split('/')
