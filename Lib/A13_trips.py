@@ -23,7 +23,7 @@ Commentaires E-CUBE (Marwane) :
 
 def createTrips():
     # On importe le fichier avec tous les appels de ports
-    df_portcalls = pd.read_csv('./Portcalls/Portcalls.csv', index_col=['IMO'])
+    df_portcalls = pd.read_csv('../Data/Portcalls/Portcalls.csv', index_col=['IMO'])
 
     timeA = time.time()
     list_data = []
@@ -43,9 +43,9 @@ def createTrips():
     # On utilise IMO comme index pour concaténer ensuite avec l'autre
     df_new_trips.set_index('IMO', inplace=True)
     # On concatene et on sauvegarde dans le csv voyages
-    df_old_trips = pd.read_csv('./PortCalls/voyages.csv', index_col='IMO')
+    df_old_trips = pd.read_csv('../Data/PortCalls/voyages.csv', index_col='IMO')
     df_all_trips_unique = pd.concat([df_old_trips, df_new_trips]).drop_duplicates()
-    df_all_trips_unique.to_csv('./PortCalls/voyages.csv')
+    df_all_trips_unique.to_csv('../Data/PortCalls/voyages.csv')
 
 
 if __name__ == '__main__':

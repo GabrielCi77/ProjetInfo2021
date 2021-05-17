@@ -1,4 +1,4 @@
-# Cherche et stocke dans le fichier SpotEur.csv les prix Spots de l'Europe
+# Cherche et stocke dans le fichier '../Data/SpotEur'.csv les prix Spots de l'Europe
 
 import requests
 import json
@@ -10,7 +10,7 @@ request = requests.get(url, headers={'User-agent': 'Mozilla/5.0'})
 all_data = json.loads(request.content)
 
 # On regarde quelle est la dernière date déjà enregistré dans le csv
-with open('SpotEur.csv', 'r') as file:
+with open('../Data/SpotEur.csv', 'r') as file:
     last_date = file.readlines()[-1].split(',')[0]  # si on a un week-end la dernière date est forcément le dimanche
     last_date = datetime.datetime.strptime(last_date, '%Y-%m-%d')
 
@@ -59,7 +59,7 @@ while last_date < price_date:
 
 # Ecriture dans le fichier
 if diff_date != datetime.timedelta(0, 0, 0):
-    with open('SpotEur.csv', 'a') as file:
+    with open('../Data/SpotEur.csv', 'a') as file:
         # Il faut inverser la liste pour conserver l'ordre chronologique
         # avant de pouvoir écrire dans le fichier
         data.reverse()

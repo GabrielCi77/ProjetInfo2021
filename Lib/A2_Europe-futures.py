@@ -10,7 +10,7 @@ jayson = json.loads(requete.content)
 soupe = bs(jayson['html'], features='html.parser')
 
 # Données déjà stockées pour récupérer la dernière date
-with open('FuturesEur.csv', 'r') as file:
+with open('../Data/FuturesEur.csv', 'r') as file:
     LastDate = file.readlines()[-1].split(',')[0]
     LastDate = datetime.strptime(LastDate, '%Y-%m-%d')
 
@@ -36,7 +36,7 @@ for day in day_list:
 
 # Ecriture dans le fichier
 if len(data):
-    with open('FuturesEur.csv', 'a') as file:
+    with open('../Data/FuturesEur.csv', 'a') as file:
         data.reverse()
         for elem in data:
             file.write(elem)

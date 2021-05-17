@@ -60,9 +60,9 @@ def convertdate(string):
     convhour = string[ind+2:ind+7]
     return f'2021-{convmonth}-{convday}-{convhour}'
  
-fichier = open('list-vessels-2021-04-30-old.csv','r')
+fichier = open('../Data/donnees-navires/list-vessels-2021-04-30-old.csv','r')
 fichiercsv = csv.reader(fichier, delimiter=',')
-out = open("list-vessels-2021-04-30.csv", "w", newline='')
+out = open("../Data/donnees-navires/list-vessels-2021-04-30.csv", "w", newline='')
 outw = csv.writer(out)
 listecsv = []
 i = 0

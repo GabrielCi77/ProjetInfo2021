@@ -102,7 +102,7 @@ def extractOriginATD(string) :
     return origin, atd
 
 
-with open('data.csv', newline='') as csvfile :
+with open('../Data/data.csv', newline='') as csvfile :
     content = csv.reader(csvfile)
     for row in content :
         if row[3] != 'Lien' :
@@ -261,4 +261,4 @@ with open('data.csv', newline='') as csvfile :
 df = pd.concat(list_df)
 # On crée le csv à partir de la dataframe
 # Index = False évite l'affichage d'une première colonne avec IMO
-df.to_csv(f'./list-vessels-{today}-test.csv', index=False, mode='a')
+df.to_csv(f'../Data/donnees-navires/list-vessels-{today}-test.csv', index=False, mode='a')s

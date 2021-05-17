@@ -55,4 +55,4 @@ driver.quit()
 # Stockage des informations dans le fichier FuturesAsie.csv
 df_columns = ['Month', 'Prior Settle', 'Update date (CT)']
 df_price = pd.DataFrame(data=list_data, columns=df_columns)
-df_price.to_csv('FuturesAsie.csv', mode='a', header=False, index=False)
+df_price.to_csv('../Data/FuturesAsie.csv', mode='a', header=False, index=False)

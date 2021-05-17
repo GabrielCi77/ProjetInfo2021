@@ -77,7 +77,7 @@ def processData(data, imo):
     return res
 
 
-def getAndWritePortCalls():
+def getAndWritePortCalls(name):
     """
     Cette fonction définit le driver (et ouvre la fenêtre chrome)
     et parcourt les lignes de data pour lancer l'acquisition sur une page
@@ -87,11 +87,11 @@ def getAndWritePortCalls():
     driver = webdriver.Chrome(options=options)
 
     # Permet d'avoir la taille pour utiliser la barre de chargement
-    with open('data.csv') as f:
+    with open('../Data/data.csv') as f:
         taille = len(f.readlines())
 
-    with open('data.csv', newline='') as csv_ship_infos:
-        with open(name_file, 'a') as csv_pc:
+    with open('../Data/data.csv', newline='') as csv_ship_infos:
+        with open(f'../Data/Portcalls/{name}', 'a') as csv_pc:
             # Ecriture de l'en-tête
             csv_pc.write('IMO,Port,Country,Arrival,Departure,In Port\n')
             # Barre de chargement dans le terminal
@@ -143,8 +143,8 @@ def appendAndSelect(name):
     pc = port calls
     """
     # On ajoute le nouveau fichier portcalls au fichier commun
-    csv_pc = pd.read_csv(name, index_col=['IMO'])
-    csv_all_pc = pd.read_csv('./PortCalls/PortCalls.csv', index_col=['IMO'])
+    csv_pc = pd.read_csv(f'../Data/Portcalls/{name}', index_col=['IMO'])
+    csv_all_pc = pd.read_csv('../Data/PortCalls/PortCalls.csv', index_col=['IMO'])
     csv_pc = csv_pc.append(csv_all_pc)
     size_before_add = csv_all_pc.shape[0]
 
@@ -166,12 +166,12 @@ def appendAndSelect(name):
     size_after_add = csv_pc.shape[0]
 
     # Ecriture dans le csv + communication dans le terminal
-    csv_pc.to_csv('./PortCalls/PortCalls.csv')
+    csv_pc.to_csv('../Data/PortCalls/PortCalls.csv')
     print(f'{size_after_add - size_before_add} appels de ports ajoutés')
 
 
 if __name__ == '__main__':
     today = date.today()
-    name_file = f'./PortCalls/PortCalls-{today}.csv'
+    name_file = f'PortCalls-{today}.csv'
     getAndWritePortCalls(name_file)
     appendAndSelect(name_file)
