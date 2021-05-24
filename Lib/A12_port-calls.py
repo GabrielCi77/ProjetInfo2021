@@ -55,26 +55,26 @@ def getData(url, driver):
         except Exception as e:
             # 2nd cas : il n'y a pas la section des derniers ports (bateaux peu utiles ?)
             print(f"error with {url} : {e}")
-            data = []
+            list_pc = []
     finally:
-        tableau = driver.find_elements_by_class_name('vfix-top')[3]
-        data = tableau.text.split('\n')
-    return data
+        table = driver.find_elements_by_class_name('vfix-top')[3]
+        list_pc = table.text.split('\n')
+    return list_pc
 
 
-def processData(data, imo):
+def processData(list_pc, imo):
     """
     Cette fonction traite les données de getData pour écrire une seule string
     prête à être copié dans le csv et qui contient toutes les lignes d'un bateau
     """
-    res = ''
-    for i in range(len(data)):
-        if data[i] == 'Arrival (UTC)':
-            tab = data[i-1].split(',')  # [ Port, Country ] (good) or [ Port, Region, Country ] (bad)
+    str_pc = ''
+    for i in range(len(list_pc)):
+        if list_pc[i] == 'Arrival (UTC)':
+            tab = list_pc[i-1].split(',')  # [Port, Country] (good) or [Port, Region, Country] (bad)
             if len(tab) == 3:
-                tab = [tab[0], '"' + tab[1].strip() + ',' + tab[2] + '"']  # [ Port, (Region)+Country ]
-            res = res + imo + ',' + tab[0] + ',' + tab[1] + ',"' + data[i+1] + '","' + data[i+3] + '","' + data[i+5] + '"\n'
-    return res
+                tab = ['"' + tab[0] + ',' + tab[1].strip() + '"', tab[2]]  # [Port+(Region), Country]
+            str_pc = str_pc + imo + ',' + tab[0] + ',' + tab[1] + ',"' + list_pc[i+1] + '","' + list_pc[i+3] + '","' + list_pc[i+5] + '"\n'
+    return str_pc
 
 
 def getAndWritePortCalls(name):
@@ -88,23 +88,23 @@ def getAndWritePortCalls(name):
 
     # Permet d'avoir la taille pour utiliser la barre de chargement
     with open('../Data/data.csv') as f:
-        taille = len(f.readlines())
+        boats_count = len(f.readlines())
 
     with open('../Data/data.csv', newline='') as csv_ship_infos:
         with open(f'../Data/Portcalls/{name}', 'a') as csv_pc:
             # Ecriture de l'en-tête
             csv_pc.write('IMO,Port,Country,Arrival,Departure,In Port\n')
             # Barre de chargement dans le terminal
-            bar = Bar('Processing', max=taille)
+            bar = Bar('Processing', max=boats_count)
             ship_infos = csv.reader(csv_ship_infos)
             # On itère sur tous les bateaux connus
             for row in ship_infos:
                 if row[3] != 'Lien':
                     url = 'https://www.' + row[3]
                     imo = row[1]
-                    data = getData(url, driver)
-                    data = processData(data, imo)
-                    csv_pc.write(data)
+                    list_data = getData(url, driver)
+                    str_data = processData(list_data, imo)
+                    csv_pc.write(str_data)
                     bar.next()
             bar.finish()
 
