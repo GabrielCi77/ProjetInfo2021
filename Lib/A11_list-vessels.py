@@ -91,7 +91,7 @@ def analyseAndWrite():
     """
 
     new_boat_list = getAllBoat()
-    new_boat_list['MMSI'] = new_boat_list['MMSI'].astype(int)
+    new_boat_list[['MMSI', 'IMO']] = new_boat_list[['MMSI', 'IMO']].astype(int)
     old_boat_list = pd.read_csv("../Data/data.csv")
     # Dataframe contenant tous les navires sans répétitions mais avec des doublons
     diff = new_boat_list.merge(old_boat_list, how='outer', indicator=True).loc[lambda x: x['_merge'] != 'both']
@@ -120,7 +120,7 @@ def analyseAndWrite():
 
         # Ecriture dans les deux fichiers cs
         new_boat_list.to_csv("../Data/data.csv", index=False)
-        new.loc[lambda x: x['_merge'] != 'ajout'].to_csv("remplacement.csv", mode='a', header=False, index=False)
+        new.loc[lambda x: x['_merge'] != 'ajout'].to_csv("../Data/remplacement.csv", mode='a', header=False, index=False)
     else:
         print("Aucun nouveau bateau ajouté à la liste")
 
