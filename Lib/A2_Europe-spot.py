@@ -21,18 +21,24 @@ def updateDateAndPrice(i):
     price_date = all_data['values'][0]['data'][-i]['name'][3:]   # WE 2021-03-22/23
     type = all_data['values'][0]['data'][-i]['name'][:2]
     # N'est utile que si type == 'WE'
-    saturday = None
+    saturdays = None
 
-    if type == 'WE':  # price_date : WE 2021-03-21/22
-        saturday = price_date[0:10]
+    if type == 'WE':  # price_date : WE 2021-03-21/23
+        # On calcule la taille du week-end en cas de week-end prolongé
+        we_lenght =  int(price_date[11:13]) - int(price_date[8:10])
+        if we_lenght == 1:
+            #WE classique
+            saturdays = [price_date[0:10]]  # saturdays = [2021-03-21]
+        if we_lenght == 2:
+            saturdays = [price_date[0:8] + str(int(price_date[8:10]) + 1), price_date[0:10]]  # saturdays = [2021-03-21, 2021-03-22]
         price_date = price_date[0:8] + price_date[11:13]  # on se place sur le dimanche
     # On convertit la date dans un format qui permet de les comparer
     price_date = datetime.datetime.strptime(price_date, '%Y-%m-%d')
-    return price_date, saturday, price, type
+    return price_date, saturdays, price, type
 
 
 # Première itération des prix : on stocke la dernière valeur du site
-price_date, saturday, price, type = updateDateAndPrice(1)
+price_date, saturdays, price, type = updateDateAndPrice(1)
 diff_date = price_date - last_date
 
 # Itération jusqu'à la valeur enregistrée dans le fichier
@@ -44,16 +50,17 @@ while last_date < price_date:
     Le week end price_date s'écrit : WE 2021-03-21/22"""
     if type == 'WE':
         data.append('\n' + price_date.strftime('%Y-%m-%d') + ',' + str(price))
-        data.append('\n' + saturday + ',' + str(price))
+        for day in saturdays:
+            data.append('\n' + day + ',' + str(price))
     elif type == 'DA':
         data.append('\n' + price_date.strftime('%Y-%m-%d') + ',' + str(price))
 
     # On met à jour les variables
-    price_date, saturday, price, type = updateDateAndPrice(i)
+    price_date, saturdays, price, type = updateDateAndPrice(i)
 
     # Mise à jour de l'itérateur
     if type == 'WE':
-        i += 2  # On a stocké samedi et dimanche donc on saute une étape
+        i += 1 + len(saturdays)  # On a stocké les samedis et dimanche donc on saute des étape
     else:
         i += 1
 
