@@ -56,3 +56,11 @@ driver.quit()
 df_columns = ['Month', 'Prior Settle', 'Update date (CT)']
 df_price = pd.DataFrame(data=list_data, columns=df_columns)
 df_price.to_csv('../Data/FuturesAsie.csv', mode='a', header=False, index=False)
+
+
+#Suppression des doublons
+df_all_price = pd.read_csv('../Data/FuturesAsie.csv')
+df_all_price = df_all_price.drop_duplicates()
+print(df_all_price)
+"""
+df_all_price.to_csv('../Data/FuturesAsie.csv', header=True, index=False) """
