@@ -7,8 +7,17 @@ from datetime import date
 import contextlib
 import pandas as pd
 
-# df_columns=["Nom Bateau", "IMO", "MMSI", "Pavillon", "Longueur", "Largeur", "GT", "DWT", "Origine", "ATD", "Destination", "Destination2", "ETA", "Tirant d'eau actuel", "Coordonnees", "Direction", "Vitesse", "Statut", "Date scraping", "Date position"]
+'''
+L'idée de ce programme est de scraper les données liées au trajet des navires sur le site 'vesselfinder.com'.
+On dispose d'une liste des navires à scraper avec l'URL correspondant à chaque fois.
+Pour chaque navire, on va donce se rendre sur la page web, scraper les donneés et les stocker dans une dataframe qu'on ajoute à la liste des dataframes.
+A la fin, on fusionne toutes ces dataframes dans un seul fichier. Ainsi, on produit un fichier par exécution du programme.
+On exécute ce programme une fois par jour afin d'avoir suffisamment de données pour la suite.
+'''
+
+# on aura besoin de la date plus tard donc on la stocke dès le début
 today = date.today()
+# Création de la liste des dataframes
 list_df = []
 
 
@@ -22,6 +31,10 @@ Commentaires E-CUBE (Marwane) :
 '''
 
 def separateSlash(string) :
+    '''
+    Fonction qui permet de séparer la direction et la vitesse qui sont sous la forme : "direction / vitesse"
+    '''
+    # On utilise la méthode split de python
     stringlist = string.split('/')
     word1 = stringlist[0]
     word2 = stringlist[1]
