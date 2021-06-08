@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait as Dwait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import pandas as pd
+from datetime import datetime
 
 '''
 Commentaires E-CUBE (Marwane):
@@ -31,11 +32,18 @@ options.add_argument("--disable-browser-side-navigation")  # https://stackoverfl
 options.add_argument("--disable-gpu")  # https://stackoverflow.com/questions/51959986/how-to-solve-selenium-chromedriver-timed-out-receiving-message-from-renderer-exc
 
 
+def changeDate(x):
+    try:
+        return datetime.strptime(x, "%H:%M:%S CT\r\n%d %b %Y").strftime("%Y-%m-%d")
+    except ValueError:
+        return x
+    
+
 def extractInfos(list_data, row):
     # Toutes les données sont stockées dans le tableau element
     element = row.find_elements_by_tag_name('td')
     # On met à jour la liste de données
-    list_data.append((element[0].text, element[4].text, element[-1].text.replace('CT\n', '')))
+    list_data.append((element[0].text, element[4].text, changeDate(element[-1].text)))
 
 
 # Connexion à la page des futures Asie par chromedriver pour charger les données du tableau des prix
@@ -62,5 +70,4 @@ df_price.to_csv('../Data/FuturesAsie.csv', mode='a', header=False, index=False)
 df_all_price = pd.read_csv('../Data/FuturesAsie.csv')
 df_all_price = df_all_price.drop_duplicates()
 print(df_all_price)
-"""
-df_all_price.to_csv('../Data/FuturesAsie.csv', header=True, index=False) """
+df_all_price.to_csv('../Data/FuturesAsie.csv', header=True, index=False)
