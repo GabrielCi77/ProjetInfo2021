@@ -10,7 +10,7 @@ import pandas as pd
 '''
 L'idée de ce programme est de scraper les données liées au trajet des navires sur le site 'vesselfinder.com'.
 On dispose d'une liste des navires à scraper avec l'URL correspondant à chaque fois.
-Pour chaque navire, on va donce se rendre sur la page web, scraper les donneés et les stocker dans une dataframe qu'on ajoute à la liste des dataframes.
+Pour chaque navire, on va donc se rendre sur la page web, scraper les données et les stocker dans une dataframe qu'on ajoute à la liste des dataframes.
 A la fin, on fusionne toutes ces dataframes dans un seul fichier. Ainsi, on produit un fichier par exécution du programme.
 On exécute ce programme une fois par jour afin d'avoir suffisamment de données pour la suite.
 '''
@@ -45,31 +45,18 @@ months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 
 month_numbers = ["%.2d" % i for i in range(1, len(months)+1)]
 dict_month = {months[i]: month_numbers[i] for i in range(len(months))}
 
-def convertDate(string) :
+
+def convertDateYear(string, year = True) :
     '''
     Convertit la date scrapée en format :
     YYYY-MM-DD-hh:mm
     '''
     # Si le string commence par '-' alors il n'y a pas d'info donc on ne fait rien
-    if string[0] == '-' :
-        return '-' # on retourne juste '-' pour supprimer les éventuels \n
-    convmonth = dict_month[string[:3]]
-    i = 0
-    ind = 0
-    for car in string :
-        if car == ',':
-            ind = i
-        i+=1
-    convday = string[4:ind]
-    if len(convday)==1:
-        convday = '0'+convday
-    convhour = string[ind+2:ind+7]
-    return f'2021-{convmonth}-{convday}-{convhour}'
-
-def convertDateWithYear(string) :
     if string[0] == '-':
-        return '-'
+        return '-' # on retourne juste '-' pour supprimer les éventuels \n
+    # On extrait le jour et on le convertit en numéro à l'aide du dictionnaire dict_month
     convmonth = dict_month[string[:3]]
+    # On extrait le jour
     i = 0
     ind = 0
     for car in string :
@@ -77,11 +64,17 @@ def convertDateWithYear(string) :
             ind = i
         i+=1
     convday = string[4:ind]
+    # On ajoute éventuellement un 0 devant le jour pour avoir un format de date cohérent
     if len(convday)==1:
         convday = '0'+ convday
-    convyear = string[ind+2:ind+6]
-    convhour = string[ind+7:ind+12]
-    return f'{convyear}-{convmonth}-{convday}-{convhour}'
+    # La fin du script diffère selon si l'année est écrite ou pas dans la donnée scrapée
+    if year :
+        convyear = string[ind+2:ind+6]
+        convhour = string[ind+7:ind+12]
+        return f'{convyear}-{convmonth}-{convday}-{convhour}'
+    else :
+        convhour = string[ind+2:ind+7]
+        return f'2021-{convmonth}-{convday}-{convhour}'
 
 # def extractdestination2(string):
 #     if string[0] in ['-', '.', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'] :
@@ -115,10 +108,13 @@ def extractOriginATD(string) :
     return origin, atd
 
 
-with open('../Data/data.csv', newline='') as csvfile :
-    content = csv.reader(csvfile)
+# On va ouvrir les pages correspondant à un navire et les scraper les unes après les autres
+# On commence par ouvrir le fichier data.csv qui contient la liste de tous les navires avec leur URL
+with open('../data/data.csv', newline='') as csv_file :
+    content = csv.reader(csv_file)
+    # On lit les lignes une par une :
     for row in content :
-        if row[3] != 'Lien' :
+        if row[3] != 'Lien' : # pour ne pas lire l'en-tête du fichier
             try :
                 URL = 'https://www.'+row[3]
 
@@ -154,11 +150,11 @@ with open('../Data/data.csv', newline='') as csvfile :
                     origin_brut = soup.find('div', class_= 'vi__r1 vi__stp')
                     origin_brut = origin_brut.text
                     origin, ATD = extractOriginATD(origin_brut)
-                    ATD = convertDate(ATD)
+                    ATD = convertDateYear(ATD, False)
                     destination_brut = soup.find('div', class_= 'vi__r1 vi__sbt')
                     destination_brut = destination_brut.text
                     destination, ETA = extractDestinationETA(destination_brut)
-                    ETA = convertDate(ETA)
+                    ETA = convertDateYear(ETA, False)
                     # destination2 = value3.text
                     # destination2 = extractdestination2(destination2)
                     tirant = values2[1].text
@@ -167,7 +163,7 @@ with open('../Data/data.csv', newline='') as csvfile :
                     direction, vitesse = separateSlash(values2[0].text)
                     statut = values2[2].text
                     date_position = soup.find(id='lastrep')['data-title'] # à convertir
-                    date_position = convertDateWithYear(date_position)
+                    date_position = convertDateYear(date_position, True)
 
                     list_df.append(pd.DataFrame({"Nom Bateau" : nom_bateau,
                                         "IMO": imo,
@@ -226,7 +222,7 @@ with open('../Data/data.csv', newline='') as csvfile :
                         destination_test = soup.find('div', class_= 'vi__r1 vi__sbt')
                         destination_test = destination_test.text
                         destination, ETA = extractDestinationETA(destination_test)
-                        ETA = convertDate(ETA)
+                        ETA = convertDateYear(ETA, False)
                         # destination2 = value3.text
                         # destination2 = extractdestination2(destination2)
                         tirant = values2[1].text
@@ -235,7 +231,7 @@ with open('../Data/data.csv', newline='') as csvfile :
                         direction, vitesse = separateSlash(values2[0].text)
                         statut = values2[2].text
                         date_position = soup.find(id='lastrep')['data-title'] # à convertir
-                        date_position = convertDateWithYear(date_position)
+                        date_position = convertDateYear(date_position, True)
 
                         list_df.append(pd.DataFrame({"Nom Bateau" : nom_bateau,
                                             "IMO": imo,
@@ -274,4 +270,4 @@ with open('../Data/data.csv', newline='') as csvfile :
 df = pd.concat(list_df)
 # On crée le csv à partir de la dataframe
 # Index = False évite l'affichage d'une première colonne avec IMO
-df.to_csv(f'../Data/donnees-navires/list-vessels-{today}-test.csv', index=False, mode='a')
+df.to_csv(f'../data/donnees-navires/list-vessels-{today}.csv', index=False, mode='a')
