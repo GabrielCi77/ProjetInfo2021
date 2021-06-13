@@ -32,7 +32,14 @@ options.add_argument("--disable-browser-side-navigation")  # https://stackoverfl
 options.add_argument("--disable-gpu")  # https://stackoverflow.com/questions/51959986/how-to-solve-selenium-chromedriver-timed-out-receiving-message-from-renderer-exc
 
 
-def changeDate(x):
+def changeDateOfMonth(x):
+    try:
+        return datetime.strptime(x, "%b %Y").strftime("%Y-%m")
+    except ValueError:
+        return x
+
+
+def changeDateOfUpdate(x):
     try:
         return datetime.strptime(x, "%H:%M:%S CT\r\n%d %b %Y").strftime("%Y-%m-%d")
     except ValueError:
@@ -43,7 +50,7 @@ def extractInfos(list_data, row):
     # Toutes les données sont stockées dans le tableau element
     element = row.find_elements_by_tag_name('td')
     # On met à jour la liste de données
-    list_data.append((element[0].text, element[4].text, changeDate(element[-1].text)))
+    list_data.append((changeDateOfMonth(element[0].text), element[4].text, changeDateOfUpdate(element[-1].text)))
 
 
 # Connexion à la page des futures Asie par chromedriver pour charger les données du tableau des prix
