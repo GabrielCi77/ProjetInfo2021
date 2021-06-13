@@ -15,6 +15,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 8608872,Dampier Anch., Australia,"04/29, 04:43","05/02, 01:17",2d 20h
 8608872,Shikama, Japan,"05/14, 01:21","05/15, 05:20",1d 3h
 8608872,Withnell Bay, Australia,"05/27, 07:25","05/28, 12:42",1d 5h
+8608872,Shikama, Japan,"06/09, 03:29","06/10, 01:48",22h 19m
 8608884,Singapore Anch. 5, Singapore,"02/15, 13:21","02/15, 16:01",2h 39m
 8608884,Singapore, Singapore,"02/16, 11:50","02/20, 07:58",3d 20h
 8608884,Dampier Anch., Australia,"03/05, 08:14","03/16, 00:10",10d 15h
@@ -45,6 +46,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 8706155,Bontang, Indonesia,"05/22, 08:26","05/23, 17:35",1d 9h
 8706155,Jakarta Term., Indonesia,"05/28, 00:29","05/30, 08:15",2d 7h
 8706155,Bontang, Indonesia,"06/02, 08:28","06/03, 12:16",1d 3h
+8706155,Jakarta Term., Indonesia,"06/07, 00:12","06/09, 03:23",2d 3h
 8913150,Mizushima, Japan,"02/19, 04:20","02/20, 06:33",1d 2h
 8913150,Withnell Bay, Australia,"03/07, 00:22","03/08, 01:15",1d
 8913150,Yanai, Japan,"03/20, 02:10","03/21, 02:09",23h 59m
@@ -53,6 +55,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 8913150,Singapore, Singapore,"05/21, 04:52","05/21, 04:52",
 8913150,Singapore Anch. 5, Singapore,"05/21, 08:01","05/22, 01:25",17h 24m
 8913150,Dampier Anch., Australia,"05/27, 01:35",,
+8913150,Withnell Bay, Australia,"06/05, 07:47","06/07, 02:12",1d 18h
+8913150,Dampier Anch., Australia,"06/07, 05:06","06/10, 02:01",2d 20h
+8913150,Withnell Bay, Australia,"06/11, 00:32","06/12, 23:23",1d 22h
 9001772,Hongqiao, China,"02/23, 00:47","02/24, 02:38",1d 1h
 9001772,Hongqiao, China,"03/07, 23:13","03/09, 01:38",1d 2h
 9001772,"Bintulu,Sarawak", Malaysia,"03/21, 11:17","03/22, 08:55",21h 38m
@@ -63,6 +68,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9001772,"Bintulu,Sarawak", Malaysia,"05/01, 07:20","05/02, 05:26",22h 5m
 9001772,Hongqiao, China,"05/07, 00:58","05/08, 02:41",1d 1h
 9001772,Shanghai, China,"05/24, 01:57","05/25, 00:15",22h 17m
+9001772,Hongqiao, China,"06/07, 02:01","06/08, 03:13",1d 1h
+9001772,"Bintulu,Sarawak", Malaysia,"06/13, 01:20",,
 9001784,Shanghai, China,"02/17, 07:41","02/18, 05:02",21h 21m
 9001784,Shanghai Anch., China,"02/18, 09:48",,
 9001784,"Bintulu,Sarawak", Malaysia,"02/26, 12:45","02/27, 03:07",14h 21m
@@ -73,7 +80,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9001784,Shanghai, China,"04/29, 05:09","04/30, 03:34",22h 25m
 9001784,Shanghai, China,"05/12, 04:19","05/13, 02:34",22h 14m
 9001784,Shanghai, China,"05/26, 03:12","05/27, 01:38",22h 26m
-9001784,"Bintulu,Sarawak", Malaysia,"06/05, 08:24",,
+9001784,Shanghai, China,"06/12, 05:23","06/13, 03:08",21h 44m
 9016492,Macun, China,"03/01, 09:19","03/02, 09:39",1d
 9016492,Dongguan, China,"03/14, 06:05","03/15, 00:06",18h
 9016492,Macun, China,"03/25, 22:30","03/26, 15:02",16h 32m
@@ -84,6 +91,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9016492,"Bintulu,Sarawak", Malaysia,"05/03, 14:18","05/04, 09:21",19h 3m
 9016492,Macun, China,"05/09, 07:30","05/10, 07:55",1d
 9016492,Dongguan, China,"05/30, 04:58","05/31, 04:09",23h 11m
+9016492,Liuheng, China,"06/04, 02:45",,
 9018555,Incheon, Korea,"02/24, 04:22","02/25, 02:26",22h 4m
 9018555,Anjeong, Korea,"03/14, 03:59","03/15, 02:03",22h 4m
 9018555,Anjeong, Korea,"03/31, 04:36","04/01, 02:39",22h 2m
@@ -91,6 +99,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9018555,Anjeong, Korea,"05/06, 04:23","05/07, 01:58",21h 34m
 9018555,Anjeong, Korea,"05/22, 04:11","05/23, 01:46",21h 34m
 9018555,Okpo Anch., Korea,"05/23, 04:04",,
+9018555,Pyeongtaek, Korea,"06/10, 05:32","06/11, 02:33",21h 1m
 9030802,Sakaide, Japan,"03/06, 05:06","03/07, 06:56",1d 1h
 9030802,Kitakyushu, Japan,"03/24, 01:52","03/25, 03:41",1d 1h
 9030802,"Bintulu,Sarawak", Malaysia,"04/06, 09:07","04/06, 09:07",
@@ -98,6 +107,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9030802,"Bintulu,Sarawak", Malaysia,"04/20, 07:25","04/21, 07:02",23h 37m
 9030802,Sakai, Japan,"04/27, 05:58","04/28, 08:40",1d 2h
 9030802,Yokohama, Japan,"05/30, 02:08","05/31, 05:09",1d 3h
+9030802,"Bintulu,Sarawak", Malaysia,"06/12, 07:07","06/12, 07:07",
 9030814,Nagoya, Japan,"02/28, 04:58","03/01, 04:11",23h 12m
 9030814,Boryeong, Korea,"03/16, 01:27","03/17, 03:37",1d 2h
 9030814,Mab Tapud, Thailand,"03/26, 23:16","03/28, 00:48",1d 1h
@@ -112,6 +122,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9030826,"Bintulu,Sarawak", Malaysia,"04/18, 04:44","04/19, 09:33",1d 4h
 9030826,Nagoya, Japan,"04/26, 01:21","04/27, 02:14",1d
 9030826,Naoetsu, Japan,"05/20, 00:31","05/21, 00:29",23h 57m
+9030826,"Pasir Gudang,Johor Anch.", Malaysia,"06/06, 11:43","06/06, 12:04",21m
+9030826,Singapore Anch. 1, Singapore,"06/07, 03:01","06/07, 22:49",19h 47m
 9030838,Nagoya Anch., Japan,"02/26, 23:53","02/27, 05:52",5h 59m
 9030838,Nagoya, Japan,"02/27, 06:36","02/28, 03:53",21h 17m
 9030838,Anjeong, Korea,"03/18, 01:09","03/19, 01:21",1d
@@ -164,6 +176,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9038452,Das Island, United Arab Emirates (UAE),"05/13, 04:11","05/16, 21:01",3d 16h
 9038452,Dubai Anch., United Arab Emirates (UAE),"05/17, 07:08","05/21, 10:57",4d 3h
 9038452,Ennore, India,"05/30, 01:38","05/31, 05:26",1d 3h
+9038452,Das Island Anch., United Arab Emirates (UAE),"06/08, 07:44","06/09, 02:58",19h 13m
+9038452,Das Island, United Arab Emirates (UAE),"06/09, 04:07","06/10, 15:43",1d 11h
+9038452,Dubai Anch., United Arab Emirates (UAE),"06/11, 05:21","06/13, 11:54",2d 6h
 9038816,Gladstone, Australia,"02/13, 16:44","02/15, 03:58",1d 11h
 9038816,Incheon, Korea,"02/27, 03:45","02/28, 04:41",1d
 9038816,Gladstone, Australia,"03/13, 14:56","03/14, 20:56",1d 5h
@@ -172,6 +187,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9038816,Incheon, Korea,"04/23, 06:19","04/24, 03:43",21h 23m
 9038816,Gladstone, Australia,"05/06, 12:11","05/07, 14:14",1d 2h
 9038816,Anjeong, Korea,"05/19, 04:05","05/20, 01:31",21h 25m
+9038816,Gladstone, Australia,"06/06, 00:36","06/07, 04:08",1d 3h
 9043677,Singapore Anch. 3, Singapore,"03/15, 06:14","03/15, 22:58",16h 43m
 9043677,Singapore, Singapore,"03/16, 00:29","03/19, 04:09",3d 3h
 9043677,Singapore Anch. 3, Singapore,"03/19, 05:38","04/10, 02:17",21d 20h
@@ -196,6 +212,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9061928,Gladstone, Australia,"04/18, 05:50","04/19, 09:58",1d 4h
 9061928,Anjeong, Korea,"05/02, 04:26","05/03, 02:10",21h 44m
 9061928,Gladstone, Australia,"05/14, 16:06","05/15, 20:32",1d 4h
+9061928,Gladstone, Australia,"06/10, 02:42","06/11, 03:43",1d 1h
 9064073,Dapeng, China,"02/27, 06:30","03/01, 02:07",1d 19h
 9064073,Bontang, Indonesia,"03/14, 13:16","03/15, 16:20",1d 3h
 9064073,Dapeng, China,"03/23, 06:23","03/24, 07:09",1d
@@ -219,12 +236,15 @@ IMO,Port,Country,Arrival,Departure,In Port
 9074626,Das Island Anch., United Arab Emirates (UAE),"05/20, 05:21","05/23, 02:14",2d 20h
 9074626,Das Island, United Arab Emirates (UAE),"05/23, 03:17","05/24, 05:03",1d 1h
 9074626,Dahej, India,"06/01, 02:31","06/02, 04:27",1d 1h
+9074626,Das Island, United Arab Emirates (UAE),"06/05, 20:47","06/07, 09:53",1d 13h
+9074626,Dubai Anch., United Arab Emirates (UAE),"06/07, 18:42","06/07, 23:15",4h 32m
 9074638,Das Island Anch., United Arab Emirates (UAE),"03/17, 04:40","03/17, 05:09",29m
 9074638,Das Island, United Arab Emirates (UAE),"03/17, 07:38","03/19, 16:13",2d 8h
 9074638,Gaolan, China,"04/05, 03:46","04/06, 09:21",1d 5h
 9074638,"Pasir Gudang,Johor Anch.", Malaysia,"04/10, 02:35",,
 9074638,Singapore Anch. 1, Singapore,"04/10, 14:45","04/12, 14:32",1d 23h
 9074638,Shanghai, China,"04/18, 10:11","04/30, 03:42",11d 17h
+9074638,Al Fujayrah Anch., United Arab Emirates (UAE),"06/07, 04:03","06/09, 11:19",2d 7h
 9074640,Al Fujayrah Anch., United Arab Emirates (UAE),"03/16, 05:52","03/23, 17:00",7d 11h
 9074640,Das Island Anch., United Arab Emirates (UAE),"03/24, 13:12","03/26, 08:09",1d 18h
 9074640,Das Island, United Arab Emirates (UAE),"03/26, 09:15","03/27, 09:53",1d
@@ -241,6 +261,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9074640,Das Island Anch., United Arab Emirates (UAE),"05/24, 17:00","05/25, 14:01",21h 1m
 9074640,Das Island, United Arab Emirates (UAE),"05/25, 15:10","05/27, 09:03",1d 17h
 9074640,Al Fujayrah Anch., United Arab Emirates (UAE),"05/28, 13:39","05/30, 04:50",1d 15h
+9074640,Dapeng, China,"06/12, 03:16","06/13, 05:40",1d 2h
 9074652,Das Island, United Arab Emirates (UAE),"02/22, 07:57","02/22, 20:43",12h 46m
 9074652,Kisarazu, Japan,"03/11, 01:48","03/12, 02:52",1d 1h
 9074652,Al Fujayrah Anch., United Arab Emirates (UAE),"03/31, 03:16","04/02, 12:54",2d 9h
@@ -254,6 +275,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9074652,Dubai Anch., United Arab Emirates (UAE),"05/14, 03:55","05/16, 15:45",2d 11h
 9074652,Das Island Anch., United Arab Emirates (UAE),"05/17, 05:09","05/17, 12:00",6h 51m
 9074652,Das Island, United Arab Emirates (UAE),"05/17, 13:08","05/20, 06:33",2d 17h
+9074652,Kawasaki, Japan,"06/06, 02:46","06/07, 01:08",22h 22m
 9075333,Anjeong, Korea,"02/15, 05:42","02/16, 01:35",19h 53m
 9075333,Incheon, Korea,"03/05, 02:22","03/06, 01:26",23h 3m
 9075333,Pyeongtaek, Korea,"03/20, 23:11","03/21, 23:43",1d
@@ -262,6 +284,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9075333,Pyeongtaek, Korea,"05/07, 04:01","05/08, 01:07",21h 5m
 9075333,Pyeongtaek, Korea,"05/23, 02:37",,
 9075333,"Bintulu,Sarawak", Malaysia,"06/04, 02:18","06/04, 02:18",
+9075333,Anjeong, Korea,"06/12, 04:01","06/13, 01:18",21h 16m
 9085613,Ras Laffan, Qatar,"02/19, 05:56","02/20, 04:05",22h 9m
 9085613,Anegasaki, Japan,"03/12, 02:00","03/13, 02:43",1d
 9085613,Singapore Anch. 1, Singapore,"03/20, 00:40","03/20, 15:25",14h 45m
@@ -269,6 +292,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9085613,Anegasaki, Japan,"04/15, 04:30","04/16, 06:01",1d 1h
 9085613,Ras Laffan Anch., Qatar,"05/04, 08:08",,
 9085613,Ras Laffan, Qatar,"05/17, 05:32",,
+9085613,Nagoya, Japan,"06/10, 00:50","06/11, 00:28",23h 37m
 9085625,Ras Laffan, Qatar,"02/24, 15:41","02/24, 18:36",2h 54m
 9085625,Yokkaichi, Japan,"03/15, 02:09","03/16, 00:18",22h 9m
 9085625,"Pasir Gudang,Johor Anch.", Malaysia,"03/24, 00:11","04/04, 07:47",11d 7h
@@ -305,6 +329,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9086734,Anegasaki, Japan,"05/03, 00:49","05/04, 01:43",1d
 9086734,Singapore Anch. 1, Singapore,"05/10, 19:18","05/11, 08:58",13h 39m
 9086734,Ras Laffan, Qatar,"05/20, 03:46","05/21, 11:15",1d 7h
+9086734,Sakai, Japan,"06/06, 01:10","06/07, 06:58",1d 5h
 9086746,Ras Laffan, Qatar,"02/14, 12:13","02/15, 16:05",1d 3h
 9086746,Yokohama, Japan,"03/04, 01:57","03/05, 03:44",1d 1h
 9086746,Ras Laffan Anch., Qatar,"03/20, 06:33","03/21, 07:57",1d 1h
@@ -315,6 +340,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9086746,Ras Laffan, Qatar,"05/05, 09:01","05/06, 12:14",1d 3h
 9086746,Yokkaichi, Japan,"05/22, 02:29","05/23, 00:21",21h 52m
 9086746,Singapore Anch. 1, Singapore,"05/29, 11:27","05/29, 22:41",11h 13m
+9086746,Ras Laffan Anch., Qatar,"06/07, 07:04","06/08, 04:29",21h 25m
 9132741,Kawasaki, Japan,"02/26, 03:09","02/27, 02:16",23h 6m
 9132741,Ras Laffan, Qatar,"03/14, 21:17","03/15, 22:57",1d 1h
 9132741,Kisarazu, Japan,"04/02, 23:54","04/04, 01:19",1d 1h
@@ -330,6 +356,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9132791,Ras Laffan, Qatar,"04/25, 12:43","04/26, 10:14",21h 31m
 9132791,Yokohama, Japan,"05/18, 01:47","05/19, 03:36",1d 1h
 9132791,Singapore, Singapore,"05/26, 04:46","05/26, 13:12",8h 26m
+9132791,Ras Laffan, Qatar,"06/05, 16:18","06/06, 16:10",23h 51m
 9132818,Ras Laffan Anch., Qatar,"03/05, 16:51","03/06, 06:42",13h 50m
 9132818,Anegasaki, Japan,"03/23, 05:23","03/24, 05:54",1d
 9132818,Singapore Anch. 1, Singapore,"03/31, 01:55","03/31, 15:02",13h 7m
@@ -340,6 +367,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9132818,Ras Laffan Anch., Qatar,"05/12, 06:24","05/19, 14:01",7d 7h
 9132818,Nagoya Anch., Japan,"06/04, 00:56","06/04, 06:30",5h 33m
 9132818,Yokkaichi, Japan,"06/04, 07:21","06/05, 09:16",1d 1h
+9132818,Singapore Anch. 1, Singapore,"06/11, 14:52","06/12, 03:49",12h 56m
 9134323,Sendai, Japan,"02/25, 00:49","02/26, 01:08",1d
 9134323,Sendai, Japan,"03/15, 04:20","03/16, 01:08",20h 48m
 9134323,Sendai, Japan,"04/02, 07:17","04/03, 01:03",17h 45m
@@ -348,11 +376,13 @@ IMO,Port,Country,Arrival,Departure,In Port
 9134323,Sendai, Japan,"05/08, 02:11",,
 9134323,"Bintulu,Sarawak", Malaysia,"05/18, 00:55","05/18, 20:24",19h 29m
 9134323,Sendai, Japan,"05/27, 04:38","05/28, 01:12",20h 34m
+9134323,"Bintulu,Sarawak", Malaysia,"06/06, 08:55","06/07, 02:52",17h 56m
 9155078,Incheon, Korea,"02/16, 01:35","02/18, 07:35",2d 6h
 9155078,Pyeongtaek, Korea,"03/19, 22:34","03/20, 22:48",1d
 9155078,Qalhat, Oman,"04/03, 14:38","04/04, 17:08",1d 2h
 9155078,Pyeongtaek, Korea,"04/19, 23:49","04/20, 23:42",23h 53m
 9155078,Anjeong, Korea,"04/28, 03:14",,
+9155078,Qalhat, Oman,"06/12, 08:08",,
 9155145,Ras Laffan, Qatar,"03/26, 15:55","03/28, 03:57",1d 12h
 9155145,Incheon, Korea,"04/12, 04:31","04/13, 01:28",20h 57m
 9155145,Ras Laffan, Qatar,"04/29, 11:11","04/30, 09:13",22h 1m
@@ -365,26 +395,32 @@ IMO,Port,Country,Arrival,Departure,In Port
 9155157,Ras Laffan, Qatar,"04/30, 22:36","05/01, 19:19",20h 43m
 9155157,Incheon, Korea,"05/17, 01:58",,
 9155157,Okpo Anch., Korea,"05/19, 00:26","05/22, 23:31",3d 23h
+9155157,Ras Laffan, Qatar,"06/06, 20:30","06/08, 00:31",1d 4h
 9157624,Incheon, Korea,"02/25, 04:07","02/26, 07:11",1d 3h
 9157624,Anjeong, Korea,"03/30, 03:49","03/31, 00:46",20h 57m
 9157624,Ras Laffan, Qatar,"04/15, 12:32","04/16, 09:42",21h 9m
 9157624,Pyeongtaek, Korea,"05/01, 23:44","05/03, 00:34",1d
 9157624,Ras Laffan, Qatar,"05/20, 17:05","05/22, 07:03",1d 13h
+9157624,Anjeong, Korea,"06/07, 04:04","06/08, 03:21",23h 16m
 9157636,Qalhat, Oman,"02/17, 05:05","02/18, 04:25",23h 19m
 9157636,Pyeongtaek, Korea,"04/04, 23:21","04/06, 00:36",1d 1h
 9157636,Qalhat, Oman,"04/20, 15:39","04/21, 17:50",1d 2h
 9157636,Incheon, Korea,"05/05, 23:42","05/07, 01:46",1d 2h
 9157636,Qalhat, Oman,"05/21, 04:40","05/22, 07:05",1d 2h
+9157636,Pyeongtaek, Korea,"06/05, 01:59","06/06, 00:35",22h 35m
 9157739,Ras Laffan, Qatar,"02/26, 09:20","02/27, 06:25",21h 5m
 9157739,Incheon, Korea,"03/14, 23:30","03/15, 23:34",1d
 9157739,Ras Laffan, Qatar,"03/30, 20:19","03/31, 17:06",20h 46m
 9157739,Pyeongtaek, Korea,"04/15, 21:43","04/16, 23:30",1d 1h
 9157739,Ras Laffan, Qatar,"05/02, 03:46","05/03, 01:28",21h 41m
 9157739,Pyeongtaek, Korea,"05/18, 22:54","05/19, 23:28",1d
+9157739,Okpo Anch., Korea,"05/23, 22:56","06/11, 21:30",18d 22h
 9161510,Benoa, Indonesia,"02/21, 04:23","02/23, 10:33",2d 6h
 9161510,Benoa Anch., Indonesia,"02/23, 12:27","03/14, 23:00",19d 10h
 9161510,Benoa Anch., Indonesia,"03/15, 01:25","04/08, 05:21",24d 3h
 9161510,Suralaya Anch., Indonesia,"04/11, 08:25",,
+9161510,Suralaya Anch., Indonesia,"06/08, 10:00","06/08, 10:00",
+9161510,Cilegon, Indonesia,"06/09, 07:25",,
 9176008,Anjeong, Korea,"02/16, 02:54","02/17, 01:55",23h
 9176008,Ras Laffan, Qatar,"03/03, 21:08","03/04, 16:58",19h 49m
 9176008,Incheon, Korea,"03/20, 01:52","03/21, 01:37",23h 44m
@@ -393,6 +429,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9176008,Pyeongtaek, Korea,"04/27, 05:09","04/28, 01:28",20h 18m
 9176008,Ras Laffan, Qatar,"05/14, 07:18","05/15, 07:03",23h 44m
 9176008,Anjeong, Korea,"05/31, 03:56","06/01, 01:33",21h 36m
+9176008,Okpo Anch., Korea,"06/01, 04:09","06/12, 04:31",11d
 9176010,Qalhat, Oman,"02/25, 04:50","02/26, 02:21",21h 31m
 9176010,Incheon, Korea,"03/12, 22:37","03/13, 23:34",1d
 9176010,Qalhat, Oman,"03/27, 09:48","03/28, 12:21",1d 2h
@@ -405,7 +442,6 @@ IMO,Port,Country,Arrival,Departure,In Port
 9179581,Incheon, Korea,"04/01, 06:20","04/02, 05:12",22h 51m
 9179581,Qalhat, Oman,"04/16, 15:46","04/17, 17:27",1d 1h
 9179581,Anjeong, Korea,"05/01, 04:06","05/02, 01:42",21h 36m
-9179581,Qalhat, Oman,"05/17, 04:57",,
 9179581,Incheon, Korea,"06/01, 03:37","06/02, 01:43",22h 5m
 9180231,Pyeongtaek, Korea,"02/13, 20:59","02/15, 01:06",1d 4h
 9180231,Qalhat, Oman,"02/28, 12:49","03/01, 11:01",22h 12m
@@ -421,6 +457,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9180243,Ras Laffan, Qatar,"04/02, 09:16","04/03, 05:01",19h 44m
 9180243,Incheon, Korea,"04/19, 02:22","04/20, 01:34",23h 12m
 9180243,Ras Laffan, Qatar,"05/09, 00:08","05/09, 20:32",20h 24m
+9180243,Okpo Anch., Korea,"05/30, 22:08","06/06, 07:13",6d 9h
 9183269,Pyeongtaek, Korea,"02/22, 02:34","02/23, 01:41",23h 6m
 9183269,Incheon, Korea,"03/24, 03:23","03/25, 04:32",1d 1h
 9183269,Qalhat, Oman,"04/08, 04:29","04/09, 07:10",1d 2h
@@ -428,11 +465,13 @@ IMO,Port,Country,Arrival,Departure,In Port
 9183269,Port Klang Anch., Malaysia,"05/01, 14:21",,
 9183269,Qalhat, Oman,"05/09, 10:32","05/10, 13:05",1d 2h
 9183269,Incheon, Korea,"05/24, 03:25","05/25, 04:43",1d 1h
+9183269,Qalhat, Oman,"06/11, 04:40","06/12, 07:02",1d 2h
 9186584,Incheon, Korea,"02/22, 03:01","02/23, 01:37",22h 36m
 9186584,Ras Laffan, Qatar,"03/11, 12:09","03/12, 08:00",19h 50m
 9186584,Okpo Anch., Korea,"03/26, 23:32","03/27, 04:57",5h 24m
 9186584,Ras Laffan, Qatar,"04/17, 01:30","04/17, 22:09",20h 39m
 9186584,Ras Laffan, Qatar,"05/23, 17:22","05/24, 14:40",21h 18m
+9186584,Pyeongtaek, Korea,"06/08, 04:14","06/09, 01:45",21h 30m
 9187356,Bontang, Indonesia,"03/01, 01:24","03/03, 09:01",2d 7h
 9187356,Bontang, Indonesia,"03/11, 06:19","03/12, 04:00",21h 41m
 9187356,Benoa, Indonesia,"03/15, 02:12","03/16, 02:58",1d
@@ -444,10 +483,13 @@ IMO,Port,Country,Arrival,Departure,In Port
 9187356,Bontang, Indonesia,"05/03, 16:13","05/04, 12:07",19h 53m
 9187356,Benoa, Indonesia,"05/21, 22:35","05/23, 00:27",1d 1h
 9187356,Bontang, Indonesia,"05/27, 21:14","05/28, 14:39",17h 25m
+9187356,Bontang, Indonesia,"06/08, 06:15","06/09, 02:33",20h 17m
+9187356,Benoa, Indonesia,"06/12, 03:04","06/13, 04:42",1d 1h
 9200316,Qalhat, Oman,"04/09, 08:34","04/12, 14:05",3d 5h
 9200316,Sakai, Japan,"04/27, 22:59",,
 9200316,Qalhat, Oman,"05/15, 05:17","05/16, 06:21",1d 1h
 9200316,Sakai, Japan,"05/30, 01:09","05/31, 00:45",23h 35m
+9200316,Singapore Anch. 1, Singapore,"06/06, 06:30","06/07, 07:25",1d
 9210816,Al Fujayrah Anch., United Arab Emirates (UAE),"05/01, 02:40","05/03, 11:20",2d 8h
 9210828,Seria, Brunei,"03/07, 22:55",,
 9210828,Mab Tapud, Thailand,"03/17, 00:13","03/18, 03:53",1d 3h
@@ -457,6 +499,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9210828,Mizushima, Japan,"05/04, 02:11","05/05, 04:29",1d 2h
 9210828,Yangkou, China,"05/19, 01:49","05/21, 00:31",1d 22h
 9210828,Singapore Anch. 1, Singapore,"06/04, 06:52",,
+9210828,Sungai Udang Port, Malaysia,"06/07, 01:46","06/08, 14:26",1d 12h
+9210828,Singapore Anch. 1, Singapore,"06/09, 02:58","06/11, 00:42",1d 21h
 9211872,Yokkaichi, Japan,"02/16, 02:23","02/17, 01:03",22h 40m
 9211872,Mab Tapud, Thailand,"02/27, 00:08","02/28, 00:47",1d
 9211872,Anegasaki, Japan,"04/04, 04:06","04/05, 04:14",1d
@@ -473,6 +517,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9213416,Boryeong, Korea,"05/13, 01:08","05/14, 02:08",1d
 9213416,Nagoya, Japan,"05/28, 01:15","05/29, 00:10",22h 54m
 9213416,"Bintulu,Sarawak", Malaysia,"06/04, 03:46","06/05, 02:10",22h 23m
+9213416,Incheon, Korea,"06/11, 04:37","06/12, 01:24",20h 46m
 9216298,Bonny, Nigeria,"02/18, 21:14","02/20, 08:39",1d 11h
 9216298,Santa Cruz de Tenerife Anch., Spain,"03/01, 09:33","03/03, 09:21",1d 23h
 9216298,Huelva, Spain,"03/06, 06:04","03/07, 06:23",1d
@@ -488,6 +533,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9216303,Sines Anch., Portugal,"04/19, 14:01",,
 9216303,Las Palmas (Gr.Canaria) Anch., Spain,"04/26, 13:11",,
 9216303,Bonny, Nigeria,"05/25, 23:17","05/27, 03:02",1d 3h
+9216303,Huelva, Spain,"06/08, 11:38","06/09, 11:25",23h 46m
 9229647,Anegasaki, Japan,"02/18, 06:11","02/19, 10:44",1d 4h
 9229647,Mizushima, Japan,"03/05, 23:46","03/07, 02:22",1d 2h
 9229647,Incheon, Korea,"03/23, 03:30","03/24, 01:46",22h 16m
@@ -495,6 +541,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9229647,"Pasir Gudang,Johor Anch.", Malaysia,"04/17, 05:01","04/19, 03:56",1d 22h
 9229647,"Pasir Gudang,Johor", Malaysia,"04/19, 05:46","05/03, 09:01",14d 3h
 9229647,Yokohama, Japan,"06/03, 00:32","06/04, 02:14",1d 1h
+9229647,"Bintulu,Sarawak", Malaysia,"06/12, 00:28","06/12, 23:31",23h 3m
 9230048,Point Fortin, Trinidad & Tobago,"03/13, 13:49","03/14, 15:12",1d 1h
 9230048,Bilbao, Spain,"03/28, 10:30","03/29, 08:44",22h 14m
 9230048,Bilbao Anch., Spain,"03/29, 10:27","03/29, 16:11",5h 43m
@@ -527,10 +574,13 @@ IMO,Port,Country,Arrival,Departure,In Port
 9230062,Gibraltar West Anch., Gibraltar,"05/21, 06:08","05/22, 09:42",1d 3h
 9230062,La Brea (Brighton) Anch., Trinidad & Tobago,"06/04, 14:18","06/05, 04:47",14h 28m
 9230062,Point Fortin, Trinidad & Tobago,"06/05, 06:15",,
+9230062,Guayanilla, Puerto Rico,"06/08, 11:56","06/09, 12:30",1d
 9236418,La Brea (Brighton) Anch., Trinidad & Tobago,"02/23, 16:00","02/27, 15:32",3d 23h
 9236418,Point Fortin, Trinidad & Tobago,"02/27, 16:53","02/28, 18:24",1d 1h
 9236418,La Brea (Brighton) Anch., Trinidad & Tobago,"04/26, 14:23","04/26, 20:17",5h 53m
 9236418,Golar Freeze FSRU Term., Jamaica,"05/27, 13:35",,
+9236418,Panama Canal Anch. Atlantic, Panama,"06/07, 14:07","06/11, 09:35",3d 19h
+9236418,Panama Canal Anch. Pacific, Panama,"06/11, 22:39","06/12, 00:25",1h 45m
 9236420,La Brea (Brighton) Anch., Trinidad & Tobago,"03/23, 21:28","03/24, 02:23",4h 54m
 9236420,Point Fortin, Trinidad & Tobago,"03/24, 04:00","03/25, 12:00",1d 7h
 9236420,Guayanilla, Puerto Rico,"03/28, 13:05","03/29, 12:18",23h 12m
@@ -543,6 +593,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9236420,Boston, United States (USA),"05/15, 16:43","05/16, 16:11",23h 28m
 9236420,Port Arthur Anch., United States (USA),"05/24, 16:56","05/24, 19:09",2h 12m
 9236420,Sabine, United States (USA),"05/24, 22:37","05/26, 12:51",1d 14h
+9236420,Algeciras Anch., Spain,"06/09, 06:03","06/09, 11:31",5h 28m
+9236420,Livorno Anch., Italy,"06/12, 05:26","06/13, 05:34",1d
+9236420,FSRU Toscana Term., Italy,"06/13, 08:22",,
 9236432,La Brea (Brighton) Anch., Trinidad & Tobago,"03/07, 17:28","03/10, 09:22",2d 15h
 9236432,Point Fortin, Trinidad & Tobago,"03/10, 11:48","03/11, 14:15",1d 2h
 9236432,Cartagena Anch., Spain,"03/24, 06:28","03/31, 09:20",7d 2h
@@ -566,6 +619,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9238040,Altamira, Mexico,"02/24, 15:57","02/25, 19:26",1d 3h
 9238040,Port Arthur Anch., United States (USA),"03/03, 14:31","03/30, 19:15",27d 4h
 9238040,Aruba Anch., Aruba,"04/07, 11:48",,
+9238040,Aruba Anch., Aruba,"05/01, 11:35","05/01, 11:35",
 9238040,Aruba Anch., Aruba,"05/01, 13:15","05/02, 12:04",22h 49m
 9238040,Cove Point, United States (USA),"05/13, 11:27",,
 9238040,Sagunto Anch., Spain,"05/25, 14:12","05/25, 16:21",2h 8m
@@ -592,6 +646,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9245031,"Bintulu,Sarawak", Malaysia,"04/21, 03:59","04/22, 02:18",22h 19m
 9245031,Kawasaki, Japan,"04/28, 06:06",,
 9245031,Anegasaki, Japan,"05/20, 07:44","05/21, 23:52",1d 16h
+9245031,Nagoya, Japan,"06/05, 01:12","06/06, 00:03",22h 50m
 9245720,Prigorodnoye, Russia,"02/22, 23:36","02/24, 03:06",1d 3h
 9245720,Hitachi, Japan,"02/27, 00:28","02/28, 02:58",1d 2h
 9245720,Yokohama, Japan,"03/10, 03:29","03/11, 02:07",22h 37m
@@ -610,6 +665,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9246578,La Brea (Brighton) Anch., Trinidad & Tobago,"05/28, 08:31","05/28, 10:39",2h 8m
 9246578,Point Fortin, Trinidad & Tobago,"05/28, 11:42","05/29, 08:56",21h 14m
 9246578,Guayanilla, Puerto Rico,"06/01, 12:04",,
+9246578,Sabine, United States (USA),"06/13, 14:02",,
 9247194,Incheon, Korea,"02/18, 23:46","02/20, 07:08",1d 7h
 9247194,Ras Laffan, Qatar,"03/06, 19:56","03/07, 16:53",20h 57m
 9247194,Pyeongtaek, Korea,"03/23, 01:27","03/24, 02:41",1d 1h
@@ -626,12 +682,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9247364,Taichung, Taiwan,"05/05, 22:50","05/06, 22:01",23h 11m
 9247364,Bontang, Indonesia,"05/14, 22:51","05/16, 04:22",1d 5h
 9247364,Dongjiakou, China,"05/28, 09:43","05/30, 01:08",1d 15h
+9247364,Bontang, Indonesia,"06/05, 22:57","06/07, 02:51",1d 3h
 9247962,Incheon, Korea,"02/24, 01:29","02/24, 23:42",22h 12m
 9247962,Wheatstone LNG Term., Australia,"03/12, 02:07","03/13, 00:04",21h 56m
 9247962,Kawasaki, Japan,"03/25, 03:01","03/26, 02:07",23h 6m
 9247962,Wheatstone LNG Term., Australia,"04/10, 23:22","04/12, 01:09",1d 1h
 9247962,Yokkaichi, Japan,"04/26, 01:26","04/27, 00:20",22h 54m
 9247962,Wheatstone LNG Term., Australia,"05/23, 04:10",,
+9247962,Ishikariwan Shinko, Japan,"06/06, 00:42","06/07, 05:32",1d 4h
 9248502,"Bintulu,Sarawak", Malaysia,"02/20, 02:08","02/20, 14:48",12h 40m
 9248502,Souma, Japan,"02/28, 00:37","03/01, 03:20",1d 2h
 9248502,Niigata, Japan,"03/15, 05:05","03/16, 04:16",23h 11m
@@ -641,6 +699,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9248502,"Bintulu,Sarawak", Malaysia,"05/03, 12:24","05/04, 14:26",1d 2h
 9248502,Souma, Japan,"05/12, 04:18","05/13, 05:24",1d 1h
 9248502,Dapeng, China,"05/30, 03:24","05/31, 08:14",1d 4h
+9248502,"Bintulu,Sarawak", Malaysia,"06/07, 08:45","06/08, 07:34",22h 48m
 9250191,Anegasaki, Japan,"02/21, 06:25","02/22, 10:58",1d 4h
 9250191,Singapore Anch. 1, Singapore,"03/04, 08:45","03/06, 20:50",2d 12h
 9250191,Singapore Anch. 1, Singapore,"04/07, 00:17","04/11, 04:08",4d 3h
@@ -662,6 +721,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9250713,Ras Laffan, Qatar,"05/24, 15:42","05/26, 00:19",1d 8h
 9250713,Dahej, India,"05/31, 01:13","06/01, 10:10",1d 8h
 9250713,Ras Laffan, Qatar,"06/04, 12:33","06/05, 10:23",21h 50m
+9250713,Dahej, India,"06/08, 21:03","06/10, 05:38",1d 8h
 9250725,Singapore Anch. 1, Singapore,"03/16, 02:41","03/16, 23:49",21h 8m
 9250725,Yokohama, Japan,"03/29, 02:01","03/30, 04:08",1d 2h
 9253105,Singapore, Singapore,"02/21, 22:35","02/23, 00:05",1d 1h
@@ -670,6 +730,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9253105,Singapore Anch. 1, Singapore,"05/08, 13:40","05/08, 22:03",8h 22m
 9253105,Tianjin Anch., China,"05/18, 23:29","05/19, 23:36",1d
 9253105,Tianjin Xingang, China,"05/20, 02:00","05/22, 01:20",1d 23h
+9253105,Tianjin Anch., China,"06/06, 14:49","06/06, 17:08",2h 19m
+9253105,Tianjin Xingang, China,"06/07, 01:48","06/08, 06:50",1d 5h
 9253222,Guayanilla, Puerto Rico,"03/02, 11:30","03/03, 21:29",1d 9h
 9253222,Guayanilla, Puerto Rico,"03/12, 11:50","03/13, 20:47",1d 8h
 9253222,Point Fortin, Trinidad & Tobago,"03/16, 09:08","03/17, 20:36",1d 11h
@@ -698,6 +760,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9253703,Ras Laffan, Qatar,"05/23, 15:50","05/24, 13:22",21h 31m
 9253703,Dahej, India,"05/28, 23:28","05/30, 08:39",1d 9h
 9253703,Ras Laffan, Qatar,"06/02, 17:17","06/03, 14:28",21h 11m
+9253703,Dahej, India,"06/06, 19:36","06/08, 04:52",1d 9h
+9253703,Al Fujayrah Anch., United Arab Emirates (UAE),"06/11, 02:42","06/13, 17:41",2d 14h
 9253715,Pisco Anch., Peru,"02/27, 15:29","02/27, 17:07",1h 37m
 9253715,Pampa Melchorita, Peru,"02/28, 20:03","03/01, 22:45",1d 2h
 9253715,Rotterdam Maasvlakte, Netherlands,"03/29, 07:22","03/30, 07:40",1d
@@ -723,6 +787,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9255854,Ras Laffan, Qatar,"05/17, 00:44","05/18, 02:35",1d 1h
 9255854,Port Qasim, Pakistan,"05/21, 10:30","05/23, 01:53",1d 15h
 9255854,Ras Laffan Anch., Qatar,"05/28, 16:24","06/05, 02:45",7d 10h
+9255854,Ras Laffan, Qatar,"06/05, 03:59","06/06, 10:32",1d 6h
+9255854,Port Qasim, Pakistan,"06/09, 03:52","06/11, 01:42",1d 21h
 9256200,Ras Laffan, Qatar,"03/04, 09:15","03/05, 16:46",1d 7h
 9256200,As Suways (Suez) Anch., Egypt,"03/14, 12:48","03/15, 06:04",17h 15m
 9256200,Chioggia Anch., Italy,"03/21, 15:44","03/22, 08:08",16h 24m
@@ -733,6 +799,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9256200,Ras Laffan, Qatar,"05/05, 16:39","05/06, 16:07",23h 28m
 9256200,Taichung, Taiwan,"05/21, 22:08","05/22, 22:02",23h 54m
 9256200,Singapore Anch. 1, Singapore,"05/26, 23:43","05/27, 14:25",14h 41m
+9256200,Ras Laffan Anch., Qatar,"06/06, 11:20","06/06, 21:21",10h 1m
+9256200,Ras Laffan, Qatar,"06/06, 22:24","06/08, 08:28",1d 10h
 9256597,Arzew Anch., Algeria,"04/01, 08:25","04/01, 10:49",2h 24m
 9256597,Arzew, Algeria,"04/01, 15:08","04/02, 16:15",1d 1h
 9256597,Cartagena Anch., Spain,"04/02, 23:24","04/03, 07:12",7h 47m
@@ -746,6 +814,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9256597,Nemrut, Turkey,"05/18, 03:34","05/19, 09:52",1d 6h
 9256597,Arzew, Algeria,"05/24, 06:27","05/25, 10:49",1d 4h
 9256597,Thamesport, United Kingdom (UK),"05/31, 00:41","06/01, 04:31",1d 3h
+9256597,Arzew, Algeria,"06/06, 10:59","06/07, 10:56",23h 57m
+9256597,Marmara Ereglisi, Turkey,"06/11, 17:19","06/12, 20:25",1d 3h
 9256602,Singapore Anch. 1, Singapore,"03/09, 23:20","03/13, 23:17",3d 23h
 9256602,Singapore, Singapore,"03/13, 23:36","03/15, 13:44",1d 14h
 9256602,Singapore Anch. 1, Singapore,"03/27, 01:17","03/28, 22:20",1d 21h
@@ -762,6 +832,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9256793,Barcelona Anch., Spain,"05/07, 07:17","05/08, 03:18",20h
 9256793,Barcelona, Spain,"05/08, 03:26",,
 9256793,Bonny, Nigeria,"05/21, 09:54","05/22, 13:46",1d 3h
+9256793,Jebel Ali Anch., United Arab Emirates (UAE),"06/12, 04:40","06/12, 17:10",12h 30m
 9259276,Dahej, India,"03/05, 21:19","03/06, 23:58",1d 2h
 9259276,As Suways (Suez) Anch., Egypt,"03/14, 15:30","03/15, 05:36",14h 5m
 9259276,Sabine, United States (USA),"04/02, 11:31","04/03, 12:22",1d
@@ -771,6 +842,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9259276,Rotterdam Maasvlakte, Netherlands,"05/17, 00:47",,
 9259276,La Brea (Brighton) Anch., Trinidad & Tobago,"05/29, 10:19","05/30, 12:32",1d 2h
 9259276,Point Fortin, Trinidad & Tobago,"05/30, 13:37","05/31, 18:25",1d 4h
+9259276,Escombreras, Spain,"06/09, 05:27","06/10, 04:29",23h 1m
 9260603,Takamatsu Anch., Japan,"04/04, 21:54","04/04, 23:02",1h 8m
 9260603,Takamatsu, Japan,"04/04, 23:09","04/05, 04:04",4h 55m
 9260603,Takamatsu Anch., Japan,"04/05, 04:12",,
@@ -796,12 +868,17 @@ IMO,Port,Country,Arrival,Departure,In Port
 9260603,Tokushima, Japan,"05/29, 22:34","05/30, 03:19",4h 45m
 9260603,Shikama, Japan,"06/03, 02:58","06/03, 11:38",8h 39m
 9260603,Tokushima, Japan,"06/04, 01:35","06/04, 06:22",4h 47m
+9260603,Shikama, Japan,"06/06, 23:58","06/07, 07:09",7h 11m
+9260603,Matsuyama, Japan,"06/08, 00:36","06/08, 05:10",4h 33m
+9260603,Kokura, Japan,"06/09, 03:22","06/10, 05:58",1d 2h
+9260603,Takamatsu, Japan,"06/10, 23:07","06/11, 03:47",4h 40m
 9261205,Incheon, Korea,"02/21, 03:17","02/22, 02:33",23h 15m
 9261205,Shikama, Japan,"04/01, 02:48","04/02, 01:29",22h 40m
 9261205,Gwangyang, Korea,"04/18, 23:49","04/20, 01:11",1d 1h
 9261205,Sakaide, Japan,"05/04, 00:08","05/05, 01:57",1d 1h
 9261205,Pyeongtaek, Korea,"05/22, 01:56","05/22, 23:13",21h 16m
 9261205,"Bintulu,Sarawak", Malaysia,"06/03, 03:34","06/03, 03:34",
+9261205,Souma, Japan,"06/10, 00:21","06/11, 02:54",1d 2h
 9262209,Marmara Ereglisi, Turkey,"02/12, 04:48","02/13, 01:54",21h 5m
 9262209,Bonny, Nigeria,"03/06, 06:14","03/07, 17:05",1d 10h
 9262209,Montoir, France,"03/19, 17:17","03/20, 19:51",1d 2h
@@ -823,6 +900,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9262223,Jebel Ali Anch., United Arab Emirates (UAE),"03/12, 14:40","03/14, 14:36",1d 23h
 9262223,Bonny, Nigeria,"04/22, 23:01","04/26, 09:46",3d 10h
 9262223,Montoir, France,"05/08, 00:14",,
+9262223,Bonny, Nigeria,"06/05, 20:34","06/07, 00:28",1d 3h
 9262235,Marmara Ereglisi, Turkey,"02/15, 04:18","02/16, 02:56",22h 38m
 9262235,Bonny, Nigeria,"03/07, 20:54","03/09, 07:01",1d 10h
 9262235,Huelva, Spain,"03/19, 03:55","03/20, 05:12",1d 1h
@@ -846,6 +924,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9265500,Yung An, Taiwan,"05/01, 00:28","05/01, 23:43",23h 15m
 9265500,Darwin, Australia,"05/08, 23:03","05/10, 04:37",1d 5h
 9265500,Sakai, Japan,"05/25, 01:33","05/26, 07:39",1d 6h
+9265500,Darwin, Australia,"06/07, 02:23","06/08, 11:58",1d 9h
 9266982,Bonny, Nigeria,"03/08, 22:36","03/10, 15:46",1d 17h
 9266982,Yung An, Taiwan,"04/03, 00:13","04/04, 01:07",1d
 9266982,Bonny, Nigeria,"05/03, 07:09","05/04, 11:56",1d 4h
@@ -863,6 +942,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9267003,Bonny, Nigeria,"04/30, 01:29","05/01, 11:46",1d 10h
 9267003,Huelva, Spain,"05/12, 13:03","05/13, 14:20",1d 1h
 9267003,Santa Cruz de Tenerife Anch., Spain,"05/16, 06:50","05/18, 09:30",2d 2h
+9267003,Bonny, Nigeria,"06/08, 22:41","06/10, 01:02",1d 2h
 9267015,Bonny, Nigeria,"03/02, 01:17","03/03, 06:11",1d 4h
 9267015,Mab Tapud Anch., Thailand,"03/24, 11:55","03/24, 22:42",10h 46m
 9267015,Mab Tapud, Thailand,"03/24, 23:45","03/26, 04:20",1d 4h
@@ -877,6 +957,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9269180,Hitachi, Japan,"04/19, 00:33","04/20, 02:57",1d 2h
 9269180,Anegasaki, Japan,"05/12, 03:13","05/12, 23:42",20h 28m
 9269180,Hiroshima, Japan,"05/17, 23:46","05/19, 03:58",1d 4h
+9269180,Yung An, Taiwan,"06/06, 00:40","06/06, 23:35",22h 54m
 9269207,Skikda, Algeria,"04/02, 17:05","04/03, 15:30",22h 24m
 9269207,La Spezia Anch., Italy,"04/05, 07:06","04/07, 05:00",1d 21h
 9269207,La Spezia, Italy,"04/07, 06:21","04/10, 06:38",3d
@@ -899,6 +980,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9269207,Fos-sur-Mer Anch., France,"05/28, 07:34","05/28, 17:05",9h 30m
 9269207,Skikda Anch., Algeria,"05/30, 14:54","05/30, 16:56",2h 1m
 9269207,Fos sur mer, France,"06/03, 13:33","06/04, 19:06",1d 5h
+9269207,Skikda, Algeria,"06/06, 16:33","06/07, 14:23",21h 49m
+9269207,Fos sur mer, France,"06/10, 18:34","06/12, 07:08",1d 12h
 9269960,Livorno Anch., Italy,"03/15, 08:59","03/15, 11:13",2h 13m
 9269960,FSRU Toscana Term., Italy,"03/17, 07:38","03/18, 10:29",1d 2h
 9269960,Santa Cruz de Tenerife Anch., Spain,"03/23, 06:23","03/23, 17:11",10h 47m
@@ -946,6 +1029,11 @@ IMO,Port,Country,Arrival,Departure,In Port
 9275074,Kristiansund, Norway,"05/27, 08:35","05/27, 11:52",3h 17m
 9275074,Floro, Norway,"05/27, 23:59","05/28, 03:03",3h 4m
 9275074,Kyleakin, United Kingdom (UK),"06/01, 11:17",,
+9275074,Kristiansund, Norway,"06/10, 05:58","06/10, 08:50",2h 52m
+9275074,Valsneset, Norway,"06/10, 15:20","06/10, 17:41",2h 20m
+9275074,Floro, Norway,"06/11, 14:00","06/11, 22:19",8h 18m
+9275074,Kristiansund, Norway,"06/13, 06:41","06/13, 09:01",2h 19m
+9275074,Sunndalsora, Norway,"06/13, 12:37","06/13, 18:35",5h 57m
 9275335,Singapore Anch. 1, Singapore,"02/17, 04:47","02/19, 00:17",1d 19h
 9275335,As Suways (Suez) Anch., Egypt,"03/02, 09:22","03/03, 05:52",20h 30m
 9275335,Gibraltar West Anch., Gibraltar,"03/09, 07:56","03/09, 15:51",7h 55m
@@ -954,6 +1042,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9275335,Bilbao Anch., Spain,"04/17, 08:42","04/22, 04:29",4d 19h
 9275335,Bilbao, Spain,"04/22, 04:32","04/23, 04:13",23h 41m
 9275335,Bilbao Anch., Spain,"04/23, 04:15",,
+9275335,Ferrol, Spain,"05/03, 02:25","06/12, 04:49",40d 2h
 9275347,Arzew, Algeria,"04/04, 09:46","04/05, 14:04",1d 4h
 9275347,Fos sur mer, France,"04/07, 15:58","04/08, 15:15",23h 16m
 9275347,Arzew Anch., Algeria,"04/10, 09:10","04/10, 14:05",4h 55m
@@ -980,6 +1069,10 @@ IMO,Port,Country,Arrival,Departure,In Port
 9275347,Arzew Anch., Algeria,"06/01, 22:33","06/02, 01:59",3h 25m
 9275347,Arzew Anch., Algeria,"06/02, 05:30","06/02, 11:41",6h 10m
 9275347,Arzew, Algeria,"06/02, 11:58","06/03, 15:37",1d 3h
+9275347,Livorno Anch., Italy,"06/05, 09:14","06/05, 21:23",12h 9m
+9275347,FSRU Toscana Term., Italy,"06/06, 05:27","06/07, 06:24",1d
+9275347,Arzew Anch., Algeria,"06/09, 08:56","06/09, 11:14",2h 18m
+9275347,Arzew Anch., Algeria,"06/09, 15:30","06/09, 15:48",18m
 9275359,Corpus Christi Anch., United States (USA),"02/20, 15:29","02/21, 01:08",9h 38m
 9275359,Port Arthur Anch., United States (USA),"04/02, 17:02","04/03, 19:55",1d 2h
 9275359,Sabine, United States (USA),"04/03, 22:19","04/05, 13:13",1d 14h
@@ -994,6 +1087,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9276389,Experience FPSO, Brazil,"04/23, 11:29",,
 9276389,Corpus Christi Anch., United States (USA),"05/14, 20:45","05/18, 22:07",4d 1h
 9276389,Ingleside, United States (USA),"05/19, 00:14","05/21, 22:32",2d 22h
+9276389,Klaipeda, Lithuania,"06/07, 01:26","06/08, 15:09",1d 13h
 9277620,Sakai, Japan,"02/24, 00:53","02/25, 00:49",23h 55m
 9277620,Kagoshima, Japan,"02/28, 23:24","03/02, 00:40",1d 1h
 9277620,Prigorodnoye, Russia,"03/20, 06:32","03/21, 20:49",1d 14h
@@ -1011,6 +1105,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9284192,Montevideo Anch., Uruguay,"05/22, 22:50",,
 9284192,Escobar LNG LNG Term., Argentina,"05/25, 09:24","05/26, 16:38",1d 7h
 9284192,Montevideo Anch., Uruguay,"05/27, 07:15","05/27, 13:25",6h 9m
+9284192,Port Arthur Anch., United States (USA),"06/12, 04:32","06/12, 10:56",6h 23m
 9285952,Ras Laffan, Qatar,"03/31, 08:21","04/01, 10:57",1d 2h
 9285952,Ras Laffan Anch., Qatar,"04/01, 11:27","04/02, 14:29",1d 3h
 9285952,Port Qasim Anch., Pakistan,"04/05, 00:10","04/05, 08:03",7h 53m
@@ -1026,6 +1121,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9285952,Port Qasim, Pakistan,"05/18, 06:59","05/20, 05:40",1d 22h
 9285952,Ras Laffan, Qatar,"05/22, 23:25","05/24, 01:36",1d 2h
 9285952,As Suways (Suez) Anch., Egypt,"05/31, 14:21","06/01, 04:18",13h 56m
+9285952,Chioggia Anch., Italy,"06/09, 07:45","06/09, 14:59",7h 13m
+9285952,Adriatic LNG LNG Term., Italy,"06/09, 16:13","06/10, 15:36",23h 22m
 9293832,Niigata, Japan,"02/19, 01:03","02/20, 00:23",23h 20m
 9293832,Toyamashinko, Japan,"03/17, 00:15","03/18, 02:34",1d 2h
 9293832,"Bintulu,Sarawak", Malaysia,"04/03, 23:29","04/05, 00:02",1d
@@ -1043,6 +1140,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9293844,"Pasir Gudang,Johor Anch.", Malaysia,"05/04, 06:44","05/04, 21:46",15h 2m
 9293844,Maojia, China,"05/13, 04:44","05/15, 07:04",2d 2h
 9293844,Yung An, Taiwan,"05/27, 23:48","05/28, 23:41",23h 53m
+9293844,"Bintulu,Sarawak", Malaysia,"06/06, 06:30","06/07, 07:31",1d 1h
 9294264,Mina al Fahl Anch., Oman,"02/12, 06:24","02/21, 07:21",9d
 9294264,Al Fujayrah Anch., United Arab Emirates (UAE),"03/07, 04:18","03/11, 03:33",3d 23h
 9294264,Mab Tapud, Thailand,"04/28, 23:12","04/30, 01:37",1d 2h
@@ -1056,6 +1154,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9300817,Anjeong, Korea,"02/16, 23:51","02/17, 15:18",15h 26m
 9300817,Tieshan, China,"04/20, 04:27","04/21, 05:59",1d 1h
 9300817,Yangkou, China,"05/21, 03:42","05/22, 07:52",1d 4h
+9300817,Mina al Fahl Anch., Oman,"06/07, 03:46",,
 9302499,Ras Laffan Anch., Qatar,"02/27, 03:25","02/28, 14:14",1d 10h
 9302499,As Suways (Suez) Anch., Egypt,"03/08, 11:50","03/09, 06:06",18h 16m
 9302499,Adriatic LNG LNG Term., Italy,"03/13, 08:27","03/14, 07:15",22h 48m
@@ -1068,6 +1167,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9302499,As Suways (Suez) Anch., Egypt,"05/17, 12:11","05/18, 05:03",16h 52m
 9302499,Chioggia Anch., Italy,"05/24, 14:44",,
 9302499,Adriatic LNG LNG Term., Italy,"05/30, 12:43",,
+9302499,Port Said Anch., Egypt,"06/05, 14:04","06/06, 04:07",14h 3m
 9303560,Manila Anch., Philippines,"02/17, 16:00","02/19, 10:15",1d 18h
 9303560,Dampier Anch., Australia,"02/27, 07:51","03/06, 15:34",7d 7h
 9303560,Barrow Island, Australia,"03/07, 01:25","03/08, 11:57",1d 10h
@@ -1089,6 +1189,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9305116,Tangguh Anch., Indonesia,"05/14, 22:56","05/18, 23:26",4d
 9305116,Tangguh, Indonesia,"05/19, 00:45","05/20, 10:45",1d 9h
 9305116,Xiuyu, China,"05/26, 22:18",,
+9305116,Tangguh Anch., Indonesia,"06/05, 23:31","06/08, 04:21",2d 4h
 9305128,Singapore Anch. 1, Singapore,"03/04, 04:42","03/06, 00:09",1d 19h
 9305128,Xiuyu, China,"03/22, 03:45","03/24, 07:19",2d 3h
 9305128,Tangguh Anch., Indonesia,"03/29, 22:00","04/04, 05:16",5d 7h
@@ -1103,6 +1204,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9305128,Tangguh Anch., Indonesia,"05/21, 22:11","05/25, 19:31",3d 21h
 9305128,Tangguh Anch., Indonesia,"05/25, 22:09","05/26, 18:39",20h 29m
 9305128,Xiuyu, China,"06/03, 04:39","06/04, 08:42",1d 4h
+9305128,Tangguh Anch., Indonesia,"06/11, 03:57","06/12, 21:14",1d 17h
 9306495,Lake Charles, United States (USA),"03/04, 16:36","03/05, 19:48",1d 3h
 9306495,Lake Charles, United States (USA),"03/20, 15:20","03/21, 12:40",21h 19m
 9306495,Cameron, United States (USA),"03/21, 14:42",,
@@ -1113,6 +1215,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9306495,Lake Charles, United States (USA),"05/11, 10:23",,
 9306495,Lake Charles, United States (USA),"05/25, 08:39","05/26, 04:19",19h 40m
 9306495,Cristobal, Panama,"06/01, 12:54",,
+9306495,Lake Charles, United States (USA),"06/08, 21:20","06/09, 21:38",1d
 9307176,Ras Laffan Anch., Qatar,"03/08, 14:14","03/18, 04:18",9d 14h
 9307176,Ras Laffan, Qatar,"03/18, 04:45","03/20, 16:19",2d 11h
 9307176,Taichung, Taiwan,"04/05, 21:36","04/06, 22:36",1d
@@ -1122,6 +1225,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9307176,Ras Laffan Anch., Qatar,"05/17, 03:05","05/17, 19:33",16h 28m
 9307176,Ras Laffan, Qatar,"05/17, 20:13","05/19, 06:40",1d 10h
 9307176,As Suways (Suez) Anch., Egypt,"05/26, 07:57","05/27, 05:36",21h 39m
+9307176,Adriatic LNG LNG Term., Italy,"06/06, 10:32","06/07, 09:15",22h 43m
+9307176,Port Said Anch., Egypt,"06/11, 08:41","06/12, 04:15",19h 33m
 9307188,Manila Anch., Philippines,"02/13, 18:26","02/14, 10:42",16h 15m
 9307188,Singapore Anch. 5, Singapore,"03/18, 01:34","03/18, 06:32",4h 57m
 9307188,Singapore, Singapore,"03/18, 10:57","04/08, 00:18",20d 13h
@@ -1130,6 +1235,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9307188,Batu Ampar Anch., Indonesia,"04/19, 13:47","04/25, 01:34",5d 11h
 9307188,Barrow Island, Australia,"05/10, 11:55",,
 9307188,Taichung, Taiwan,"05/23, 21:23","05/25, 02:53",1d 5h
+9307188,Barrow Island, Australia,"06/10, 01:32","06/11, 10:43",1d 9h
 9307190,Port Arthur Anch., United States (USA),"03/17, 14:01","03/26, 04:38",8d 14h
 9307190,Port Arthur Anch., United States (USA),"03/26, 06:16","03/26, 07:52",1h 36m
 9307190,Sabine, United States (USA),"03/26, 10:41","03/28, 00:43",1d 14h
@@ -1152,6 +1258,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9308431,Zeebrugge, Belgium,"05/07, 12:24","05/08, 12:07",23h 42m
 9308431,Port Said Anch., Egypt,"05/16, 17:20","05/17, 02:01",8h 41m
 9308431,Ras Laffan, Qatar,"05/25, 03:50","05/26, 12:34",1d 8h
+9308431,Ras Laffan Anch., Qatar,"06/03, 13:56","06/09, 14:52",6d
+9308431,Ras Laffan, Qatar,"06/09, 15:45","06/10, 21:49",1d 6h
 9308479,Dampier Anch., Australia,"03/16, 22:42","03/18, 01:27",1d 2h
 9308479,Withnell Bay, Australia,"03/18, 06:19","03/19, 05:46",23h 27m
 9308479,Dapeng, China,"03/26, 06:47","03/27, 06:58",1d
@@ -1164,6 +1272,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9308479,Hong Kong Anch., Hong Kong,"05/17, 10:08",,
 9308479,Dampier Anch., Australia,"05/29, 00:45","05/29, 21:15",20h 30m
 9308479,Withnell Bay, Australia,"05/30, 05:32","05/31, 06:15",1d
+9308479,Dapeng, China,"06/07, 04:55","06/08, 05:16",1d
 9308481,Withnell Bay, Australia,"03/16, 00:33","03/17, 02:42",1d 2h
 9308481,Withnell Bay, Australia,"03/17, 05:18","03/18, 04:46",23h 28m
 9308481,Dapeng, China,"03/25, 03:17","03/26, 04:27",1d 1h
@@ -1175,6 +1284,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9308481,Dampier Anch., Australia,"05/17, 23:37","05/19, 04:04",1d 4h
 9308481,Withnell Bay, Australia,"05/19, 07:32","05/20, 13:35",1d 6h
 9308481,Dapeng, China,"05/27, 03:19",,
+9308481,Dampier Anch., Australia,"06/06, 23:25","06/08, 03:06",1d 3h
+9308481,Withnell Bay, Australia,"06/09, 07:50","06/10, 08:14",1d
 9311567,Sagunto, Spain,"02/27, 09:56","02/28, 10:21",1d
 9311567,Bonny, Nigeria,"03/11, 23:05","03/13, 04:42",1d 5h
 9311567,Sines, Portugal,"03/21, 16:26","03/22, 15:08",22h 42m
@@ -1210,6 +1321,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9315692,Nagoya, Japan,"05/11, 01:50","05/12, 00:21",22h 30m
 9315692,Yokkaichi, Japan,"05/25, 02:10","05/26, 01:14",23h 3m
 9315692,Prigorodnoye, Russia,"05/31, 09:36","06/01, 12:46",1d 3h
+9315692,Yanai, Japan,"06/09, 02:17","06/10, 03:24",1d 1h
 9315707,Gladstone, Australia,"02/24, 00:53","02/25, 05:47",1d 4h
 9315707,Maojia, China,"03/12, 03:42","03/14, 05:29",2d 1h
 9315707,Gladstone, Australia,"03/27, 01:24","03/28, 05:35",1d 4h
@@ -1218,6 +1330,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9315707,Gladstone, Australia,"04/20, 04:23","05/15, 07:51",25d 3h
 9315707,Gladstone Anch., Australia,"04/20, 04:23",,
 9315707,Maojia, China,"05/27, 04:33","05/29, 07:15",2d 2h
+9315707,Gladstone, Australia,"06/09, 14:04","06/10, 17:48",1d 3h
 9315719,Yokohama, Japan,"02/18, 01:56","02/19, 11:06",1d 9h
 9315719,Wheatstone LNG Term., Australia,"03/05, 02:13","03/06, 00:58",22h 44m
 9315719,Kokura, Japan,"03/17, 05:14","03/18, 23:50",1d 18h
@@ -1225,6 +1338,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9315719,"Bintulu,Sarawak", Malaysia,"04/23, 23:35","04/25, 02:58",1d 3h
 9315719,Hongqiao, China,"05/17, 06:56","05/18, 08:21",1d 1h
 9315719,Withnell Bay, Australia,"05/28, 02:19","05/29, 06:10",1d 3h
+9315719,Nagoya, Japan,"06/07, 23:56","06/09, 00:19",1d
 9317200,Hakodate, Japan,"03/31, 22:41","04/01, 04:59",6h 17m
 9317200,Ishikariwan Shinko, Japan,"04/03, 00:03",,
 9317200,Kushiro, Japan,"04/05, 22:56","04/06, 09:02",10h 5m
@@ -1267,6 +1381,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9320075,Mejillones, Chile,"05/15, 21:37","05/17, 03:18",1d 5h
 9320075,Panama Canal Anch. Pacific, Panama,"05/25, 15:10","05/26, 10:01",18h 51m
 9320075,Freeport Anch., United States (USA),"06/02, 10:47",,
+9320075,Freeport, United States (USA),"06/05, 12:13","06/07, 12:32",2d
+9320075,Panama Canal Anch. Atlantic, Panama,"06/11, 21:03","06/12, 10:54",13h 51m
+9320075,Panama Canal Anch. Pacific, Panama,"06/12, 22:37","06/13, 08:21",9h 43m
 9320374,Port Said Anch., Egypt,"02/16, 14:38","02/18, 03:48",1d 13h
 9320374,Taichung, Taiwan,"03/07, 03:51","03/08, 02:09",22h 18m
 9320374,La Brea (Brighton) Anch., Trinidad & Tobago,"04/18, 03:53","04/18, 08:11",4h 17m
@@ -1274,6 +1391,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9320374,Corpus Christi Anch., United States (USA),"04/29, 04:25","04/29, 15:20",10h 55m
 9320374,Ingleside, United States (USA),"04/29, 17:03","04/30, 16:49",23h 46m
 9320374,Port Said Anch., Egypt,"05/18, 18:04","05/19, 02:34",8h 30m
+9320374,Taichung, Taiwan,"06/06, 21:16","06/07, 21:46",1d
 9320386,Singapore Anch. 1, Singapore,"02/19, 13:49","02/20, 06:55",17h 6m
 9320386,Ras Laffan Anch., Qatar,"02/28, 22:53","03/07, 09:21",6d 10h
 9320386,Ras Laffan Anch., Qatar,"03/30, 06:09","04/02, 17:49",3d 11h
@@ -1281,6 +1399,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9320386,Taichung, Taiwan,"04/21, 23:00","04/23, 03:00",1d 3h
 9320386,Ras Laffan Anch., Qatar,"05/06, 01:20","05/06, 03:27",2h 7m
 9320386,Ras Laffan, Qatar,"05/06, 03:53","05/31, 12:51",25d 8h
+9320386,Ras Laffan Anch., Qatar,"05/31, 15:05","06/08, 08:21",7d 17h
+9320386,Ras Laffan, Qatar,"06/08, 08:48","06/10, 19:39",2d 10h
 9321653,Shikama, Japan,"02/24, 01:20","02/25, 05:05",1d 3h
 9321653,Withnell Bay, Australia,"03/10, 02:00","03/11, 02:39",1d
 9321653,Kawasaki, Japan,"03/21, 23:50","03/23, 02:18",1d 2h
@@ -1304,6 +1424,10 @@ IMO,Port,Country,Arrival,Departure,In Port
 9321732,Ras Laffan, Qatar,"04/07, 04:13","05/20, 07:05",43d 2h
 9321732,Ras Laffan Anch., Qatar,"05/20, 14:45","05/28, 16:14",8d 1h
 9321732,Ras Laffan, Qatar,"05/28, 17:15","05/30, 20:49",2d 3h
+9321732,Port Qasim, Pakistan,"06/04, 07:37","06/06, 01:29",1d 17h
+9321732,Sohar Anch., Oman,"06/08, 01:06","06/08, 07:36",6h 30m
+9321732,Ras Laffan Anch., Qatar,"06/09, 04:19","06/09, 21:48",17h 29m
+9321732,Ras Laffan, Qatar,"06/09, 22:43","06/11, 01:01",1d 2h
 9321744,As Suways (Suez) Anch., Egypt,"03/01, 07:03","03/02, 05:25",22h 22m
 9321744,Livorno Anch., Italy,"03/23, 06:52","03/24, 02:57",20h 5m
 9321744,FSRU Toscana Term., Italy,"03/24, 06:47","03/25, 06:13",23h 25m
@@ -1355,6 +1479,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9323675,Mab Tapud, Thailand,"05/31, 23:24",,
 9323675,Mab Tapud Anch., Thailand,"06/02, 01:04","06/02, 07:48",6h 44m
 9323687,Dahej, India,"05/23, 08:11","05/24, 09:19",1d 1h
+9323687,Cape Town Anch., South Africa,"06/09, 07:24","06/13, 03:51",3d 20h
 9324277,Dubai Anch., United Arab Emirates (UAE),"04/02, 04:21","04/02, 07:04",2h 43m
 9324277,Ras Laffan Anch., Qatar,"04/02, 19:41","04/05, 20:02",3d
 9324277,Ras Laffan, Qatar,"04/05, 20:46","04/06, 19:23",22h 37m
@@ -1387,6 +1512,10 @@ IMO,Port,Country,Arrival,Departure,In Port
 9324332,Skikda, Algeria,"05/26, 11:50","05/27, 09:39",21h 48m
 9324332,Sagunto, Spain,"05/28, 12:21","05/29, 08:24",20h 3m
 9324332,Skikda, Algeria,"06/02, 09:26","06/03, 07:32",22h 5m
+9324332,Revithoussa Desfa LNG Term., Greece,"06/06, 06:55","06/07, 07:56",1d 1h
+9324332,Skikda Anch., Algeria,"06/10, 05:48","06/11, 10:40",1d 4h
+9324332,Skikda, Algeria,"06/11, 11:09","06/12, 09:55",22h 46m
+9324332,Sagunto, Spain,"06/13, 12:27",,
 9324344,Skikda, Algeria,"04/04, 14:11","04/05, 16:36",1d 2h
 9324344,Sagunto, Spain,"04/07, 12:47","04/08, 09:16",20h 28m
 9324344,Skikda, Algeria,"04/10, 07:04","04/11, 16:17",1d 9h
@@ -1406,6 +1535,10 @@ IMO,Port,Country,Arrival,Departure,In Port
 9324344,Fos sur mer, France,"05/25, 18:45","05/27, 00:18",1d 5h
 9324344,Skikda, Algeria,"05/28, 18:51","05/29, 19:11",1d
 9324344,Sagunto, Spain,"06/02, 06:15","06/03, 02:03",19h 47m
+9324344,Skikda, Algeria,"06/04, 16:57","06/05, 15:21",22h 24m
+9324344,Fos sur mer, France,"06/07, 13:12","06/08, 10:25",21h 12m
+9324344,Skikda, Algeria,"06/09, 15:52","06/10, 14:35",22h 43m
+9324344,Fos sur mer, France,"06/12, 09:53","06/13, 07:56",22h 2m
 9324435,Singapore Anch. 1, Singapore,"03/18, 13:50","03/19, 08:58",19h 7m
 9324435,Ras Laffan Anch., Qatar,"03/27, 20:42","03/30, 03:58",2d 7h
 9324435,Ras Laffan, Qatar,"03/30, 04:28","03/31, 14:38",1d 10h
@@ -1417,6 +1550,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9324435,As Suways (Suez) Anch., Egypt,"05/23, 17:33","05/24, 06:26",12h 52m
 9324435,Chioggia Anch., Italy,"05/30, 17:11","06/02, 19:18",3d 2h
 9324435,Adriatic LNG LNG Term., Italy,"06/02, 20:32","06/03, 23:11",1d 2h
+9324435,Port Said Anch., Egypt,"06/08, 05:31","06/09, 03:30",21h 59m
 9325685,Barcelona, Spain,"03/05, 03:51","03/06, 02:14",22h 22m
 9325685,Port Said Anch., Egypt,"03/10, 14:58","03/11, 02:48",11h 50m
 9325685,Ras Laffan Anch., Qatar,"03/19, 17:17","03/20, 15:49",22h 31m
@@ -1427,6 +1561,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9325685,Port Qasim, Pakistan,"05/15, 06:05","05/18, 02:33",2d 20h
 9325685,Ras Laffan Anch., Qatar,"05/20, 18:03","06/01, 15:59",11d 21h
 9325685,Ras Laffan, Qatar,"06/01, 16:40","06/03, 04:09",1d 11h
+9325685,As Suways (Suez) Anch., Egypt,"06/11, 10:32","06/12, 05:06",18h 33m
 9325697,Ras Laffan, Qatar,"03/15, 08:20","03/16, 18:23",1d 10h
 9325697,As Suways (Suez) Anch., Egypt,"03/24, 13:01","03/30, 06:42",5d 17h
 9325697,Chioggia Anch., Italy,"04/03, 10:13","04/03, 13:28",3h 15m
@@ -1440,6 +1575,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9325697,Dumyat, Egypt,"05/12, 09:53","05/13, 14:10",1d 4h
 9325697,Port Said Anch., Egypt,"05/13, 17:18","05/14, 03:28",10h 10m
 9325697,Hazira, India,"05/29, 03:52","05/30, 13:01",1d 9h
+9325697,Ras Laffan Anch., Qatar,"06/03, 13:26","06/08, 10:22",4d 20h
+9325697,Ras Laffan, Qatar,"06/08, 11:22","06/09, 18:21",1d 6h
+9325697,Ras Laffan Anch., Qatar,"06/09, 18:54","06/11, 08:31",1d 13h
 9325702,Ras Laffan, Qatar,"03/22, 07:05","03/23, 10:46",1d 3h
 9325702,Ras Laffan Anch., Qatar,"03/23, 11:08","03/24, 15:07",1d 3h
 9325702,As Suways (Suez) Anch., Egypt,"04/01, 13:28","04/05, 11:27",3d 21h
@@ -1449,6 +1587,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9325702,Ras Laffan, Qatar,"04/27, 06:02","04/28, 21:36",1d 15h
 9325702,Ras Laffan Anch., Qatar,"05/23, 04:50","05/31, 03:54",7d 23h
 9325702,Ras Laffan, Qatar,"05/31, 06:28","06/01, 10:37",1d 4h
+9325702,As Suways (Suez) Anch., Egypt,"06/09, 10:39","06/10, 03:42",17h 2m
 9325893,Tangguh, Indonesia,"03/22, 02:09",,
 9325893,Blang Lancang, Indonesia,"03/30, 03:57","03/31, 13:38",1d 9h
 9325893,Tangguh Anch., Indonesia,"04/08, 01:36","04/11, 22:35",3d 20h
@@ -1460,6 +1599,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9325893,Jakarta Terminal Anch., Indonesia,"05/10, 04:44","05/22, 07:09",12d 2h
 9325893,Tangguh Anch., Indonesia,"05/31, 00:29","05/31, 20:28",19h 59m
 9325893,Tangguh, Indonesia,"06/01, 00:06","06/02, 01:51",1d 1h
+9325893,Blang Lancang, Indonesia,"06/08, 09:00","06/09, 12:42",1d 3h
 9326603,Sabine, United States (USA),"02/22, 23:49","02/24, 04:37",1d 4h
 9326603,Rotterdam Maasvlakte, Netherlands,"03/08, 02:04","03/09, 05:46",1d 3h
 9326603,Port Arthur Anch., United States (USA),"03/25, 04:44","03/25, 22:17",17h 33m
@@ -1474,7 +1614,6 @@ IMO,Port,Country,Arrival,Departure,In Port
 9326689,Qalhat, Oman,"04/15, 05:49","04/15, 05:49",
 9326689,Dapeng, China,"04/28, 03:20","04/29, 09:01",1d 5h
 9326689,Qalhat, Oman,"05/14, 05:14","05/15, 02:10",20h 55m
-9326689,Mina al Fahl Anch., Oman,"05/15, 15:28",,
 9326689,Dahej, India,"05/21, 18:33","05/23, 03:18",1d 8h
 9326689,Mina al Fahl Anch., Oman,"05/26, 04:45","06/03, 06:25",8d 1h
 9329291,Yanai, Japan,"02/21, 02:17","02/22, 01:28",23h 11m
@@ -1484,12 +1623,16 @@ IMO,Port,Country,Arrival,Departure,In Port
 9329291,Shikama, Japan,"05/08, 01:46",,
 9329291,Withnell Bay, Australia,"05/18, 07:25","05/19, 15:02",1d 7h
 9329291,Shikama, Japan,"05/28, 01:21","05/29, 00:11",22h 49m
+9329291,Withnell Bay, Australia,"06/08, 07:59","06/09, 09:35",1d 1h
 9329679,Yokkaichi, Japan,"02/13, 00:51","02/13, 00:51",
 9329679,"Bintulu,Sarawak", Malaysia,"02/22, 22:01","02/23, 02:11",4h 10m
 9329679,Singapore Anch. 1, Singapore,"03/09, 09:41","03/10, 02:13",16h 32m
 9329679,Yokkaichi, Japan,"03/24, 05:16","03/25, 03:33",22h 16m
 9329679,Dongjiakou, China,"04/14, 03:20","04/15, 05:28",1d 2h
 9329679,Tianjin Xingang, China,"05/25, 01:25","05/26, 06:38",1d 5h
+9329679,"Bintulu,Sarawak", Malaysia,"06/06, 01:14","06/06, 11:21",10h 6m
+9329679,"Pasir Gudang,Johor Anch.", Malaysia,"06/08, 03:57","06/10, 02:37",1d 22h
+9329679,Singapore Anch. 1, Singapore,"06/10, 06:05","06/12, 16:25",2d 10h
 9330745,Singapore Anch. 3, Singapore,"02/17, 03:35","02/17, 20:06",16h 30m
 9330745,Singapore Anch. 1, Singapore,"02/20, 00:00","03/15, 00:33",23d
 9330745,Singapore Anch. 1, Singapore,"04/24, 06:47","04/29, 23:23",5d 16h
@@ -1497,6 +1640,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9330745,Darwin Anch., Australia,"05/07, 05:30","05/10, 09:13",3d 3h
 9330745,Darwin, Australia,"05/10, 11:03",,
 9330745,Kisarazu, Japan,"05/27, 02:42",,
+9330745,Singapore Anch. 1, Singapore,"06/07, 06:37","06/07, 23:55",17h 17m
 9331048,Singapore Anch. 1, Singapore,"02/26, 00:42","02/26, 22:29",21h 46m
 9331048,Darwin, Australia,"03/10, 21:41","03/12, 03:54",1d 6h
 9331048,Yangkou, China,"03/22, 02:39","03/23, 05:38",1d 2h
@@ -1505,6 +1649,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9331048,Arzew, Algeria,"05/01, 10:52","05/02, 17:57",1d 7h
 9331048,Port Said Anch., Egypt,"05/08, 05:02","05/09, 02:11",21h 8m
 9331048,Yangkou, China,"05/27, 04:20",,
+9331048,Darwin, Australia,"06/08, 03:45","06/10, 02:58",1d 23h
 9331634,Das Island, United Arab Emirates (UAE),"02/18, 18:07","02/20, 15:15",1d 21h
 9331634,Kawasaki, Japan,"03/12, 02:55","03/13, 03:04",1d
 9331634,Wheatstone LNG Term., Australia,"03/24, 02:27","03/25, 00:40",22h 12m
@@ -1512,6 +1657,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9331634,Barrow Island, Australia,"04/23, 01:12","04/24, 01:38",1d
 9331634,Tianjin Xingang, China,"05/07, 01:42",,
 9331634,Tianjin Xingang, China,"05/27, 01:41","05/28, 06:38",1d 4h
+9331634,Bontang, Indonesia,"06/10, 16:44","06/12, 02:12",1d 9h
 9331646,Pengerang, Malaysia,"03/09, 00:47","03/10, 05:56",1d 5h
 9331646,Gladstone, Australia,"03/25, 00:48","03/26, 07:09",1d 6h
 9331646,"Pasir Gudang,Johor Anch.", Malaysia,"04/06, 00:46","04/06, 22:29",21h 43m
@@ -1528,6 +1674,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9331658,"Pasir Gudang,Johor Anch.", Malaysia,"04/27, 00:30","04/28, 00:03",23h 32m
 9331658,Pengerang, Malaysia,"04/28, 00:33","04/28, 09:22",8h 48m
 9331658,Gladstone, Australia,"05/09, 13:22","05/10, 20:12",1d 6h
+9331658,"Bintulu,Sarawak", Malaysia,"06/05, 03:56","06/06, 05:09",1d 1h
 9331660,Freeport, United States (USA),"02/14, 14:47","02/17, 16:46",3d 1h
 9331660,Altamira, Mexico,"02/19, 23:04","02/21, 14:10",1d 15h
 9331660,Corpus Christi Anch., United States (USA),"02/22, 11:08","02/22, 12:46",1h 37m
@@ -1538,6 +1685,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9331660,Port Arthur Anch., United States (USA),"05/04, 17:22","05/05, 05:04",11h 42m
 9331660,Sabine, United States (USA),"05/05, 08:29","05/06, 12:51",1d 4h
 9331660,Port Said Anch., Egypt,"05/22, 10:15","05/23, 03:57",17h 42m
+9331660,Boryeong, Korea,"06/10, 00:04","06/11, 01:26",1d 1h
 9331672,Panama Canal Anch. Pacific, Panama,"02/22, 11:01","02/24, 09:47",1d 22h
 9331672,Port Arthur Anch., United States (USA),"03/01, 18:56","03/02, 18:19",23h 23m
 9331672,Sabine, United States (USA),"03/02, 21:15","03/03, 23:21",1d 2h
@@ -1551,17 +1699,21 @@ IMO,Port,Country,Arrival,Departure,In Port
 9332054,Prigorodnoye, Russia,"05/01, 01:16","05/02, 02:22",1d 1h
 9332054,Xiuyu, China,"05/08, 08:15","05/10, 03:37",1d 19h
 9332054,Yung An, Taiwan,"05/23, 23:52","05/24, 23:33",23h 40m
+9332054,Kitakyushu, Japan,"06/09, 01:44","06/10, 02:36",1d
 9333591,Lake Charles, United States (USA),"03/17, 18:32","03/19, 21:03",2d 2h
 9333591,Ennore, India,"04/19, 01:15","04/20, 06:21",1d 5h
 9333591,As Suways (Suez) Anch., Egypt,"04/30, 13:07","05/01, 04:49",15h 42m
 9333591,La Brea (Brighton) Anch., Trinidad & Tobago,"05/14, 14:13","05/14, 19:34",5h 21m
 9333591,Point Fortin, Trinidad & Tobago,"05/14, 21:01","05/16, 14:39",1d 17h
 9333591,Port Said Anch., Egypt,"05/29, 08:08","05/30, 03:17",19h 9m
+9333591,Ennore, India,"06/10, 04:23","06/11, 04:47",1d
 9333606,Qalhat, Oman,"03/03, 04:46","03/03, 14:09",9h 22m
 9333606,Dampier Anch., Australia,"03/24, 08:33","04/01, 05:12",7d 20h
 9333606,Withnell Bay, Australia,"04/01, 07:47","04/02, 09:43",1d 1h
 9333606,Yung An, Taiwan,"04/08, 23:47","04/09, 23:37",23h 49m
 9333606,Sabine, United States (USA),"05/15, 13:36","05/16, 15:25",1d 1h
+9333606,Recalada Anch., Argentina,"06/08, 13:46","06/09, 11:22",21h 36m
+9333606,Recalada Anch., Argentina,"06/09, 21:12","06/13, 11:47",3d 14h
 9333618,Aliaga, Turkey,"02/20, 05:43","02/21, 08:00",1d 2h
 9333618,Cove Point, United States (USA),"03/13, 21:00","03/14, 13:32",16h 31m
 9333618,Fos sur mer, France,"03/26, 08:08","03/27, 09:54",1d 1h
@@ -1579,6 +1731,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9333620,Tianjin Xingang, China,"04/16, 01:34","04/18, 00:38",1d 23h
 9333620,La Brea (Brighton) Anch., Trinidad & Tobago,"05/25, 09:24","05/26, 04:37",19h 13m
 9333620,Point Fortin, Trinidad & Tobago,"05/26, 05:40","05/27, 12:49",1d 7h
+9333620,Freeport, United States (USA),"06/10, 12:11","06/11, 15:10",1d 2h
 9333632,Ambon Anch., Indonesia,"03/18, 00:04","03/27, 01:49",9d 1h
 9333632,Tangguh Anch., Indonesia,"03/30, 23:59","04/04, 05:43",4d 5h
 9333632,Tangguh Anch., Indonesia,"04/04, 08:33","04/05, 19:05",1d 10h
@@ -1590,6 +1743,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9333632,Tianjin Xingang, China,"05/16, 00:57","05/18, 00:37",1d 23h
 9333632,Tangguh Anch., Indonesia,"05/28, 22:25","05/29, 20:56",22h 30m
 9333632,Tangguh, Indonesia,"05/29, 22:56","05/31, 07:15",1d 8h
+9333632,Dapeng, China,"06/07, 01:30","06/09, 09:21",2d 7h
 9334076,Port Qasim Anch., Pakistan,"03/15, 02:34","03/19, 05:47",4d 3h
 9334076,Ras Laffan Anch., Qatar,"03/23, 21:30","04/09, 05:58",16d 8h
 9334076,Ras Laffan, Qatar,"04/09, 07:12","04/10, 20:34",1d 13h
@@ -1603,6 +1757,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9334076,Port Said Anch., Egypt,"05/16, 13:20","05/16, 14:39",1h 18m
 9334076,Ras Laffan Anch., Qatar,"05/24, 06:42","05/25, 15:25",1d 8h
 9334076,Ras Laffan, Qatar,"05/25, 17:04","05/27, 00:56",1d 7h
+9334076,Taichung, Taiwan,"06/09, 21:21","06/10, 21:55",1d
 9334284,Jakarta Term., Indonesia,"03/21, 13:38","03/24, 00:26",2d 10h
 9334284,Jakarta Terminal Anch., Indonesia,"03/24, 00:35","03/26, 04:31",2d 3h
 9334284,Bontang, Indonesia,"03/30, 00:05","03/31, 01:50",1d 1h
@@ -1614,6 +1769,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9334284,Tangguh Anch., Indonesia,"05/13, 02:15","05/13, 19:53",17h 37m
 9334284,Jakarta Term., Indonesia,"05/19, 23:33","05/22, 01:32",2d 1h
 9334284,Jakarta Terminal Anch., Indonesia,"05/22, 02:04","05/22, 14:06",12h 1m
+9334284,Tangguh Anch., Indonesia,"06/09, 22:53","06/10, 05:13",6h 20m
+9334284,Tangguh, Indonesia,"06/10, 06:54","06/11, 16:20",1d 9h
 9336737,Sakai, Japan,"02/16, 01:17","02/17, 06:00",1d 4h
 9336737,Busan Anch., Korea,"02/21, 21:47","02/24, 04:47",2d 7h
 9336737,Lese, Papua New Guinea,"03/13, 20:23","03/14, 23:03",1d 2h
@@ -1624,6 +1781,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9336737,Jintang Anch., China,"05/15, 06:57","05/15, 18:37",11h 39m
 9336737,Tianjin Xingang, China,"05/16, 01:45","05/18, 01:42",1d 23h
 9336737,Dampier Anch., Australia,"06/02, 01:05","06/04, 02:00",2d
+9336737,Withnell Bay, Australia,"06/04, 14:52","06/05, 23:13",1d 8h
 9336749,Sabine, United States (USA),"03/11, 07:13","03/12, 05:07",21h 54m
 9336749,Dunkerque, France,"03/25, 00:29","03/26, 02:47",1d 2h
 9336749,Corpus Christi Anch., United States (USA),"04/08, 13:52","04/08, 17:47",3h 55m
@@ -1632,6 +1790,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9336749,Escombreras, Spain,"04/22, 12:28","04/23, 11:03",22h 35m
 9336749,Freeport, United States (USA),"05/05, 12:17","05/06, 15:21",1d 3h
 9336749,Dunkerque, France,"05/22, 09:55","05/23, 12:03",1d 2h
+9336749,Freeport Anch., United States (USA),"06/05, 13:55","06/07, 13:04",1d 23h
+9336749,Freeport, United States (USA),"06/07, 13:56","06/09, 23:58",2d 10h
 9337705,Singapore Anch. 1, Singapore,"03/15, 22:26","03/16, 20:04",21h 38m
 9337705,Ras Laffan Anch., Qatar,"03/25, 04:20","03/25, 16:24",12h 4m
 9337705,Ras Laffan, Qatar,"03/25, 17:11","03/26, 19:41",1d 2h
@@ -1643,6 +1803,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9337705,Ras Laffan, Qatar,"05/03, 20:08","05/05, 06:38",1d 10h
 9337705,Mab Tapud, Thailand,"05/22, 23:25","05/24, 04:46",1d 5h
 9337705,Singapore Anch. 1, Singapore,"05/26, 03:13","05/26, 16:54",13h 41m
+9337705,Ras Laffan Anch., Qatar,"06/05, 06:08","06/07, 10:32",2d 4h
+9337705,Ras Laffan, Qatar,"06/07, 11:49","06/08, 23:32",1d 11h
+9337705,Ras Laffan Anch., Qatar,"06/08, 23:56","06/10, 11:21",1d 11h
 9337717,Gibraltar West Anch., Gibraltar,"03/09, 13:48","03/10, 09:41",19h 53m
 9337717,Port Said Anch., Egypt,"03/15, 10:58","03/16, 04:24",17h 25m
 9337717,Ras Laffan, Qatar,"03/23, 23:06","03/25, 01:52",1d 2h
@@ -1656,6 +1819,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9337717,Ras Laffan, Qatar,"05/10, 17:18","05/12, 04:11",1d 10h
 9337717,Ras Laffan Anch., Qatar,"05/12, 04:31","05/15, 01:48",2d 21h
 9337717,Mab Tapud, Thailand,"05/28, 22:19","05/30, 03:46",1d 5h
+9337717,Ras Laffan, Qatar,"06/10, 03:47","06/12, 04:33",2d
 9337729,Ras Laffan, Qatar,"04/01, 15:45","04/02, 16:15",1d
 9337729,Ras Laffan Anch., Qatar,"04/02, 16:43","04/08, 13:23",5d 20h
 9337729,Mina' 'Abd Allah Anch., Kuwait,"04/09, 08:03","04/09, 19:52",11h 49m
@@ -1670,6 +1834,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9337729,Zeebrugge, Belgium,"05/15, 17:01","05/16, 16:45",23h 44m
 9337729,Gibraltar West Anch., Gibraltar,"05/20, 08:19","05/20, 21:46",13h 27m
 9337729,Port Said Anch., Egypt,"05/25, 10:09","05/26, 03:08",16h 58m
+9337729,Ras Laffan Anch., Qatar,"06/03, 11:22","06/08, 18:41",5d 7h
+9337729,Ras Laffan, Qatar,"06/08, 20:14","06/09, 19:32",23h 18m
 9337731,Kisarazu, Japan,"03/03, 23:50","03/05, 11:27",1d 11h
 9337731,Singapore Anch. 1, Singapore,"03/13, 17:06","03/14, 22:34",1d 5h
 9337731,Ras Laffan Anch., Qatar,"03/23, 15:51","03/24, 11:27",19h 35m
@@ -1682,6 +1848,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9337731,Fos sur mer, France,"05/20, 07:26","05/21, 16:29",1d 9h
 9337731,Malta Bunkering Area 3, Malta,"05/23, 07:03",,
 9337731,Port Said Anch., Egypt,"05/26, 14:44","05/27, 03:24",12h 40m
+9337731,Ras Laffan Anch., Qatar,"06/03, 19:59","06/07, 15:15",3d 19h
+9337731,Ras Laffan, Qatar,"06/07, 15:37","06/08, 16:26",1d
 9337743,As Suways (Suez) Anch., Egypt,"03/18, 12:46","03/19, 04:37",15h 50m
 9337743,Alexandria Anch., Egypt,"03/20, 09:58",,
 9337743,Swinoujscie, Poland,"04/01, 06:36","04/02, 13:45",1d 7h
@@ -1692,6 +1860,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9337743,Ras Laffan, Qatar,"04/30, 11:33","05/02, 01:56",1d 14h
 9337743,Kisarazu, Japan,"05/23, 00:12","05/24, 05:39",1d 5h
 9337743,Singapore Anch. 1, Singapore,"05/31, 04:23","06/01, 02:42",22h 19m
+9337743,Ras Laffan Anch., Qatar,"06/11, 01:04","06/11, 18:06",17h 2m
+9337743,Ras Laffan, Qatar,"06/11, 19:35","06/12, 20:34",1d
 9337755,Ras Laffan, Qatar,"03/18, 01:04","03/19, 07:07",1d 6h
 9337755,Mab Tapud, Thailand,"03/29, 23:15","03/31, 08:52",1d 9h
 9337755,Ras Laffan Anch., Qatar,"04/11, 10:53","04/12, 17:45",1d 6h
@@ -1711,6 +1881,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9337951,Zeebrugge, Belgium,"04/30, 00:06","05/01, 04:13",1d 4h
 9337951,Port Arthur Anch., United States (USA),"05/22, 00:59","05/24, 00:54",1d 23h
 9337951,Sabine, United States (USA),"05/24, 05:30","05/25, 16:32",1d 11h
+9337951,Port Said Anch., Egypt,"06/12, 14:13","06/13, 04:13",13h 59m
 9337963,Ras Laffan Anch., Qatar,"03/08, 05:24","03/10, 05:24",1d 23h
 9337963,Ras Laffan, Qatar,"03/10, 07:06","03/11, 07:09",1d
 9337963,Ningbo, China,"03/26, 02:15","03/28, 03:00",2d
@@ -1745,6 +1916,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9337987,Jebel Ali, United Arab Emirates (UAE),"05/13, 05:01","05/15, 07:58",2d 2h
 9337987,Ras Laffan Anch., Qatar,"05/15, 20:35","05/16, 07:42",11h 6m
 9337987,Ras Laffan, Qatar,"05/16, 09:12","05/17, 10:41",1d 1h
+9337987,Kisarazu, Japan,"06/05, 00:06","06/06, 05:25",1d 5h
+9337987,Singapore Anch. 1, Singapore,"06/13, 01:26","06/13, 16:42",15h 16m
 9338266,As Suways (Suez) Anch., Egypt,"03/09, 16:01","03/10, 05:18",13h 17m
 9338266,Milford Haven, United Kingdom (UK),"03/19, 11:13","03/20, 12:31",1d 1h
 9338266,Gibraltar West Anch., Gibraltar,"03/23, 04:41","03/23, 16:20",11h 39m
@@ -1754,11 +1927,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9338266,Singapore Anch. 1, Singapore,"05/08, 15:02","05/09, 07:19",16h 17m
 9338266,Ras Laffan Anch., Qatar,"05/20, 00:49","05/23, 18:06",3d 17h
 9338266,Ras Laffan, Qatar,"05/23, 19:13","05/24, 22:05",1d 2h
+9338266,Malta Bunkering Area 3, Malta,"06/05, 07:11","06/05, 20:02",12h 50m
+9338266,Malta Anch., Malta,"06/05, 20:03","06/08, 15:42",2d 19h
 9338797,Pyeongtaek, Korea,"02/15, 21:46","02/18, 09:22",2d 11h
 9338797,Pisco Anch., Peru,"03/18, 12:25","03/18, 16:02",3h 37m
 9338797,Pampa Melchorita, Peru,"03/18, 21:38",,
 9338797,Pyeongtaek, Korea,"04/14, 06:49","04/15, 03:05",20h 15m
 9338797,Panama Canal Anch. Pacific, Panama,"05/11, 15:38","05/16, 08:41",4d 17h
+9338797,Sabine, United States (USA),"06/05, 13:12","06/06, 20:44",1d 7h
 9338929,Tianjin Xingang, China,"03/08, 01:05","03/10, 02:06",2d 1h
 9338929,Tianjin Xingang, China,"04/26, 01:12","04/28, 00:37",1d 23h
 9338929,Tianjin Anch., China,"04/28, 01:58",,
@@ -1772,6 +1948,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9338955,Niigata, Japan,"04/27, 01:05","04/28, 00:35",23h 29m
 9338955,Oita, Japan,"05/09, 00:39","05/09, 23:55",23h 15m
 9338955,Niigata, Japan,"06/03, 01:03","06/04, 00:24",23h 21m
+9338955,Gwangyang, Korea,"06/10, 23:54","06/12, 02:08",1d 2h
 9339260,Ras Laffan Anch., Qatar,"02/12, 12:38","02/12, 14:26",1h 48m
 9339260,Dahej, India,"02/23, 19:31","02/25, 05:00",1d 9h
 9339260,Corpus Christi Anch., United States (USA),"03/31, 21:48","04/01, 19:59",22h 11m
@@ -1781,6 +1958,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9339260,Freeport Anch., United States (USA),"04/27, 21:47","04/28, 12:15",14h 28m
 9339260,Freeport, United States (USA),"04/28, 14:05","04/29, 21:13",1d 7h
 9339260,Barcelona, Spain,"05/11, 23:39","05/13, 04:01",1d 4h
+9339260,Port Said Anch., Egypt,"06/10, 08:05","06/11, 02:27",18h 21m
 9341299,Hiroshima, Japan,"02/22, 01:19","02/23, 00:10",22h 51m
 9341299,Barrow Island, Australia,"03/08, 17:14","03/09, 17:20",1d
 9341299,Boryeong, Korea,"03/19, 02:57","03/20, 03:25",1d
@@ -1794,15 +1972,19 @@ IMO,Port,Country,Arrival,Departure,In Port
 9341689,Naoetsu, Japan,"04/24, 23:37",,
 9341689,Barrow Island, Australia,"05/09, 01:11","05/10, 01:05",23h 54m
 9341689,Tieshan, China,"05/22, 04:24","05/23, 06:40",1d 2h
+9341689,Barrow Island, Australia,"06/05, 01:07","06/06, 00:20",23h 13m
 9342487,Lake Charles, United States (USA),"02/23, 09:14","02/24, 10:20",1d 1h
 9342487,Corpus Christi Anch., United States (USA),"03/31, 15:36","04/06, 03:42",5d 12h
 9342487,Ingleside, United States (USA),"04/06, 05:29","04/07, 12:45",1d 7h
 9342487,Itaparica Anch., Brazil,"05/25, 09:58","05/27, 12:03",2d 2h
 9342487,Experience FPSO, Brazil,"05/27, 14:16","05/29, 09:45",1d 19h
+9342487,Corpus Christi Anch., United States (USA),"06/08, 19:19","06/09, 07:10",11h 50m
+9342487,Ingleside, United States (USA),"06/09, 09:29","06/10, 21:42",1d 12h
 9343106,Singapore Anch. 1, Singapore,"02/19, 04:25","02/19, 22:27",18h 2m
 9343106,Tieshan, China,"02/25, 04:49","02/26, 06:15",1d 1h
 9343106,Tianjin Xingang, China,"03/21, 01:49","03/23, 02:01",2d
 9343106,Pyeongtaek, Korea,"05/13, 21:11","05/14, 22:48",1d 1h
+9343106,Yokkaichi, Japan,"06/07, 01:18","06/08, 00:22",23h 3m
 9349007,Tangguh Anch., Indonesia,"02/19, 23:56","02/21, 00:44",1d
 9349007,Bitung Anch., Indonesia,"03/15, 05:17","03/29, 01:17",13d 20h
 9349007,Tangguh Anch., Indonesia,"04/05, 05:12","04/13, 21:20",8d 16h
@@ -1812,6 +1994,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9349007,Tangguh Anch., Indonesia,"05/04, 23:59","05/09, 22:32",4d 22h
 9349007,Tangguh Anch., Indonesia,"05/10, 00:04","05/12, 02:11",2d 2h
 9349007,Tangguh Anch., Indonesia,"05/12, 09:24","05/13, 03:32",18h 7m
+9349007,Singapore Anch. 1, Singapore,"06/04, 22:33","06/06, 22:31",1d 23h
 9349019,Bitung Anch., Indonesia,"02/17, 01:53","03/01, 01:36",11d 23h
 9349019,Tangguh Anch., Indonesia,"03/04, 22:45","03/05, 23:21",1d
 9349019,Tangguh Anch., Indonesia,"03/22, 22:22","03/23, 21:09",22h 46m
@@ -1835,6 +2018,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9350927,Pyeongtaek, Korea,"03/18, 07:18","03/19, 06:47",23h 29m
 9350927,Darwin, Australia,"04/12, 21:05","04/14, 09:51",1d 12h
 9350927,Singapore Anch. 1, Singapore,"05/18, 00:34","05/27, 23:01",9d 22h
+9350927,Barrow Island, Australia,"06/06, 05:15","06/07, 04:53",23h 37m
 9351971,Kokura, Japan,"02/13, 05:06","02/14, 05:35",1d
 9351971,Withnell Bay, Australia,"02/26, 23:40","02/28, 00:51",1d 1h
 9351971,Withnell Bay, Australia,"03/23, 00:46","03/24, 01:24",1d
@@ -1842,6 +2026,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9351971,Withnell Bay, Australia,"04/22, 02:52","04/23, 03:42",1d
 9351971,Yokohama, Japan,"05/06, 01:55","05/07, 04:11",1d 2h
 9351971,Withnell Bay, Australia,"05/22, 07:52","05/23, 07:47",23h 54m
+9351971,Yokohama, Japan,"06/05, 00:37","06/06, 03:09",1d 2h
 9352860,Bonny, Nigeria,"02/16, 18:02","02/17, 23:54",1d 5h
 9352860,Ras Laffan Anch., Qatar,"03/28, 06:08","03/30, 22:21",2d 16h
 9352860,Ras Laffan, Qatar,"03/30, 22:54","03/31, 23:34",1d
@@ -1856,6 +2041,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9352860,Dumyat (Damietta) Anch., Egypt,"05/17, 20:17","05/20, 09:39",2d 13h
 9352860,Dumyat, Egypt,"05/20, 10:51","05/21, 12:07",1d 1h
 9352860,Port Said Anch., Egypt,"05/21, 15:39","05/22, 02:37",10h 58m
+9352860,Hazira, India,"06/08, 09:17",,
 9355264,Hitachi, Japan,"02/17, 00:35","02/18, 02:59",1d 2h
 9355264,Barrow Island, Australia,"03/06, 05:47","03/07, 05:19",23h 32m
 9355264,Souma, Japan,"03/19, 22:15","03/21, 01:35",1d 3h
@@ -1864,6 +2050,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9355264,Singapore Anch. 1, Singapore,"04/18, 07:19","04/20, 06:34",1d 23h
 9355264,Singapore, Singapore,"04/20, 07:25","05/25, 02:55",34d 19h
 9355264,Singapore Anch. 1, Singapore,"05/25, 03:02","05/26, 06:21",1d 3h
+9355264,Wheatstone LNG Term., Australia,"06/06, 11:36","06/09, 08:30",2d 20h
 9355379,Ningbo, China,"02/18, 01:42","02/19, 07:41",1d 5h
 9355379,Tangguh Anch., Indonesia,"03/27, 00:46","03/27, 05:47",5h 1m
 9355379,Ningbo, China,"04/08, 01:38","04/09, 07:15",1d 5h
@@ -1874,6 +2061,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9355604,Maojia, China,"04/10, 02:58","04/12, 05:36",2d 2h
 9355604,Ho Chi Minh Anch., Vietnam,"04/16, 21:54","04/17, 05:42",7h 48m
 9355604,Singapore Anch. 5, Singapore,"04/19, 06:21","04/20, 06:43",1d
+9355604,Singapore, Singapore,"04/20, 09:35","06/10, 07:04",50d 21h
 9360790,Ras Laffan, Qatar,"03/01, 20:37","03/02, 20:58",1d
 9360790,Nagoya, Japan,"03/22, 23:59","03/24, 02:21",1d 2h
 9360790,Singapore Anch. 1, Singapore,"03/31, 01:36","03/31, 22:37",21h
@@ -1908,6 +2096,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9360817,Caofeidian, China,"05/11, 03:25",,
 9360817,Singapore Anch. 3, Singapore,"05/20, 18:58","05/21, 06:09",11h 11m
 9360817,Ras Laffan Anch., Qatar,"05/30, 11:12","06/04, 05:31",4d 18h
+9360817,Ras Laffan, Qatar,"06/04, 06:47","06/05, 17:48",1d 11h
+9360817,Ras Laffan Anch., Qatar,"06/05, 18:07","06/11, 10:49",5d 16h
 9360829,Ras Laffan Anch., Qatar,"03/09, 20:10","03/12, 11:22",2d 15h
 9360829,As Suways (Suez) Anch., Egypt,"03/21, 14:07","03/22, 05:01",14h 54m
 9360829,Zeebrugge, Belgium,"04/03, 19:02","04/04, 20:42",1d 1h
@@ -1919,6 +2109,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9360829,Ras Laffan, Qatar,"05/02, 05:19","05/03, 04:07",22h 48m
 9360829,Incheon, Korea,"05/19, 03:10","05/20, 07:18",1d 4h
 9360829,Singapore Anch. 1, Singapore,"05/27, 08:51","05/27, 15:30",6h 39m
+9360829,Ras Laffan Anch., Qatar,"06/07, 02:26","06/13, 14:18",6d 11h
 9360831,Ras Laffan, Qatar,"02/17, 22:16","02/18, 08:00",9h 44m
 9360831,As Suways (Suez) Anch., Egypt,"02/26, 08:44","02/27, 05:40",20h 55m
 9360831,Swinoujscie, Poland,"03/13, 08:04","03/14, 16:05",1d 8h
@@ -1928,6 +2119,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9360831,Ras Laffan Anch., Qatar,"05/20, 14:01","05/24, 16:20",4d 2h
 9360831,Ras Laffan, Qatar,"05/24, 17:38","05/25, 17:10",23h 31m
 9360831,As Suways (Suez) Anch., Egypt,"06/02, 10:15","06/03, 03:49",17h 33m
+9360831,Malta Anch., Malta,"06/06, 10:00","06/11, 16:06",5d 6h
 9360843,Hazira, India,"03/25, 07:53","03/26, 13:32",1d 5h
 9360843,Mina' 'Abd Allah Anch., Kuwait,"04/05, 03:07",,
 9360843,Mina' al Ahmadi, Kuwait,"04/05, 05:19","04/07, 00:24",1d 19h
@@ -1938,6 +2130,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9360843,Ras Laffan Anch., Qatar,"05/15, 08:46","05/17, 11:53",2d 3h
 9360843,Ras Laffan, Qatar,"05/17, 12:41","05/18, 17:38",1d 4h
 9360843,Gaolan, China,"06/03, 03:34",,
+9360843,Singapore Anch. 1, Singapore,"06/09, 08:25","06/10, 03:14",18h 49m
 9360855,Dapeng, China,"02/22, 03:39","02/23, 08:29",1d 4h
 9360855,Ras Laffan Anch., Qatar,"03/09, 12:48","03/16, 17:38",7d 4h
 9360855,Ras Laffan, Qatar,"03/16, 19:02","03/17, 20:57",1d 1h
@@ -1950,6 +2143,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9360855,Singapore Anch. 1, Singapore,"05/12, 16:55","05/13, 22:25",1d 5h
 9360855,Ras Laffan Anch., Qatar,"05/22, 07:29","05/23, 08:16",1d
 9360855,Ras Laffan, Qatar,"05/23, 09:11","05/24, 11:33",1d 2h
+9360855,Mab Tapud, Thailand,"06/06, 06:50","06/07, 13:43",1d 6h
 9360867,Ras Laffan Anch., Qatar,"03/03, 04:32","03/04, 18:36",1d 14h
 9360867,Ras Laffan Anch., Qatar,"03/04, 21:02","03/05, 09:40",12h 38m
 9360867,Ras Laffan, Qatar,"03/05, 17:15","03/06, 18:08",1d
@@ -1967,6 +2161,10 @@ IMO,Port,Country,Arrival,Departure,In Port
 9360867,Ras Laffan Anch., Qatar,"05/28, 12:22","05/29, 10:13",21h 51m
 9360867,Ras Laffan, Qatar,"05/29, 11:18","05/30, 10:44",23h 26m
 9360867,Ras Laffan Anch., Qatar,"05/30, 11:04","06/05, 06:42",5d 19h
+9360867,Mina' al Ahmadi, Kuwait,"06/06, 04:47","06/07, 22:07",1d 17h
+9360867,Ras Laffan, Qatar,"06/08, 15:51","06/09, 13:54",22h 2m
+9360867,Mina' 'Abd Allah Anch., Kuwait,"06/10, 09:30","06/10, 18:35",9h 5m
+9360867,Mina' al Ahmadi, Kuwait,"06/10, 19:36","06/12, 23:24",2d 3h
 9360879,Ras Laffan Anch., Qatar,"03/01, 06:50","03/01, 18:11",11h 21m
 9360879,Mab Tapud, Thailand,"03/13, 03:23","03/14, 07:53",1d 4h
 9360879,Singapore, Singapore,"03/16, 07:22","03/22, 01:15",5d 17h
@@ -1980,6 +2178,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9360879,Ras Laffan Anch., Qatar,"05/15, 21:26","05/18, 00:37",2d 3h
 9360879,As Suways (Suez) Anch., Egypt,"05/25, 08:43","05/26, 04:58",20h 15m
 9360879,Gibraltar West Anch., Gibraltar,"05/31, 05:58","05/31, 22:40",16h 41m
+9360879,Swinoujscie, Poland,"06/07, 06:30","06/08, 20:00",1d 13h
 9360881,Ras Laffan, Qatar,"03/14, 08:17","03/15, 06:33",22h 16m
 9360881,Mina' 'Abd Allah Anch., Kuwait,"03/16, 11:13","03/16, 20:13",9h
 9360881,Mina' al Ahmadi, Kuwait,"03/16, 21:46","03/18, 20:17",1d 22h
@@ -1994,6 +2193,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9360881,Ras Laffan, Qatar,"05/21, 17:11","05/22, 22:58",1d 5h
 9360881,Ras Laffan Anch., Qatar,"05/22, 23:41","05/29, 06:10",6d 6h
 9360881,Jebel Ali, United Arab Emirates (UAE),"05/30, 04:22",,
+9360881,Ras Laffan Anch., Qatar,"06/04, 18:28","06/10, 04:37",5d 10h
+9360881,Ras Laffan, Qatar,"06/10, 06:03","06/11, 18:56",1d 12h
 9360893,Ras Laffan Anch., Qatar,"03/10, 01:45","03/26, 22:14",16d 20h
 9360893,Mina' 'Abd Allah Anch., Kuwait,"03/27, 20:15","03/28, 11:06",14h 50m
 9360893,Mina' al Ahmadi, Kuwait,"03/28, 12:21","03/30, 06:25",1d 18h
@@ -2005,6 +2206,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9360893,As Suways (Suez) Anch., Egypt,"05/17, 11:10","05/18, 05:23",18h 13m
 9360893,Milford Haven, United Kingdom (UK),"05/26, 20:50","05/28, 03:25",1d 6h
 9360893,Gibraltar West Anch., Gibraltar,"06/01, 00:52",,
+9360893,Port Said Anch., Egypt,"06/06, 12:36","06/07, 03:53",15h 17m
 9360908,As Suways (Suez) Anch., Egypt,"03/05, 11:26","03/06, 05:46",18h 20m
 9360908,Gibraltar East Anch., Gibraltar,"03/11, 22:55","03/13, 19:05",1d 20h
 9360908,Swinoujscie, Poland,"03/21, 11:56","03/22, 20:04",1d 8h
@@ -2034,15 +2236,18 @@ IMO,Port,Country,Arrival,Departure,In Port
 9361639,Dongjiakou, China,"05/01, 00:21","05/02, 02:12",1d 1h
 9361639,Shimizu, Japan,"05/22, 00:12","05/23, 08:10",1d 7h
 9361639,Lese Anch., Papua New Guinea,"06/03, 05:14","06/04, 18:57",1d 13h
+9361639,Lese, Papua New Guinea,"06/04, 20:22","06/06, 06:12",1d 9h
 9361990,Gwangyang, Korea,"02/12, 08:45","02/12, 08:45",
 9361990,Tangguh Anch., Indonesia,"02/22, 00:02","02/22, 18:27",18h 24m
 9361990,Tangguh, Indonesia,"02/23, 16:18","02/24, 05:18",13h
 9361990,Tangguh Anch., Indonesia,"04/18, 00:52","04/18, 23:35",22h 42m
 9361990,Pyeongtaek, Korea,"04/29, 07:04","04/30, 06:45",23h 40m
 9361990,Tangguh Anch., Indonesia,"06/03, 23:35","06/05, 01:29",1d 1h
+9361990,Tangguh, Indonesia,"06/06, 12:56","06/06, 12:56",
 9368314,As Suways (Suez) Anch., Egypt,"03/12, 14:29","03/13, 05:53",15h 24m
 9368314,Port Arthur Anch., United States (USA),"03/30, 11:06","03/30, 22:48",11h 41m
 9368314,Sabine, United States (USA),"03/31, 01:15","04/02, 01:11",1d 23h
+9368314,Lake Charles, United States (USA),"06/04, 15:44","06/05, 16:17",1d
 9369473,Dapeng, China,"03/04, 03:30","03/05, 04:25",1d
 9369473,Withnell Bay, Australia,"03/13, 02:43","03/14, 02:43",1d
 9369473,Dapeng, China,"03/21, 03:25","03/22, 04:16",1d
@@ -2055,6 +2260,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9369473,Dapeng, China,"05/12, 03:13","05/13, 05:18",1d 2h
 9369473,Withnell Bay, Australia,"05/24, 00:46","05/25, 04:34",1d 3h
 9369473,Dapeng, China,"06/01, 03:19","06/02, 06:28",1d 3h
+9369473,Dampier Anch., Australia,"06/08, 23:46","06/09, 02:19",2h 33m
+9369473,Withnell Bay, Australia,"06/10, 05:09","06/11, 05:50",1d
 9369899,Yung An, Taiwan,"03/08, 00:11","03/09, 00:08",23h 57m
 9369899,Singapore Anch. 1, Singapore,"03/13, 08:18","03/17, 10:45",4d 2h
 9369899,Withnell Bay, Australia,"03/30, 03:30","03/31, 01:07",21h 37m
@@ -2070,6 +2277,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9369904,Sabine, United States (USA),"03/24, 20:53","03/26, 04:29",1d 7h
 9369904,Swinoujscie, Poland,"04/10, 06:25","04/11, 09:42",1d 3h
 9369904,Ingleside, United States (USA),"04/25, 15:13","04/26, 16:26",1d 1h
+9369904,Ras Laffan Anch., Qatar,"06/09, 10:41","06/09, 19:18",8h 37m
+9369904,Ras Laffan Anch., Qatar,"06/09, 19:38","06/10, 14:43",19h 4m
+9369904,Ras Laffan, Qatar,"06/10, 16:45","06/12, 04:19",1d 11h
 9372731,As Suways (Suez) Anch., Egypt,"02/24, 10:16","02/25, 06:23",20h 6m
 9372731,Milford Haven, United Kingdom (UK),"03/06, 01:00","03/07, 06:52",1d 5h
 9372731,Port Said Anch., Egypt,"03/15, 14:57","03/16, 04:34",13h 36m
@@ -2091,6 +2301,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9372743,Malta Anch., Malta,"05/23, 04:01","05/23, 15:50",11h 48m
 9372743,Milford Haven, United Kingdom (UK),"05/30, 00:09","05/31, 13:28",1d 13h
 9372743,Gibraltar West Anch., Gibraltar,"06/03, 16:13","06/04, 12:36",20h 22m
+9372743,Port Said Anch., Egypt,"06/09, 15:30","06/10, 03:21",11h 50m
 9372963,Pyeongtaek, Korea,"02/18, 23:41","02/20, 01:40",1d 1h
 9372963,Gladstone, Australia,"03/05, 21:45","03/07, 02:46",1d 5h
 9372963,Okpo Anch., Korea,"03/19, 06:16","03/21, 04:32",1d 22h
@@ -2099,6 +2310,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9372963,Gladstone, Australia,"04/28, 15:15","04/29, 22:39",1d 7h
 9372963,Incheon, Korea,"05/11, 03:54","05/12, 03:29",23h 34m
 9372963,Gladstone, Australia,"05/27, 03:23","05/28, 09:49",1d 6h
+9372963,Incheon, Korea,"06/09, 03:36","06/10, 02:26",22h 49m
 9372999,Okpo Anch., Korea,"02/15, 12:56","02/16, 06:16",17h 20m
 9372999,Gladstone, Australia,"02/27, 15:07","02/28, 18:03",1d 2h
 9372999,Pyeongtaek, Korea,"03/11, 03:40","03/12, 03:47",1d
@@ -2116,18 +2328,20 @@ IMO,Port,Country,Arrival,Departure,In Port
 9373008,Okpo Anch., Korea,"04/28, 04:57","04/29, 01:56",20h 58m
 9373008,Prigorodnoye, Russia,"05/03, 21:15","05/06, 08:00",2d 10h
 9373008,Okpo Anch., Korea,"05/11, 23:40","05/13, 23:25",1d 23h
+9373008,Panama Canal Anch. Pacific, Panama,"06/08, 14:20","06/11, 07:10",2d 16h
 9373010,Sabine, United States (USA),"03/09, 14:29","03/11, 08:50",1d 18h
 9373010,Pena Blanca Anch., Panama,"03/15, 15:03",,
 9373010,Pyeongtaek, Korea,"04/07, 03:28","04/08, 02:46",23h 18m
 9373010,Okpo Anch., Korea,"04/09, 23:22","04/12, 10:06",2d 10h
 9373010,Panama Canal Anch. Pacific, Panama,"05/03, 13:20","05/05, 08:53",1d 19h
-9373010,Sabine, United States (USA),"05/11, 08:20",,
 9373010,Panama Canal Anch. Atlantic, Panama,"05/16, 13:12","05/19, 09:41",2d 20h
+9373010,Anjeong, Korea,"06/09, 03:54","06/10, 02:06",22h 12m
 9375721,Pyeongtaek, Korea,"02/25, 06:29","02/26, 06:44",1d
 9375721,Singapore Anch. 1, Singapore,"03/05, 10:40","03/06, 09:27",22h 47m
 9375721,As Suways (Suez) Anch., Egypt,"03/19, 10:19","03/20, 05:43",19h 24m
 9375721,Freeport, United States (USA),"04/08, 14:16","04/09, 15:55",1d 1h
 9375721,Tianjin Anch., China,"05/09, 00:35","05/11, 09:12",2d 8h
+9375721,Panama Canal Anch. Pacific, Panama,"06/06, 21:31","06/07, 08:52",11h 21m
 9376294,Niigata, Japan,"02/21, 00:58","02/22, 00:20",23h 22m
 9376294,Prigorodnoye, Russia,"02/27, 10:14","03/01, 04:25",1d 18h
 9376294,Niigata, Japan,"03/05, 00:55","03/06, 00:24",23h 29m
@@ -2155,6 +2369,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9377547,Ras Laffan, Qatar,"05/25, 07:33","05/26, 06:42",23h 8m
 9377547,Dahej, India,"05/30, 00:31","05/31, 09:16",1d 8h
 9377547,Ras Laffan, Qatar,"06/03, 11:29","06/04, 11:42",1d
+9377547,Dahej, India,"06/07, 20:13","06/09, 05:14",1d 9h
+9377547,Ras Laffan, Qatar,"06/12, 06:58","06/13, 05:53",22h 55m
 9383900,Port Said Anch., Egypt,"02/20, 08:26","02/21, 04:28",20h 1m
 9383900,Boryeong, Korea,"03/13, 00:25","03/15, 02:35",2d 2h
 9383900,Panama Canal Anch. Pacific, Panama,"04/05, 15:53","04/06, 07:15",15h 21m
@@ -2184,6 +2400,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9388821,Port Said Anch., Egypt,"05/01, 10:18","05/02, 03:25",17h 6m
 9388821,Ras Laffan Anch., Qatar,"05/10, 07:23","05/19, 07:36",9d
 9388821,Ras Laffan, Qatar,"05/19, 09:09","05/21, 16:45",2d 7h
+9388821,Anjeong, Korea,"06/10, 00:09","06/11, 07:50",1d 7h
 9388833,Ras Laffan Anch., Qatar,"02/28, 01:20","03/01, 02:56",1d 1h
 9388833,Incheon, Korea,"03/18, 23:38","03/20, 08:20",1d 8h
 9388833,Singapore Anch. 1, Singapore,"03/26, 17:22","03/27, 11:32",18h 9m
@@ -2194,6 +2411,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9388833,Ras Laffan, Qatar,"05/12, 08:50","05/14, 01:07",1d 16h
 9388833,As Suways (Suez) Anch., Egypt,"05/22, 05:44","05/23, 05:31",23h 47m
 9388833,Milford Haven, United Kingdom (UK),"06/02, 00:06","06/03, 06:42",1d 6h
+9388833,Gibraltar West Anch., Gibraltar,"06/06, 04:02","06/07, 03:19",23h 17m
+9388833,Port Said Anch., Egypt,"06/12, 12:24","06/13, 04:02",15h 38m
 9390185,Fos sur mer, France,"03/10, 03:05","03/11, 08:11",1d 5h
 9390185,Rotterdam Maasvlakte, Netherlands,"03/19, 02:10","03/20, 01:07",22h 57m
 9390185,Port Rashid, Egypt,"03/30, 17:39","03/31, 13:01",19h 21m
@@ -2217,6 +2436,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9397286,Ras Laffan Anch., Qatar,"05/06, 17:30","05/08, 07:20",1d 13h
 9397286,Ras Laffan, Qatar,"05/08, 08:16","05/09, 08:53",1d
 9397286,Anegasaki, Japan,"05/30, 06:03","05/31, 09:57",1d 3h
+9397286,Singapore Anch. 1, Singapore,"06/07, 06:18","06/07, 23:24",17h 6m
 9397298,Ras Laffan Anch., Qatar,"03/06, 09:27","03/08, 22:16",2d 12h
 9397298,As Suways (Suez) Anch., Egypt,"03/16, 12:55","03/17, 06:02",17h 6m
 9397298,Milford Haven, United Kingdom (UK),"03/26, 01:17","03/27, 12:21",1d 11h
@@ -2228,6 +2448,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9397298,Yangkou, China,"05/05, 04:04","05/07, 02:17",1d 22h
 9397298,Singapore Anch. 1, Singapore,"05/12, 20:48","05/13, 18:39",21h 50m
 9397298,Ras Laffan, Qatar,"05/22, 07:18","05/23, 13:33",1d 6h
+9397298,Incheon, Korea,"06/08, 03:31","06/10, 08:17",2d 4h
 9397303,As Suways (Suez) Anch., Egypt,"03/18, 09:44","03/19, 04:50",19h 6m
 9397303,Milford Haven, United Kingdom (UK),"03/30, 00:15","03/31, 19:06",1d 18h
 9397303,Gibraltar West Anch., Gibraltar,"04/03, 14:00","04/04, 06:40",16h 40m
@@ -2237,6 +2458,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9397303,As Suways (Suez) Anch., Egypt,"04/28, 11:09","04/29, 04:16",17h 6m
 9397303,Milford Haven, United Kingdom (UK),"05/09, 15:19","05/11, 03:02",1d 11h
 9397303,Port Said Anch., Egypt,"05/19, 12:29","05/20, 03:43",15h 14m
+9397303,Ras Laffan Anch., Qatar,"05/28, 17:35","06/06, 14:36",8d 21h
+9397303,Ras Laffan, Qatar,"06/06, 15:49","06/08, 07:49",1d 15h
 9397315,Singapore Anch. 1, Singapore,"03/11, 17:05","03/12, 08:57",15h 51m
 9397315,Ras Laffan Anch., Qatar,"03/20, 07:51","03/20, 23:31",15h 39m
 9397315,Ras Laffan, Qatar,"03/21, 00:18","03/22, 06:34",1d 6h
@@ -2250,6 +2473,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9397315,Ras Laffan, Qatar,"05/18, 09:08","05/19, 13:13",1d 4h
 9397315,As Suways (Suez) Anch., Egypt,"05/27, 08:59","05/28, 04:11",19h 11m
 9397315,Malta Anch., Malta,"05/31, 05:50","06/01, 21:48",1d 15h
+9397315,Milford Haven, United Kingdom (UK),"06/08, 03:07","06/09, 21:53",1d 18h
+9397315,Milford Haven, United Kingdom (UK),"06/09, 21:59","06/10, 01:05",3h 5m
+9397315,Gibraltar West Anch., Gibraltar,"06/12, 18:41","06/13, 18:02",23h 21m
 9397327,Ras Laffan, Qatar,"02/19, 23:30","02/20, 13:09",13h 38m
 9397327,Ningbo, China,"03/09, 08:27","03/11, 02:32",1d 18h
 9397327,Singapore Anch. 1, Singapore,"03/16, 07:01","03/17, 01:44",18h 43m
@@ -2261,6 +2487,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9397327,Ras Laffan Anch., Qatar,"05/13, 12:38","05/14, 18:58",1d 6h
 9397327,Ras Laffan, Qatar,"05/14, 20:00","05/16, 20:00",2d
 9397327,Kisarazu, Japan,"06/02, 00:07","06/03, 06:50",1d 6h
+9397327,Singapore Anch. 1, Singapore,"06/10, 07:41","06/10, 23:53",16h 12m
 9397339,Ras Laffan Anch., Qatar,"02/25, 14:33","03/01, 12:19",3d 21h
 9397339,As Suways (Suez) Anch., Egypt,"03/09, 07:45","03/10, 05:02",21h 16m
 9397339,Milford Haven, United Kingdom (UK),"03/19, 00:39","03/20, 10:59",1d 10h
@@ -2285,6 +2512,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9397341,Ras Laffan Anch., Qatar,"04/22, 10:22","04/25, 14:37",3d 4h
 9397341,Ras Laffan, Qatar,"04/25, 16:01","04/26, 17:26",1d 1h
 9397341,Pyeongtaek, Korea,"05/16, 23:03","05/18, 03:18",1d 4h
+9397341,Ras Laffan Anch., Qatar,"06/03, 03:05","06/05, 19:08",2d 16h
+9397341,Ras Laffan, Qatar,"06/05, 20:13","06/06, 19:48",23h 34m
 9397353,Ras Laffan Anch., Qatar,"03/20, 04:21","03/22, 05:42",2d 1h
 9397353,Mina' al Ahmadi, Kuwait,"03/23, 05:18","03/24, 23:39",1d 18h
 9397353,Ras Laffan, Qatar,"03/26, 04:41","03/27, 06:11",1d 1h
@@ -2302,10 +2531,13 @@ IMO,Port,Country,Arrival,Departure,In Port
 9397353,Dahej, India,"05/24, 20:18","05/26, 18:13",1d 21h
 9397353,Ras Laffan Anch., Qatar,"05/30, 08:16","06/02, 05:44",2d 21h
 9397353,Ras Laffan, Qatar,"06/02, 06:45","06/03, 07:09",1d
+9397353,Ras Laffan Anch., Qatar,"06/03, 07:54","06/08, 02:33",4d 18h
+9397353,Dahej, India,"06/11, 22:58","06/13, 12:54",1d 13h
 9401295,Panama Canal Anch. Pacific, Panama,"02/24, 14:22","02/25, 07:17",16h 55m
 9401295,Freeport, United States (USA),"03/19, 13:15","03/20, 22:40",1d 9h
 9401295,Boryeong, Korea,"04/30, 03:09",,
 9401295,Singapore Anch. 1, Singapore,"05/10, 02:33","05/10, 17:09",14h 35m
+9401295,Bonny, Nigeria,"06/06, 10:57","06/07, 19:50",1d 8h
 9403645,Taichung, Taiwan,"02/16, 05:39","02/17, 03:01",21h 22m
 9403645,Ras Laffan, Qatar,"03/03, 04:46","03/04, 04:27",23h 40m
 9403645,Taichung, Taiwan,"03/17, 22:14","03/19, 01:52",1d 3h
@@ -2334,6 +2566,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9403669,Ras Laffan, Qatar,"05/15, 10:47","05/16, 10:59",1d
 9403669,Taichung, Taiwan,"05/28, 22:16","05/30, 02:22",1d 4h
 9403669,Manila Anch., Philippines,"05/31, 16:57","06/01, 08:47",15h 50m
+9403669,Ras Laffan, Qatar,"06/12, 09:06","06/13, 07:33",22h 27m
 9403671,Taichung, Taiwan,"02/19, 23:34","02/21, 01:47",1d 2h
 9403671,Ras Laffan, Qatar,"03/10, 03:46","03/11, 03:57",1d
 9403671,Taichung, Taiwan,"03/23, 21:57","03/24, 22:40",1d
@@ -2341,6 +2574,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9403671,Taichung, Taiwan,"04/23, 03:18","04/24, 01:36",22h 18m
 9403671,Ras Laffan, Qatar,"05/07, 03:49","05/08, 01:43",21h 54m
 9403671,Taichung, Taiwan,"05/20, 21:09","05/21, 21:47",1d
+9403671,Ras Laffan, Qatar,"06/04, 16:11","06/05, 15:44",23h 33m
 9405588,Barrow Island, Australia,"02/23, 05:00","02/24, 04:57",23h 57m
 9405588,Anegasaki, Japan,"03/07, 01:38","03/08, 04:20",1d 2h
 9405588,Barrow Island, Australia,"03/22, 03:15","03/23, 02:46",23h 31m
@@ -2358,6 +2592,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9412880,Gladstone Anch., Australia,"05/08, 19:59","05/09, 11:16",15h 16m
 9412880,Gladstone, Australia,"05/09, 13:01","05/10, 23:08",1d 10h
 9412880,Ningbo, China,"05/23, 07:46","05/25, 02:02",1d 18h
+9412880,Gladstone Anch., Australia,"06/05, 22:24","06/08, 07:54",2d 9h
+9412880,Gladstone, Australia,"06/08, 11:01","06/09, 13:46",1d 2h
 9413327,Quintero, Chile,"03/25, 10:02","03/26, 14:36",1d 4h
 9413327,Mejillones, Chile,"03/28, 10:08","03/29, 04:25",18h 17m
 9413327,Panama Canal Anch. Pacific, Panama,"04/03, 22:10","04/09, 07:31",5d 9h
@@ -2381,6 +2617,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9418365,Ras Laffan Anch., Qatar,"04/20, 12:00","04/25, 05:56",4d 17h
 9418365,Ras Laffan, Qatar,"04/25, 06:20","04/27, 05:31",1d 23h
 9418365,Incheon, Korea,"05/12, 23:38","05/14, 09:55",1d 10h
+9418365,Ras Laffan Anch., Qatar,"05/30, 16:01","06/05, 20:51",6d 4h
+9418365,Ras Laffan, Qatar,"06/05, 22:15","06/07, 11:23",1d 13h
+9418365,Ras Laffan Anch., Qatar,"06/07, 12:14","06/08, 10:11",21h 57m
 9425277,Dampier Anch., Australia,"03/04, 09:27","03/06, 14:04",2d 4h
 9425277,Gladstone Anch., Australia,"03/14, 06:43","03/14, 13:38",6h 54m
 9425277,Gladstone, Australia,"03/14, 15:55","03/16, 08:00",1d 16h
@@ -2400,6 +2639,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9431111,Port Said Anch., Egypt,"05/10, 09:27","05/11, 00:52",15h 25m
 9431111,Ras Laffan Anch., Qatar,"05/19, 00:26","05/27, 14:38",8d 14h
 9431111,Ras Laffan, Qatar,"05/27, 15:44","05/29, 04:06",1d 12h
+9431111,As Suways (Suez) Anch., Egypt,"06/06, 07:46","06/07, 04:32",20h 46m
+9431111,Chioggia Anch., Italy,"06/10, 21:10","06/12, 13:06",1d 15h
+9431111,Adriatic LNG LNG Term., Italy,"06/12, 14:27","06/13, 16:31",1d 2h
 9431123,Kisarazu, Japan,"03/14, 03:04","03/15, 06:22",1d 3h
 9431123,Singapore Anch. 1, Singapore,"03/22, 06:09","03/23, 06:10",1d
 9431123,Ras Laffan Anch., Qatar,"03/31, 16:10","04/02, 11:51",1d 19h
@@ -2409,6 +2651,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9431123,Port Said Anch., Egypt,"05/09, 08:07","05/09, 22:28",14h 21m
 9431123,Ras Laffan Anch., Qatar,"05/17, 19:21","05/20, 21:44",3d 2h
 9431123,Ras Laffan, Qatar,"05/20, 23:05","05/22, 00:44",1d 1h
+9431123,Ras Laffan Anch., Qatar,"05/22, 01:02","06/06, 11:56",15d 10h
 9431135,Ras Laffan Anch., Qatar,"02/27, 15:05","02/27, 21:26",6h 20m
 9431135,Ras Laffan Anch., Qatar,"03/01, 00:48","03/01, 12:31",11h 43m
 9431135,As Suways (Suez) Anch., Egypt,"03/09, 06:36","03/10, 04:39",22h 3m
@@ -2418,6 +2661,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9431135,Ras Laffan Anch., Qatar,"04/23, 17:21","04/26, 05:08",2d 11h
 9431135,Ras Laffan, Qatar,"04/26, 06:03","04/27, 07:14",1d 1h
 9431135,Ningbo Anch., China,"05/13, 04:43","05/13, 11:14",6h 30m
+9431135,Jebel Ali, United Arab Emirates (UAE),"06/05, 04:13","06/08, 13:10",3d 8h
 9431147,Ras Laffan Anch., Qatar,"03/02, 03:57","03/02, 14:38",10h 41m
 9431147,Ras Laffan, Qatar,"03/02, 15:42","03/03, 18:21",1d 2h
 9431147,As Suways (Suez) Anch., Egypt,"03/11, 07:54","03/12, 06:10",22h 16m
@@ -2430,6 +2674,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9431147,Ras Laffan Anch., Qatar,"05/19, 14:31","05/25, 18:10",6d 3h
 9431147,Ras Laffan, Qatar,"05/25, 19:39","05/27, 05:38",1d 9h
 9431147,As Suways (Suez) Anch., Egypt,"06/04, 11:40","06/05, 04:26",16h 45m
+9431147,Malta Anch., Malta,"06/08, 06:26","06/09, 18:52",1d 12h
+9431147,Barcelona, Spain,"06/11, 22:29","06/13, 01:07",1d 2h
 9431214,Ras Laffan, Qatar,"02/23, 20:24","02/25, 00:51",1d 4h
 9431214,Ras Laffan Anch., Qatar,"02/25, 01:14","02/25, 03:34",2h 20m
 9431214,Pyeongtaek, Korea,"03/13, 06:40","03/14, 22:47",1d 16h
@@ -2441,6 +2687,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9431214,Milford Haven, United Kingdom (UK),"05/13, 19:01","05/15, 08:51",1d 13h
 9431214,Gibraltar West Anch., Gibraltar,"05/18, 15:38","05/19, 09:18",17h 40m
 9431214,Port Said Anch., Egypt,"05/24, 12:41","05/25, 04:25",15h 44m
+9431214,Ras Laffan Anch., Qatar,"06/02, 12:47","06/12, 19:24",10d 6h
 9433717,Gladstone, Australia,"02/25, 02:16","02/26, 06:16",1d 3h
 9433717,Tianjin Xingang, China,"03/17, 01:16","03/19, 00:33",1d 23h
 9433717,Barrow Island, Australia,"04/02, 20:32","04/03, 23:46",1d 3h
@@ -2473,6 +2720,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9433884,Matsuyama, Japan,"05/27, 00:41","05/27, 05:21",4h 39m
 9433884,Kokura, Japan,"05/28, 00:34","06/02, 09:35",5d 9h
 9433884,Matsuyama, Japan,"06/04, 00:30","06/04, 05:35",5h 5m
+9433884,Shikama, Japan,"06/08, 04:05","06/08, 12:53",8h 47m
+9433884,Tokushima, Japan,"06/08, 22:33","06/09, 03:41",5h 7m
 9434266,Savannah Anch., United States (USA),"02/27, 10:13","02/27, 18:09",7h 55m
 9434266,Savannah, United States (USA),"02/27, 21:27","03/01, 23:57",2d 2h
 9434266,Dunkerque, France,"03/13, 20:05","03/14, 23:38",1d 3h
@@ -2483,6 +2732,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9434266,Pampa Melchorita, Peru,"04/25, 20:16","04/27, 00:22",1d 4h
 9434266,Pisco Anch., Peru,"04/27, 03:43",,
 9434266,Busan Anch., Korea,"05/29, 10:56","05/30, 11:00",1d
+9434266,Wheatstone LNG Term., Australia,"06/11, 14:38","06/12, 22:07",1d 7h
 9443401,Ras Laffan, Qatar,"02/16, 16:59","02/17, 21:27",1d 4h
 9443401,Yangkou, China,"03/11, 03:07","03/13, 05:00",2d 1h
 9443401,Singapore Anch. 1, Singapore,"03/18, 17:09","03/19, 16:50",23h 40m
@@ -2497,6 +2747,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9443401,Antwerpen Anch., Belgium,"05/26, 02:53","05/27, 06:08",1d 3h
 9443401,Zeebrugge, Belgium,"05/27, 09:21",,
 9443401,Gibraltar West Anch., Gibraltar,"06/01, 22:32","06/02, 17:44",19h 12m
+9443401,Port Said Anch., Egypt,"06/07, 11:47","06/08, 03:09",15h 21m
 9443413,Ras Laffan Anch., Qatar,"03/10, 14:15","03/13, 21:12",3d 6h
 9443413,Ras Laffan, Qatar,"03/13, 22:20","03/15, 07:39",1d 9h
 9443413,As Suways (Suez) Anch., Egypt,"03/22, 17:15","03/30, 07:03",7d 13h
@@ -2507,6 +2758,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9443413,Ras Laffan Anch., Qatar,"04/29, 16:37","05/01, 21:02",2d 4h
 9443413,Ras Laffan, Qatar,"05/01, 22:13","05/03, 11:22",1d 13h
 9443413,Incheon, Korea,"05/21, 23:55","05/23, 06:41",1d 6h
+9443413,Ras Laffan Anch., Qatar,"06/08, 14:38","06/11, 14:40",3d
+9443413,Ras Laffan, Qatar,"06/11, 16:01","06/13, 06:46",1d 14h
 9443683,Incheon, Korea,"02/21, 23:59","02/23, 07:50",1d 7h
 9443683,Ras Laffan Anch., Qatar,"03/09, 10:36","03/11, 09:01",1d 22h
 9443683,Ras Laffan, Qatar,"03/11, 10:22","03/12, 16:06",1d 5h
@@ -2520,6 +2773,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9443683,Port Said Anch., Egypt,"05/15, 11:55","05/16, 03:25",15h 29m
 9443683,Ras Laffan Anch., Qatar,"05/24, 14:44","05/26, 18:33",2d 3h
 9443683,Ras Laffan, Qatar,"05/26, 19:09","05/28, 00:52",1d 5h
+9443683,As Suways (Suez) Anch., Egypt,"06/05, 13:03","06/06, 04:27",15h 24m
 9469235,Ishikariwan Shinko, Japan,"03/31, 23:57","04/01, 14:02",14h 4m
 9469235,Kushiro, Japan,"04/02, 22:54","04/03, 06:27",7h 33m
 9469235,Hachinohe, Japan,"04/05, 00:03","04/05, 07:56",7h 53m
@@ -2533,6 +2787,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9469235,Akita, Japan,"05/18, 23:13","05/19, 07:15",8h 1m
 9469235,Ishikariwan Shinko, Japan,"05/24, 23:59","05/25, 12:52",12h 52m
 9469235,Kushiro, Japan,"05/26, 22:48","05/27, 08:17",9h 28m
+9469235,Hachinohe, Japan,"06/06, 05:43","06/09, 03:08",2d 21h
 9475208,Soyo, Angola,"03/05, 07:26","03/07, 06:58",1d 23h
 9475208,Gwangyang, Korea,"03/31, 22:49","04/02, 02:32",1d 3h
 9475208,Singapore Anch. 1, Singapore,"04/10, 02:55","04/10, 16:58",14h 2m
@@ -2555,11 +2810,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9477593,Dahej, India,"05/23, 19:23","05/25, 04:57",1d 9h
 9477593,Ras Laffan Anch., Qatar,"05/28, 16:03","05/31, 06:06",2d 14h
 9477593,Ras Laffan, Qatar,"05/31, 08:19","06/01, 11:03",1d 2h
+9477593,As Suways (Suez) Anch., Egypt,"06/08, 11:07","06/09, 03:31",16h 23m
 9482299,Dahej, India,"02/21, 04:36","02/22, 07:06",1d 2h
 9482299,Soyo, Angola,"03/13, 07:44","03/14, 12:16",1d 4h
 9482299,Port Qasim, Pakistan,"04/01, 07:23","04/03, 04:02",1d 20h
 9482299,Soyo, Angola,"04/21, 07:19","04/22, 13:14",1d 5h
 9482299,Rotterdam Maasvlakte, Netherlands,"05/06, 23:41","05/07, 21:21",21h 40m
+9482299,Soyo, Angola,"06/05, 07:20","06/06, 11:02",1d 3h
+9482299,Walvis Bay Anch., Namibia,"06/09, 10:02","06/10, 14:59",1d 4h
 9482304,Soyo, Angola,"02/28, 07:25","03/01, 15:48",1d 8h
 9482304,Luanda Anch., Angola,"03/24, 06:23","03/24, 16:43",10h 19m
 9482304,Soyo, Angola,"03/27, 07:30","03/28, 12:41",1d 5h
@@ -2576,10 +2834,13 @@ IMO,Port,Country,Arrival,Departure,In Port
 9483877,Withnell Bay, Australia,"05/06, 00:42","05/07, 06:56",1d 6h
 9483877,Hitachi, Japan,"05/18, 00:37","05/19, 05:56",1d 5h
 9483877,Withnell Bay, Australia,"05/28, 07:28","05/29, 17:03",1d 9h
+9483877,Yokohama, Japan,"06/07, 00:33","06/08, 03:16",1d 2h
 9490959,Singapore Anch. 1, Singapore,"02/19, 02:02","02/20, 04:55",1d 2h
 9490959,Singapore, Singapore,"02/20, 05:44","04/03, 01:04",41d 19h
 9490959,Singapore Anch. 1, Singapore,"04/03, 11:13","04/04, 23:19",1d 12h
 9490959,Soyo, Angola,"04/26, 07:17","04/29, 06:41",2d 23h
+9490959,Dubai Anch., United Arab Emirates (UAE),"05/29, 19:51","06/09, 02:46",10d 6h
+9490959,Dubai Anch., United Arab Emirates (UAE),"06/10, 14:34","06/11, 05:23",14h 48m
 9490961,Port Qasim, Pakistan,"03/09, 12:54","03/13, 01:32",3d 12h
 9490961,Luanda Anch., Angola,"04/02, 08:03","04/02, 10:06",2h 2m
 9490961,Soyo, Angola,"04/05, 07:25","04/06, 11:54",1d 4h
@@ -2604,6 +2865,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9496317,Anegasaki, Japan,"04/19, 01:53","04/20, 04:51",1d 2h
 9496317,Anegasaki, Japan,"05/07, 07:43","05/08, 09:59",1d 2h
 9496317,Kisarazu, Japan,"05/25, 01:23","05/26, 03:30",1d 2h
+9496317,Anegasaki, Japan,"06/10, 02:38","06/11, 05:42",1d 3h
 9501186,Bonny, Nigeria,"02/14, 03:21","02/15, 13:31",1d 10h
 9501186,Freeport Anch., United States (USA),"03/25, 19:31","03/27, 14:17",1d 18h
 9501186,Houston Anch., United States (USA),"04/03, 15:10","04/10, 14:10",6d 23h
@@ -2623,6 +2885,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9520376,Gaolan, China,"04/24, 02:34","04/25, 08:12",1d 5h
 9520376,Singapore Anch. 1, Singapore,"04/29, 00:38","04/30, 00:03",23h 25m
 9520376,Punta Europa, Equatorial Guinea,"05/26, 06:38","05/27, 12:58",1d 6h
+9520376,Bilbao, Spain,"06/06, 04:16","06/07, 04:08",23h 52m
+9520376,Montoir, France,"06/12, 03:13","06/13, 13:53",1d 10h
 9540716,Withnell Bay, Australia,"02/22, 00:29","02/23, 06:44",1d 6h
 9540716,Pyeongtaek, Korea,"03/03, 22:44","03/05, 00:34",1d 1h
 9540716,Singapore Anch. 1, Singapore,"03/28, 04:23","04/02, 04:14",4d 23h
@@ -2645,6 +2909,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9554729,Tomakomai, Japan,"05/23, 22:18","05/24, 08:04",9h 45m
 9554729,Ishikariwan Shinko, Japan,"05/27, 00:15","05/27, 10:45",10h 29m
 9554729,Tomakomai, Japan,"06/01, 21:57","06/02, 08:24",10h 26m
+9554729,Tomakomai, Japan,"06/09, 22:10","06/10, 08:21",10h 10m
 9583677,Hongqiao, China,"02/27, 04:07","02/28, 05:19",1d 1h
 9583677,Hongqiao, China,"03/12, 03:31","03/13, 04:47",1d 1h
 9583677,Hongqiao, China,"03/26, 02:34","03/27, 04:05",1d 1h
@@ -2654,6 +2919,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9583677,Singapore Anch. 1, Singapore,"05/01, 00:45","05/02, 01:16",1d
 9583677,Hongqiao, China,"05/13, 04:25","05/14, 05:46",1d 1h
 9583677,Hongqiao, China,"05/27, 04:00","05/28, 05:19",1d 1h
+9583677,Hongqiao, China,"06/09, 02:50","06/10, 04:27",1d 1h
 9600528,Panama Canal Anch. Pacific, Panama,"02/16, 12:43","02/21, 08:45",4d 20h
 9600528,Aratu Anch., Brazil,"03/13, 11:52","03/15, 11:55",2d
 9600528,Experience FPSO, Brazil,"03/15, 14:14","03/17, 20:14",2d 5h
@@ -2670,6 +2936,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9600530,Freeport, United States (USA),"05/02, 12:16","05/03, 18:38",1d 6h
 9600530,Aratu Anch., Brazil,"05/16, 08:01",,
 9600530,Experience FPSO, Brazil,"05/19, 10:58","05/22, 12:40",3d 1h
+9600530,Ingleside, United States (USA),"06/04, 22:19","06/06, 04:19",1d 6h
 9606948,Panama Canal Anch. Atlantic, Panama,"02/12, 09:44","02/12, 09:44",
 9606948,Pyeongtaek, Korea,"03/06, 04:14","03/07, 05:05",1d
 9606948,Barrow Island, Australia,"03/25, 01:11","03/26, 19:49",1d 18h
@@ -2679,12 +2946,15 @@ IMO,Port,Country,Arrival,Departure,In Port
 9606948,Wheatstone LNG Term., Australia,"05/06, 09:20","05/07, 07:56",22h 36m
 9606948,Benoa Anch., Indonesia,"05/09, 02:17","05/09, 07:44",5h 27m
 9606948,Barrow Island, Australia,"05/25, 23:24","05/26, 23:57",1d
+9606948,Kokura, Japan,"06/08, 01:12","06/09, 08:53",1d 7h
 9606950,Wheatstone LNG Term., Australia,"02/28, 00:09","03/01, 08:15",1d 8h
 9606950,Kawasaki, Japan,"03/14, 00:54","03/15, 02:13",1d 1h
 9606950,Wheatstone LNG Term., Australia,"03/29, 00:11","03/30, 02:58",1d 2h
 9606950,Dampier Anch., Australia,"03/30, 23:34","04/01, 03:42",1d 4h
 9606950,Gwangyang, Korea,"04/11, 00:18","04/12, 02:59",1d 2h
 9606950,Wheatstone LNG Term., Australia,"05/01, 06:06","05/02, 02:35",20h 28m
+9606950,Wheatstone LNG Term., Australia,"06/09, 12:08","06/10, 19:53",1d 7h
+9606950,Benoa Anch., Indonesia,"06/13, 00:03","06/13, 06:14",6h 11m
 9610767,Dapeng, China,"03/23, 03:02","03/24, 05:30",1d 2h
 9610767,Singapore Anch. 1, Singapore,"03/28, 06:53","03/29, 22:07",1d 15h
 9610767,Wheatstone LNG Term., Australia,"04/04, 16:41","04/05, 14:31",21h 50m
@@ -2696,6 +2966,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9610767,Dapeng, China,"05/07, 03:20","05/08, 04:19",1d
 9610767,Benoa Anch., Indonesia,"05/19, 23:40","05/20, 09:04",9h 24m
 9610767,Wheatstone LNG Term., Australia,"05/26, 21:11","05/28, 02:59",1d 5h
+9610767,Tieshan, China,"06/07, 04:25","06/08, 06:22",1d 1h
 9610779,Wheatstone LNG Term., Australia,"02/20, 03:36","02/21, 12:55",1d 9h
 9610779,Oita, Japan,"03/04, 00:46","03/05, 02:38",1d 1h
 9610779,Wheatstone LNG Term., Australia,"03/13, 18:08","03/14, 16:03",21h 55m
@@ -2706,6 +2977,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9610779,Dapeng, China,"05/17, 03:47","05/18, 04:40",1d
 9610779,Benoa Anch., Indonesia,"05/25, 00:00","05/25, 08:17",8h 17m
 9610779,Wheatstone LNG Term., Australia,"06/03, 09:07","06/04, 06:19",21h 11m
+9610779,Dampier Anch., Australia,"06/05, 01:00","06/06, 04:06",1d 3h
 9613135,Dongjiakou, China,"03/09, 00:38","03/10, 02:40",1d 2h
 9613135,Lese Anch., Papua New Guinea,"03/19, 23:06","03/20, 19:08",20h 2m
 9613135,Lese, Papua New Guinea,"03/20, 20:29","03/21, 22:59",1d 2h
@@ -2726,6 +2998,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9613147,Yung An, Taiwan,"05/25, 00:22","05/26, 01:02",1d
 9613147,"Pasir Gudang,Johor Anch.", Malaysia,"05/30, 02:09","05/31, 11:23",1d 9h
 9613147,Singapore Anch. 5, Singapore,"05/31, 13:16",,
+9613147,Singapore, Singapore,"06/02, 01:48","06/10, 23:44",8d 21h
+9613147,Singapore Anch. 1, Singapore,"06/11, 04:11","06/12, 14:23",1d 10h
 9613159,Sabine, United States (USA),"02/21, 19:55","02/22, 20:37",1d
 9613159,Algeciras Anch., Spain,"03/05, 20:25","03/06, 13:48",17h 23m
 9613159,Port Said Anch., Egypt,"03/10, 19:35","03/11, 02:38",7h 2m
@@ -2745,6 +3019,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9613161,Singapore Anch. 5, Singapore,"04/19, 13:34","04/20, 23:00",1d 9h
 9613161,Singapore, Singapore,"04/21, 01:45","05/20, 08:51",29d 7h
 9613161,Singapore Anch. 1, Singapore,"05/26, 07:08","05/28, 07:41",2d
+9613161,Lese Anch., Papua New Guinea,"06/06, 10:08","06/09, 03:22",2d 17h
+9613161,Lese, Papua New Guinea,"06/09, 04:51","06/11, 16:58",2d 12h
 9617698,Rotterdam Maasvlakte, Netherlands,"03/25, 12:17","03/26, 07:04",18h 46m
 9617698,Rotterdam Maasvlakte, Netherlands,"04/02, 14:29","04/03, 08:44",18h 15m
 9617698,Brofjorden, Sweden,"04/05, 10:38","04/06, 15:16",1d 4h
@@ -2774,6 +3050,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9624914,Singapore Anch. 1, Singapore,"03/03, 00:32","03/10, 08:51",7d 8h
 9624914,Singapore Anch. 1, Singapore,"04/08, 13:50","04/08, 23:52",10h 1m
 9624914,Manila Anch., Philippines,"05/14, 19:30","05/15, 05:36",10h 6m
+9624914,Qalhat, Oman,"06/09, 06:41","06/10, 00:05",17h 23m
 9624926,Sabine, United States (USA),"03/08, 05:21","03/09, 08:20",1d 2h
 9624926,Livorno Anch., Italy,"03/29, 05:47","03/31, 01:51",1d 20h
 9624926,FSRU Toscana Term., Italy,"03/31, 06:11","04/01, 14:44",1d 8h
@@ -2804,12 +3081,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9626027,Freeport Anch., United States (USA),"05/15, 11:19","05/15, 14:27",3h 8m
 9626027,Freeport, United States (USA),"05/15, 15:48","05/16, 16:37",1d
 9626027,Rotterdam Maasvlakte, Netherlands,"05/29, 00:52","05/30, 01:36",1d
+9626027,Freeport Anch., United States (USA),"06/12, 15:38","06/13, 11:18",19h 39m
 9626039,Swinoujscie, Poland,"03/07, 13:37","03/08, 14:32",1d
 9626039,Freeport Anch., United States (USA),"03/25, 11:43","03/28, 18:51",3d 7h
 9626039,Freeport, United States (USA),"03/28, 19:33","03/30, 18:56",1d 23h
 9626039,Panama Canal Anch. Atlantic, Panama,"04/05, 02:56","04/05, 10:05",7h 9m
 9626039,Panama Canal Anch. Pacific, Panama,"05/25, 15:05","05/26, 09:07",18h 2m
 9626039,Freeport, United States (USA),"05/30, 13:00","05/31, 17:55",1d 4h
+9626039,Panama Canal Anch. Atlantic, Panama,"06/04, 22:25","06/05, 10:34",12h 9m
 9626273,Maojia, China,"03/08, 02:09","03/10, 03:57",2d 1h
 9626273,Gladstone, Australia,"03/19, 07:22","03/20, 11:05",1d 3h
 9626273,Tianjin Xingang, China,"04/01, 00:20","04/03, 00:38",2d
@@ -2842,6 +3121,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9627497,Gladstone Anch., Australia,"05/02, 11:25","05/03, 20:19",1d 8h
 9627497,Gladstone, Australia,"05/03, 21:49","05/05, 05:42",1d 7h
 9627497,Yangpu Anch., China,"05/16, 10:05",,
+9627497,Panama Canal Anch. Pacific, Panama,"06/12, 10:38","06/13, 08:53",22h 15m
 9627502,Pisco Anch., Peru,"02/22, 13:10","02/22, 16:39",3h 28m
 9627502,Pampa Melchorita, Peru,"02/22, 20:12","02/23, 23:40",1d 3h
 9627502,Busan Anch., Korea,"03/21, 11:55","03/22, 11:44",23h 48m
@@ -2864,6 +3144,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9629586,Cape Town, South Africa,"04/04, 15:26","04/05, 07:25",15h 58m
 9629586,Port Arthur Anch., United States (USA),"04/22, 16:20","04/24, 06:14",1d 13h
 9629586,Sabine, United States (USA),"04/26, 02:54","04/28, 14:22",2d 11h
+9629586,Tianjin Xingang, China,"06/05, 01:34","06/06, 06:40",1d 5h
 9629598,As Suways (Suez) Anch., Egypt,"02/20, 05:05","02/21, 04:50",23h 45m
 9629598,Antwerpen Anch., Belgium,"03/06, 12:07","03/09, 15:23",3d 3h
 9629598,Zeebrugge, Belgium,"03/09, 17:57","03/10, 19:56",1d 1h
@@ -2874,10 +3155,10 @@ IMO,Port,Country,Arrival,Departure,In Port
 9629598,Sabine, United States (USA),"05/29, 00:20","05/30, 08:00",1d 7h
 9630004,Al Fujayrah Anch., United Arab Emirates (UAE),"04/18, 03:25","04/18, 21:57",18h 31m
 9630028,Gladstone, Australia,"02/21, 10:52","02/22, 16:35",1d 5h
-9630028,Hazira, India,"05/08, 01:27",,
 9630028,Al Fujayrah Anch., United Arab Emirates (UAE),"05/11, 20:52","05/12, 08:54",12h 1m
 9630028,Ras Laffan Anch., Qatar,"05/13, 05:51","05/14, 03:10",21h 18m
 9630028,Ras Laffan, Qatar,"05/14, 03:46","05/15, 07:50",1d 4h
+9630028,Bahia Blanca, Argentina,"06/08, 20:33","06/10, 19:08",1d 22h
 9633161,Yokohama, Japan,"02/16, 00:38","02/18, 00:42",2d
 9633161,Withnell Bay, Australia,"02/27, 03:23","02/28, 07:15",1d 3h
 9633161,Busan Anch., Korea,"03/25, 06:57","03/26, 10:54",1d 3h
@@ -2900,6 +3181,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9633434,Lake Charles, United States (USA),"04/19, 11:29","04/20, 20:55",1d 9h
 9633434,Valparaiso Anch., Chile,"05/15, 15:09","05/15, 19:06",3h 56m
 9633434,Quintero, Chile,"05/16, 18:11",,
+9633434,Lake Charles, United States (USA),"06/12, 15:19","06/13, 19:50",1d 4h
 9634086,Gladstone Anch., Australia,"03/21, 03:46","03/26, 20:47",5d 17h
 9634086,Gladstone Anch., Australia,"03/26, 21:35","03/29, 05:37",2d 8h
 9634086,Gladstone Anch., Australia,"03/29, 06:15","03/31, 02:05",1d 19h
@@ -2907,6 +3189,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9634086,Ningbo, China,"04/10, 02:39","04/12, 03:10",2d
 9634086,Caofeidian Anch., China,"04/28, 05:52",,
 9634086,Caofeidian, China,"04/30, 03:07","05/01, 03:27",1d
+9634086,Punta Europa, Equatorial Guinea,"06/10, 06:09","06/11, 06:40",1d
 9634098,Point Fortin, Trinidad & Tobago,"02/12, 19:01","02/13, 22:59",1d 3h
 9634098,Huelva, Spain,"02/24, 23:23","02/26, 01:07",1d 1h
 9634098,Savannah, United States (USA),"03/07, 04:42","03/09, 10:51",2d 6h
@@ -2946,6 +3229,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9636747,Yokohama, Japan,"04/26, 05:10","04/27, 10:22",1d 5h
 9636747,Ras Laffan, Qatar,"05/22, 09:20","05/23, 08:44",23h 24m
 9636747,Mina' al Ahmadi, Kuwait,"05/29, 22:41","05/31, 16:13",1d 17h
+9636747,As Suways (Suez) Anch., Egypt,"06/08, 12:08","06/09, 03:17",15h 9m
+9636747,Kali Limenes Term., Greece,"06/12, 05:38",,
 9636785,Sabine, United States (USA),"02/25, 23:00","02/26, 22:01",23h
 9636785,Klaipeda, Lithuania,"03/13, 03:49","03/14, 14:51",1d 11h
 9636785,Arzew, Algeria,"03/23, 13:10","03/24, 18:15",1d 5h
@@ -2954,6 +3239,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9636785,Ningbo, China,"04/25, 02:06","04/26, 07:08",1d 5h
 9636785,Ras Laffan Anch., Qatar,"05/16, 20:43","05/17, 14:35",17h 52m
 9636785,Ras Laffan, Qatar,"05/17, 15:44","05/18, 14:15",22h 31m
+9636785,Yangkou, China,"06/05, 01:59","06/06, 04:30",1d 2h
 9636797,Klaipeda, Lithuania,"02/18, 07:00","02/19, 16:55",1d 9h
 9636797,Corpus Christi Anch., United States (USA),"03/07, 13:20","03/07, 19:27",6h 6m
 9636797,Ingleside, United States (USA),"03/07, 21:01","03/09, 09:08",1d 12h
@@ -2963,12 +3249,16 @@ IMO,Port,Country,Arrival,Departure,In Port
 9637325,Sines, Portugal,"03/17, 13:28","03/18, 14:07",1d
 9637325,Port Said Anch., Egypt,"03/30, 16:02","03/31, 06:15",14h 13m
 9637325,As Suways (Suez) Anch., Egypt,"04/05, 07:21","04/07, 05:03",1d 21h
+9637325,La Brea (Brighton) Anch., Trinidad & Tobago,"06/09, 18:42","06/09, 21:26",2h 44m
+9637325,Point Fortin, Trinidad & Tobago,"06/09, 22:45","06/11, 05:23",1d 6h
 9637492,Anjeong, Korea,"02/13, 04:19","02/14, 01:16",20h 57m
 9637492,As Suways (Suez) Anch., Egypt,"03/03, 08:41","03/04, 05:35",20h 54m
 9637492,Thamesport, United Kingdom (UK),"03/28, 10:39","03/29, 10:32",23h 52m
 9637492,Port Said Anch., Egypt,"04/21, 18:14","04/22, 03:39",9h 24m
 9637492,Anjeong, Korea,"05/13, 04:02","05/14, 05:43",1d 1h
 9637492,As Suways (Suez) Anch., Egypt,"05/31, 07:20","06/01, 03:42",20h 22m
+9637492,Antwerpen Anch., Belgium,"06/08, 18:51","06/09, 00:06",5h 15m
+9637492,Zeebrugge, Belgium,"06/09, 02:45","06/10, 03:18",1d
 9637507,Rotterdam Maasvlakte, Netherlands,"03/22, 19:42","03/23, 21:00",1d 1h
 9637507,Antwerpen Anch., Belgium,"03/24, 07:55","03/27, 02:46",2d 18h
 9637507,Antwerpen Anch., Belgium,"03/27, 10:38","04/01, 14:49",5d 4h
@@ -3001,6 +3291,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9640437,Ingleside, United States (USA),"04/18, 18:55","04/20, 00:36",1d 5h
 9640437,Thamesport, United Kingdom (UK),"05/10, 09:03","05/11, 08:54",23h 50m
 9640437,Ingleside, United States (USA),"05/27, 07:27","05/28, 10:06",1d 2h
+9640437,Rotterdam Maasvlakte, Netherlands,"06/11, 20:09","06/12, 20:16",1d
 9640645,Freeport Anch., United States (USA),"02/22, 04:22","03/06, 16:09",12d 11h
 9640645,Freeport Anch., United States (USA),"03/07, 20:01","03/12, 12:40",4d 16h
 9640645,Freeport Anch., United States (USA),"03/26, 01:11","03/26, 12:13",11h 2m
@@ -3017,6 +3308,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9645748,Lese, Papua New Guinea,"04/16, 20:31","04/17, 22:05",1d 1h
 9645748,Kagoshima, Japan,"05/02, 23:14","05/04, 00:41",1d 1h
 9645748,Shikama, Japan,"05/06, 02:11","05/07, 00:41",22h 29m
+9645748,Sakai, Japan,"06/07, 00:55","06/08, 02:22",1d 1h
 9645970,Singapore Anch. 1, Singapore,"02/18, 01:03","02/20, 11:40",2d 10h
 9645970,As Suways (Suez) Anch., Egypt,"03/06, 08:19","03/07, 05:48",21h 29m
 9645970,Algeciras Anch., Spain,"03/13, 10:51","03/14, 00:43",13h 51m
@@ -3026,6 +3318,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9645970,La Brea (Brighton) Anch., Trinidad & Tobago,"05/04, 03:28","05/04, 09:26",5h 57m
 9645970,Point Fortin, Trinidad & Tobago,"05/04, 10:52","05/05, 23:37",1d 12h
 9645970,Klaipeda, Lithuania,"05/21, 01:29","05/22, 10:11",1d 8h
+9645970,Freeport, United States (USA),"06/06, 12:16","06/08, 12:19",2d
 9649328,Nemrut, Turkey,"02/28, 05:17","03/01, 14:56",1d 9h
 9649328,Dumyat, Egypt,"03/03, 04:58","03/04, 09:40",1d 4h
 9649328,Port Said Anch., Egypt,"03/04, 13:42","03/05, 03:40",13h 58m
@@ -3034,6 +3327,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9649328,Ras Laffan Anch., Qatar,"05/21, 08:29","05/22, 03:43",19h 14m
 9649328,Ras Laffan, Qatar,"05/22, 04:14","05/23, 07:44",1d 3h
 9649328,As Suways (Suez) Anch., Egypt,"05/31, 16:45","06/01, 04:02",11h 16m
+9649328,Barcelona, Spain,"06/06, 21:21","06/07, 23:42",1d 2h
+9649328,Algeciras Anch., Spain,"06/09, 14:21","06/09, 21:03",6h 41m
 9650042,Port Said Anch., Egypt,"02/28, 16:44","03/01, 04:32",11h 47m
 9650042,Tianjin Anch., China,"03/27, 00:53","03/28, 23:39",1d 22h
 9650042,Tianjin Xingang, China,"03/29, 01:38","03/30, 06:35",1d 4h
@@ -3042,6 +3337,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9650042,Dampier Anch., Australia,"05/15, 15:31","05/17, 21:10",2d 5h
 9650042,Withnell Bay, Australia,"05/18, 00:39","05/19, 03:06",1d 2h
 9650042,Kawasaki, Japan,"05/30, 01:32","05/31, 02:32",1d 1h
+9650042,Gladstone, Australia,"06/12, 03:31","06/13, 09:43",1d 6h
 9650054,As Suways (Suez) Anch., Egypt,"02/14, 15:41","02/15, 05:58",14h 16m
 9650054,Ingleside, United States (USA),"03/05, 17:31","03/07, 03:49",1d 10h
 9650054,Dunkerque, France,"03/21, 18:18","03/22, 19:35",1d 1h
@@ -3118,12 +3414,16 @@ IMO,Port,Country,Arrival,Departure,In Port
 9658240,Port Said Anch., Egypt,"05/16, 10:58","05/17, 02:20",15h 22m
 9658240,Port Qasim, Pakistan,"05/26, 05:22","05/28, 05:15",1d 23h
 9658240,As Suways (Suez) Anch., Egypt,"06/04, 16:20","06/05, 04:17",11h 56m
+9658240,Dumyat, Egypt,"06/06, 03:57","06/07, 06:48",1d 2h
+9658240,Port Said Anch., Egypt,"06/07, 10:42","06/08, 03:41",16h 58m
 9659725,Algeciras Anch., Spain,"03/19, 08:01","03/19, 19:43",11h 41m
 9659725,Setubal, Portugal,"04/02, 16:16","04/22, 18:30",20d 2h
 9659725,Mugardos, Spain,"04/26, 08:50","04/28, 15:59",2d 7h
 9659725,Galveston, United States (USA),"05/20, 13:28","05/21, 14:47",1d 1h
 9659725,Sabine, United States (USA),"05/22, 21:27","05/23, 20:46",23h 18m
 9659725,Aratu Anch., Brazil,"06/04, 02:55","06/04, 06:22",3h 27m
+9659725,Experience FPSO, Brazil,"06/04, 11:04","06/05, 16:48",1d 5h
+9659725,Escobar LNG LNG Term., Argentina,"06/11, 00:06","06/12, 09:38",1d 9h
 9661869,Seria, Brunei,"02/13, 06:54","02/15, 00:03",1d 17h
 9661869,Shikama, Japan,"02/21, 03:23","02/22, 03:18",23h 55m
 9661869,Shikama, Japan,"03/24, 02:13","03/25, 02:59",1d
@@ -3133,6 +3433,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9661869,Anegasaki, Japan,"05/15, 07:42","05/16, 10:09",1d 2h
 9661869,Seria, Brunei,"05/25, 02:41","05/26, 19:20",1d 16h
 9661869,Anegasaki, Japan,"06/02, 01:49","06/03, 04:11",1d 2h
+9661869,Seria, Brunei,"06/09, 23:47","06/11, 15:31",1d 15h
 9666558,Wheatstone LNG Term., Australia,"02/19, 02:06","02/19, 23:56",21h 50m
 9666558,Yung An, Taiwan,"03/04, 00:04","03/05, 00:04",23h 59m
 9666558,Wheatstone LNG Term., Australia,"03/21, 02:04","03/21, 23:46",21h 42m
@@ -3159,6 +3460,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9666986,Port Rashid, Egypt,"04/23, 12:51","04/24, 13:49",1d
 9666986,Klaipeda, Lithuania,"05/07, 03:20","05/08, 12:42",1d 9h
 9666986,Bonny, Nigeria,"05/27, 11:37","05/28, 18:33",1d 6h
+9666986,Mugardos, Spain,"06/06, 13:23","06/07, 13:26",1d
 9666998,Gladstone Anch., Australia,"03/13, 20:32","03/14, 13:09",16h 37m
 9666998,Gladstone, Australia,"03/14, 15:38","03/17, 10:55",2d 19h
 9666998,Gaolan, China,"04/01, 02:50","04/02, 08:40",1d 5h
@@ -3166,6 +3468,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9666998,Shikama, Japan,"05/04, 01:50","05/05, 01:52",1d
 9666998,Gladstone Anch., Australia,"05/18, 07:04","05/21, 21:05",3d 14h
 9666998,Gladstone, Australia,"05/21, 22:45","05/23, 03:23",1d 4h
+9666998,Singapore Anch. 1, Singapore,"06/07, 09:42","06/07, 23:38",13h 56m
+9666998,Singapore, Singapore,"06/07, 23:43","06/09, 02:07",1d 2h
 9672818,Gladstone, Australia,"03/02, 04:32","03/03, 13:59",1d 9h
 9672818,Tianjin Anch., China,"03/15, 08:11","03/16, 01:02",16h 51m
 9672818,Tianjin Xingang, China,"03/16, 03:02","03/17, 06:37",1d 3h
@@ -3182,6 +3486,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9672820,Gladstone, Australia,"04/05, 05:23","05/01, 18:05",26d 12h
 9672820,Dongjiakou, China,"05/12, 21:59","05/13, 23:45",1d 1h
 9672820,Gladstone, Australia,"05/28, 03:57","05/29, 09:23",1d 5h
+9672820,Dongjiakou, China,"06/10, 22:37","06/12, 07:22",1d 8h
 9672832,Gladstone, Australia,"03/04, 18:37","03/06, 05:13",1d 10h
 9672832,Tianjin Xingang, China,"03/18, 01:56","03/20, 01:51",1d 23h
 9672832,Gladstone, Australia,"04/01, 04:55","04/02, 10:56",1d 6h
@@ -3210,6 +3515,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9675200,Kushiro, Japan,"05/19, 23:00","05/20, 06:40",7h 39m
 9675200,Ishikariwan Shinko, Japan,"05/31, 00:09","05/31, 15:32",15h 22m
 9675200,Muroran, Japan,"06/03, 00:02","06/03, 02:32",2h 30m
+9675200,Kushiro, Japan,"06/07, 22:58","06/08, 05:53",6h 55m
+9675200,Ishikariwan Shinko, Japan,"06/10, 00:08","06/10, 08:52",8h 43m
 9680188,Shikama, Japan,"03/04, 05:33","03/05, 06:50",1d 1h
 9680188,Barrow Island, Australia,"03/14, 04:58","03/15, 03:38",22h 39m
 9680188,Gwangyang, Korea,"03/26, 23:35","03/28, 02:40",1d 3h
@@ -3219,6 +3526,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9680188,Barrow Island Anch., Australia,"05/14, 01:52","05/21, 00:31",6d 22h
 9680188,Barrow Island, Australia,"05/21, 05:09","05/22, 15:34",1d 10h
 9680188,Boryeong, Korea,"06/01, 04:21","06/02, 05:53",1d 1h
+9680188,Benoa Anch., Indonesia,"06/09, 03:56","06/09, 09:39",5h 42m
+9680188,Barrow Island, Australia,"06/12, 01:20","06/13, 00:36",23h 16m
 9680190,Wheatstone LNG Term., Australia,"03/18, 00:12","03/19, 08:02",1d 7h
 9680190,Hachinohe, Japan,"04/01, 00:59","04/02, 05:52",1d 4h
 9680190,Barrow Island, Australia,"04/13, 01:09","04/14, 01:58",1d
@@ -3226,6 +3535,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9680190,Singapore Anch. 1, Singapore,"04/30, 01:33","05/02, 23:36",2d 22h
 9680190,Wheatstone LNG Term., Australia,"05/11, 02:03","05/11, 22:49",20h 46m
 9680190,Yangkou, China,"05/23, 01:33","05/24, 08:09",1d 6h
+9680190,Benoa Anch., Indonesia,"06/05, 23:55","06/06, 03:52",3h 57m
 9681687,Singapore, Singapore,"03/09, 23:38","03/09, 23:38",
 9681687,Singapore Anch. 5, Singapore,"03/10, 01:53","03/10, 05:00",3h 7m
 9681687,Singapore Anch. 1, Singapore,"03/10, 17:04","03/11, 19:15",1d 2h
@@ -3249,6 +3559,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9682552,Singapore Anch. 1, Singapore,"05/08, 02:40","05/11, 23:22",3d 20h
 9682552,Singapore Anch. 1, Singapore,"05/16, 02:59","05/17, 08:48",1d 5h
 9682552,As Suways (Suez) Anch., Egypt,"06/03, 11:09","06/04, 03:40",16h 30m
+9682552,Dumyat, Egypt,"06/11, 04:43","06/12, 18:23",1d 13h
 9682576,Yung An, Taiwan,"02/23, 00:12","02/24, 00:04",23h 52m
 9682576,Lese, Papua New Guinea,"03/06, 20:24","03/07, 22:41",1d 2h
 9682576,Yung An, Taiwan,"03/16, 23:42","03/18, 00:00",1d
@@ -3259,6 +3570,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9682576,Lese, Papua New Guinea,"04/30, 20:29","05/04, 04:13",3d 7h
 9682576,Lese Anch., Papua New Guinea,"05/28, 18:26","05/29, 18:50",1d
 9682576,Lese, Papua New Guinea,"05/29, 20:48","05/31, 01:29",1d 4h
+9682576,Sakai, Japan,"06/09, 01:29","06/10, 06:32",1d 5h
 9682588,Port Arthur Anch., United States (USA),"03/03, 11:46","03/07, 11:33",3d 23h
 9682588,Sabine, United States (USA),"03/07, 14:06","03/08, 15:36",1d 1h
 9682588,Singapore Anch. 1, Singapore,"04/16, 02:49","04/17, 03:29",1d
@@ -3267,6 +3579,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9682588,Gladstone Anch., Australia,"05/21, 10:52","05/22, 21:16",1d 10h
 9682588,Gladstone, Australia,"05/22, 23:33","05/25, 04:46",2d 5h
 9682588,Gladstone Anch., Australia,"05/25, 05:55","05/27, 05:17",1d 23h
+9682588,Gladstone Anch., Australia,"05/27, 05:30","06/10, 00:39",13d 19h
+9682588,Gladstone, Australia,"06/10, 02:21","06/12, 17:05",2d 14h
 9682590,Busan Anch., Korea,"02/23, 08:45","02/24, 10:22",1d 1h
 9682590,Dampier Anch., Australia,"03/04, 08:13","03/05, 05:55",21h 42m
 9682590,Withnell Bay, Australia,"03/05, 09:17","03/06, 13:40",1d 4h
@@ -3278,6 +3592,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9682590,Barrow Island, Australia,"05/15, 13:32","05/16, 12:31",22h 58m
 9682590,Singapore Anch. 1, Singapore,"05/20, 23:10","05/21, 23:19",1d
 9682590,Gladstone Anch., Australia,"06/01, 07:21","06/04, 21:47",3d 14h
+9682590,Gladstone, Australia,"06/04, 23:16","06/06, 06:10",1d 6h
 9682605,Dunkerque, France,"03/06, 08:32","03/07, 11:12",1d 2h
 9682605,Chaguaramas Anch., Trinidad & Tobago,"03/20, 11:32","03/22, 05:10",1d 17h
 9682605,La Brea (Brighton) Anch., Trinidad & Tobago,"03/22, 09:45","03/22, 14:39",4h 54m
@@ -3288,11 +3603,13 @@ IMO,Port,Country,Arrival,Departure,In Port
 9687019,Singapore Anch. 1, Singapore,"03/10, 23:55","03/11, 17:39",17h 44m
 9687019,Punta Europa, Equatorial Guinea,"04/01, 08:18","04/02, 13:02",1d 4h
 9687019,Singapore Anch. 5, Singapore,"05/19, 01:52","05/21, 23:09",2d 21h
+9687019,Singapore, Singapore,"05/22, 01:53","06/11, 06:48",20d 4h
 9687021,Naoetsu, Japan,"03/06, 23:45","03/08, 00:54",1d 1h
 9687021,Panama Canal Anch. Pacific, Panama,"04/01, 12:32","04/02, 08:38",20h 5m
 9687021,Port Arthur Anch., United States (USA),"04/06, 13:17","04/07, 00:40",11h 23m
 9687021,Sabine, United States (USA),"04/07, 02:58","04/08, 07:21",1d 4h
 9687021,Barrow Island, Australia,"05/29, 15:44","05/30, 16:22",1d
+9687021,Yung An, Taiwan,"06/07, 04:39","06/08, 03:20",22h 41m
 9690145,Gaolan, China,"03/15, 01:53","03/16, 09:55",1d 8h
 9690145,Bonny, Nigeria,"04/19, 04:19","04/20, 10:20",1d 6h
 9690145,Singapore Anch. 3, Singapore,"05/11, 02:52","05/11, 10:45",7h 53m
@@ -3304,6 +3621,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9690157,Bonny, Nigeria,"04/26, 13:26","04/30, 09:26",3d 20h
 9690157,Rotterdam Maasvlakte, Netherlands,"05/12, 06:36","05/13, 10:52",1d 4h
 9690157,Bonny, Nigeria,"05/28, 15:08","05/29, 22:36",1d 7h
+9690157,Fos sur mer, France,"06/09, 07:01","06/10, 08:50",1d 1h
 9690169,Sines, Portugal,"02/18, 09:59","02/19, 16:41",1d 6h
 9690169,Ferrol, Spain,"02/26, 15:19","03/07, 09:04",8d 17h
 9690169,Ferrol, Spain,"03/07, 09:14","03/18, 06:04",10d 20h
@@ -3311,6 +3629,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9690169,Bonny, Nigeria,"04/14, 12:57","04/18, 09:54",3d 20h
 9690169,Escombreras, Spain,"04/27, 04:53",,
 9690169,Bonny, Nigeria,"05/24, 11:05","05/25, 19:39",1d 8h
+9690169,Montoir, France,"06/05, 23:46","06/07, 02:00",1d 2h
 9690171,Bonny, Nigeria,"03/19, 14:37","03/20, 20:52",1d 6h
 9690171,Sines, Portugal,"03/29, 09:43","03/30, 15:21",1d 5h
 9690171,Las Palmas (Gr.Canaria) Anch., Spain,"04/01, 07:30","04/02, 13:09",1d 5h
@@ -3318,6 +3637,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9690171,Bonny, Nigeria,"04/12, 00:07","04/13, 23:25",1d 23h
 9690171,Aliaga, Turkey,"04/26, 06:41","04/27, 10:47",1d 4h
 9690171,Bonny, Nigeria,"05/22, 22:28","05/24, 04:04",1d 5h
+9690171,Fos sur mer, France,"06/04, 06:55","06/05, 13:54",1d 6h
 9691137,Barrow Island, Australia,"02/12, 06:52","02/12, 06:52",
 9691137,Kawasaki, Japan,"02/23, 00:52","02/24, 01:07",1d
 9691137,"Yura,Wakayama", Japan,"03/14, 23:18","04/16, 00:37",32d 1h
@@ -3330,6 +3650,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9692002,Bonny, Nigeria,"05/01, 15:21","05/02, 21:19",1d 5h
 9692002,Cartagena Anch., Spain,"05/12, 04:58","05/12, 17:35",12h 36m
 9692002,Escombreras, Spain,"05/12, 19:54","05/13, 19:48",23h 54m
+9692002,Bonny, Nigeria,"06/10, 11:22","06/11, 21:00",1d 9h
 9692014,Bonny, Nigeria,"02/22, 19:46","02/24, 07:14",1d 11h
 9692014,Aliaga, Turkey,"03/11, 05:02","03/12, 22:10",1d 17h
 9692014,Santa Cruz de Tenerife Anch., Spain,"03/19, 09:21","03/19, 21:23",12h 1m
@@ -3345,11 +3666,13 @@ IMO,Port,Country,Arrival,Departure,In Port
 9693161,Port Arthur Anch., United States (USA),"04/29, 10:11","04/29, 16:40",6h 28m
 9693161,Sabine, United States (USA),"04/29, 19:32","05/01, 08:17",1d 12h
 9693161,Lake Charles, United States (USA),"05/29, 10:03","05/30, 13:24",1d 3h
+9693161,Zeebrugge, Belgium,"06/11, 15:47","06/12, 11:00",19h 12m
 9693173,Marmara Ereglisi, Turkey,"02/18, 05:39","02/18, 05:39",
 9693173,Lake Charles, United States (USA),"03/13, 22:43","03/14, 23:53",1d 1h
 9693173,Singapore Anch. 1, Singapore,"04/16, 04:38","04/16, 09:46",5h 7m
 9693173,Yung An, Taiwan,"04/20, 07:29","04/21, 05:42",22h 12m
 9693173,Panama Canal Anch. Pacific, Panama,"05/17, 03:12","05/17, 08:01",4h 48m
+9693173,Freeport Anch., United States (USA),"05/22, 12:17","05/23, 11:14",22h 56m
 9693173,Freeport, United States (USA),"05/23, 12:10","05/24, 17:40",1d 5h
 9693173,Panama Canal Anch. Atlantic, Panama,"06/01, 02:39","06/01, 09:43",7h 3m
 9693719,San Juan, Puerto Rico,"03/06, 13:12","03/07, 18:33",1d 5h
@@ -3362,6 +3685,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9693719,San Juan, Puerto Rico,"05/11, 10:24",,
 9693719,San Juan, Puerto Rico,"05/20, 10:35","05/21, 21:30",1d 10h
 9693719,San Juan, Puerto Rico,"05/27, 22:07","05/28, 21:26",23h 19m
+9693719,San Juan, Puerto Rico,"06/07, 18:36","06/08, 21:41",1d 3h
 9694749,Tieshan, China,"02/15, 07:27","02/16, 09:00",1d 1h
 9694749,Gladstone, Australia,"02/27, 02:37","02/28, 14:54",1d 12h
 9694749,Tieshan, China,"03/11, 00:38","03/12, 07:24",1d 6h
@@ -3371,6 +3695,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9694749,Tianjin Xingang, China,"04/29, 01:37","05/01, 01:41",2d
 9694749,Gladstone, Australia,"05/12, 02:52","05/13, 08:20",1d 5h
 9694749,Dongjiakou, China,"05/24, 01:48","05/25, 08:09",1d 6h
+9694749,Gladstone, Australia,"06/06, 12:31","06/07, 19:25",1d 6h
 9694751,Tianjin Xingang, China,"03/04, 01:54","03/06, 01:50",1d 23h
 9694751,Gladstone Anch., Australia,"03/16, 21:28","03/18, 14:33",1d 17h
 9694751,Gladstone, Australia,"03/18, 17:37","03/19, 23:58",1d 6h
@@ -3406,8 +3731,10 @@ IMO,Port,Country,Arrival,Departure,In Port
 9696266,Fangcheng, China,"05/26, 02:42","05/27, 04:12",1d 1h
 9696266,Yangpu Anch., China,"05/27, 15:03","06/02, 23:20",6d 8h
 9696266,Yangpu, China,"06/02, 23:48","06/05, 07:28",2d 7h
+9696266,Fangcheng, China,"06/06, 00:47","06/07, 01:18",1d
 9696735,Singapore Anch. 1, Singapore,"02/22, 14:59","02/24, 12:37",1d 21h
 9696735,Singapore Anch. 1, Singapore,"03/31, 14:39","04/02, 01:18",1d 10h
+9696735,Singapore Anch. 1, Singapore,"06/10, 01:31","06/11, 09:30",1d 7h
 9698111,Shimizu, Japan,"03/16, 00:12","03/16, 01:47",1h 35m
 9698111,Shimizu, Japan,"03/16, 23:40","03/18, 00:42",1d 1h
 9698111,Darwin, Australia,"03/28, 01:36","03/29, 10:02",1d 8h
@@ -3441,6 +3768,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9701229,Valparaiso Anch., Chile,"05/02, 01:59","05/02, 15:55",13h 56m
 9701229,Quintero, Chile,"05/02, 18:11","05/03, 20:46",1d 2h
 9701229,Port Arthur Anch., United States (USA),"06/04, 06:14","06/04, 20:02",13h 48m
+9701229,Sabine, United States (USA),"06/04, 22:26","06/06, 00:56",1d 2h
 9705641,Barrow Island, Australia,"03/04, 07:10","03/05, 07:26",1d
 9705641,Yung An, Taiwan,"03/15, 00:20","03/16, 00:10",23h 50m
 9705641,Gladstone Anch., Australia,"03/26, 09:53","03/28, 11:25",2d 1h
@@ -3470,6 +3798,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9707510,Dunkerque, France,"04/29, 09:39","04/30, 11:42",1d 2h
 9707510,Sabine, United States (USA),"05/13, 12:50","05/14, 21:26",1d 8h
 9707510,Panama Canal Anch. Atlantic, Panama,"05/18, 20:00","05/19, 08:27",12h 27m
+9707510,Pyeongtaek, Korea,"06/12, 06:36","06/13, 07:11",1d
 9709025,Niigata, Japan,"02/24, 01:12","02/25, 04:41",1d 3h
 9709025,Singapore, Singapore,"03/06, 09:11","03/09, 06:30",2d 21h
 9709025,Ras Laffan, Qatar,"03/22, 21:12","03/24, 05:58",1d 8h
@@ -3498,6 +3827,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9709489,Gladstone, Australia,"05/12, 15:04","05/14, 03:26",1d 12h
 9709489,Gladstone Anch., Australia,"05/14, 05:19","05/16, 20:43",2d 15h
 9709489,Anegasaki, Japan,"05/27, 03:52","05/28, 09:53",1d 6h
+9709489,Singapore Anch. 1, Singapore,"06/05, 02:18","06/05, 13:09",10h 50m
 9709491,Port Arthur Anch., United States (USA),"02/24, 13:11","02/26, 07:15",1d 18h
 9709491,Sabine, United States (USA),"02/26, 09:05","03/02, 16:31",4d 7h
 9709491,Milford Haven, United Kingdom (UK),"03/15, 19:26","03/16, 22:57",1d 3h
@@ -3520,12 +3850,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9714290,"Bintulu,Sarawak", Malaysia,"04/23, 09:09","04/24, 19:12",1d 10h
 9714290,Hongqiao, China,"05/01, 06:35","05/02, 08:26",1d 1h
 9714290,Gwangyang, Korea,"05/15, 23:56","05/17, 02:17",1d 2h
+9714290,Kisarazu, Japan,"06/07, 00:07","06/08, 02:17",1d 2h
 9714305,Gladstone, Australia,"03/02, 16:36","03/03, 20:14",1d 3h
 9714305,Pengerang, Malaysia,"03/18, 07:36","03/19, 06:54",23h 18m
 9714305,Mab Tapud, Thailand,"03/26, 01:16","03/27, 03:44",1d 2h
 9714305,Xiuyu, China,"04/26, 09:28","04/28, 05:04",1d 19h
 9714305,"Bintulu,Sarawak", Malaysia,"05/03, 08:03","05/04, 08:06",1d
 9714305,Kitakyushu, Japan,"05/11, 01:52",,
+9714305,"Pasir Gudang,Johor Anch.", Malaysia,"06/07, 06:21","06/08, 04:14",21h 52m
 9721401,Pyeongtaek, Korea,"03/07, 05:51","03/08, 05:41",23h 49m
 9721401,Singapore Anch. 1, Singapore,"03/15, 08:38","03/17, 09:15",2d
 9721401,Mina al Fahl Anch., Oman,"03/26, 13:40","03/27, 11:26",21h 46m
@@ -3544,6 +3876,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9721724,Singapore Anch. 1, Singapore,"04/14, 15:02","04/15, 22:02",1d 7h
 9721724,Wheatstone LNG Term., Australia,"05/03, 18:04","05/04, 16:03",21h 59m
 9721724,Xiuyu, China,"05/17, 01:17","05/19, 04:00",2d 2h
+9721724,Dubai Anch., United Arab Emirates (UAE),"06/07, 03:44","06/07, 05:55",2h 10m
 9721736,Sabine, United States (USA),"03/03, 03:35","03/04, 18:07",1d 14h
 9721736,Thamesport, United Kingdom (UK),"03/17, 00:18","03/17, 23:33",23h 14m
 9721736,La Brea (Brighton) Anch., Trinidad & Tobago,"03/29, 07:45","03/31, 10:40",2d 2h
@@ -3554,6 +3887,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9721736,Rotterdam Maasvlakte, Netherlands,"05/03, 12:53","05/04, 20:42",1d 7h
 9721736,Corpus Christi Anch., United States (USA),"05/17, 04:20","05/17, 11:32",7h 11m
 9721736,Ingleside, United States (USA),"05/17, 13:42","05/20, 07:10",2d 17h
+9721736,Punta Arenas Anch., Chile,"06/08, 01:43","06/09, 02:17",1d
 9723801,Barrow Island, Australia,"02/21, 01:03","02/22, 01:20",1d
 9723801,Tianjin Xingang, China,"03/07, 01:56","03/08, 06:47",1d 4h
 9723801,Barrow Island Anch., Australia,"03/20, 14:17","03/23, 19:14",3d 4h
@@ -3563,6 +3897,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9723801,Barrow Island, Australia,"04/17, 01:08","04/18, 02:00",1d
 9723801,Caofeidian, China,"04/28, 01:53","04/29, 05:29",1d 3h
 9723801,Gladstone, Australia,"05/19, 08:08","05/20, 13:40",1d 5h
+9723801,Singapore Anch. 1, Singapore,"06/07, 10:48","06/08, 14:24",1d 3h
 9732369,Singapore Anch. 1, Singapore,"02/19, 10:25","02/20, 06:11",19h 45m
 9732369,Tianjin Xingang, China,"03/01, 05:35","03/03, 01:43",1d 20h
 9732369,Gladstone, Australia,"03/20, 19:38","03/22, 00:56",1d 5h
@@ -3579,6 +3914,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9736092,Panama Canal Anch. Atlantic, Panama,"02/26, 14:52","03/02, 08:51",3d 17h
 9736092,"Pasir Gudang,Johor Anch.", Malaysia,"04/09, 22:51","04/12, 23:19",3d
 9736092,Singapore Anch. 1, Singapore,"04/13, 02:28","04/15, 01:40",1d 23h
+9736092,Singapore, Singapore,"04/15, 02:23","06/06, 03:01",52d
+9736092,Singapore Anch. 1, Singapore,"06/06, 03:15","06/08, 00:50",1d 21h
 9737187,Montoir Anch., France,"03/19, 20:29","03/21, 05:01",1d 8h
 9737187,Montoir, France,"03/21, 06:37","03/22, 10:00",1d 3h
 9737187,Sabetta, Russia,"03/31, 10:36","04/01, 12:37",1d 2h
@@ -3610,6 +3947,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9742819,Port Arthur Anch., United States (USA),"04/30, 05:01","04/30, 10:27",5h 25m
 9742819,Sabine, United States (USA),"04/30, 13:38","05/02, 09:36",1d 19h
 9742819,Singapore Anch. 1, Singapore,"06/03, 20:49","06/04, 09:29",12h 40m
+9742819,Yangkou, China,"06/12, 05:19","06/13, 07:34",1d 2h
 9743875,Wheatstone LNG Term., Australia,"02/24, 02:06","02/24, 23:34",21h 28m
 9743875,Tianjin Xingang, China,"03/09, 02:02","03/11, 01:48",1d 23h
 9743875,Darwin, Australia,"03/24, 21:23","03/26, 00:14",1d 2h
@@ -3625,6 +3963,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9744013,Ningbo, China,"04/21, 05:40","04/24, 01:50",2d 20h
 9744013,Port Arthur Anch., United States (USA),"05/30, 15:04","05/31, 10:53",19h 49m
 9744013,Sabine, United States (USA),"05/31, 13:50","06/01, 18:52",1d 5h
+9744013,Panama Canal Anch. Atlantic, Panama,"06/05, 19:41","06/06, 08:38",12h 57m
 9744025,Port Arthur Anch., United States (USA),"02/26, 15:54","03/04, 01:18",5d 9h
 9744025,Sabine, United States (USA),"03/04, 04:01","03/05, 09:30",1d 5h
 9744025,Panama Canal Anch. Atlantic, Panama,"03/09, 14:32","03/10, 10:38",20h 5m
@@ -3641,12 +3980,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9748899,Gaolan, China,"03/19, 03:03","03/20, 08:46",1d 5h
 9748899,Barrow Island, Australia,"03/28, 01:36","03/29, 01:48",1d
 9748899,Bonny, Nigeria,"05/15, 16:02","05/16, 22:31",1d 6h
+9748899,Singapore Anch. 1, Singapore,"06/08, 01:51","06/09, 06:23",1d 4h
 9748904,As Suways (Suez) Anch., Egypt,"03/04, 14:34","03/05, 06:15",15h 41m
 9748904,Freeport, United States (USA),"03/22, 15:39","03/23, 19:32",1d 3h
 9748904,Fos sur mer, France,"04/06, 03:11","04/07, 07:19",1d 4h
 9748904,Lake Charles, United States (USA),"04/21, 15:54","04/22, 22:52",1d 6h
 9748904,Panama Canal Anch. Atlantic, Panama,"04/27, 01:29","04/27, 10:11",8h 42m
 9748904,Yung An, Taiwan,"05/19, 23:32","05/20, 23:30",23h 58m
+9748904,As Suways (Suez) Anch., Egypt,"06/06, 14:13","06/07, 04:10",13h 57m
 9749609,Lese, Papua New Guinea,"03/02, 02:31","03/03, 07:44",1d 5h
 9749609,Sakai, Japan,"03/11, 23:52","03/13, 02:01",1d 2h
 9749609,Lese, Papua New Guinea,"03/24, 20:24","03/26, 00:14",1d 3h
@@ -3655,6 +3996,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9749609,Wheatstone LNG Term., Australia,"04/21, 02:06","04/22, 00:21",22h 14m
 9749609,Shimizu, Japan,"05/05, 00:15","05/06, 00:37",1d
 9749609,Kawasaki, Japan,"05/09, 04:49","05/10, 00:00",19h 10m
+9749609,Wheatstone LNG Term., Australia,"06/05, 09:07","06/06, 08:06",22h 58m
 9750220,Port Arthur Anch., United States (USA),"03/30, 14:20","03/31, 22:59",1d 8h
 9750220,Sabine, United States (USA),"04/01, 02:24","04/02, 13:54",1d 11h
 9750220,Port Arthur Anch., United States (USA),"04/02, 16:09","04/07, 12:38",4d 20h
@@ -3665,6 +4007,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9750232,Sabine, United States (USA),"03/16, 02:43","03/17, 08:23",1d 5h
 9750232,La Brea (Brighton) Anch., Trinidad & Tobago,"05/16, 17:10","05/18, 09:15",1d 16h
 9750232,Point Fortin, Trinidad & Tobago,"05/18, 10:30","05/19, 16:37",1d 6h
+9750232,Quintero, Chile,"06/07, 12:12","06/08, 15:46",1d 3h
 9750244,Punta Europa, Equatorial Guinea,"03/16, 10:29","03/18, 07:20",1d 20h
 9750244,Walvis Bay Anch., Namibia,"03/23, 06:34","03/23, 10:13",3h 38m
 9750244,Tianjin Xingang, China,"04/15, 01:44","04/16, 07:11",1d 5h
@@ -3683,6 +4026,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9750256,Mab Tapud, Thailand,"05/14, 10:17","05/15, 15:01",1d 4h
 9750256,Singapore Anch. 1, Singapore,"05/18, 08:23","05/21, 09:45",3d 1h
 9750256,Darwin Anch., Australia,"06/04, 22:04","06/05, 09:26",11h 22m
+9750256,Prelude Term., Australia,"06/10, 01:51","06/11, 18:50",1d 16h
 9750658,Portland Anch., United Kingdom (UK),"03/03, 07:11","03/03, 20:26",13h 15m
 9750658,Sabetta, Russia,"03/11, 14:51","03/13, 13:28",1d 22h
 9750658,Thamesport, United Kingdom (UK),"03/22, 02:54","03/23, 04:10",1d 1h
@@ -3704,6 +4048,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9750660,Rotterdam Maasvlakte, Netherlands,"05/14, 20:49","05/15, 19:47",22h 58m
 9750660,Sabetta, Russia,"05/22, 17:29","05/24, 00:22",1d 6h
 9750660,Zeebrugge, Belgium,"05/31, 12:25","06/01, 15:06",1d 2h
+9750660,Sabetta, Russia,"06/11, 20:14","06/13, 02:23",1d 6h
 9750672,Mugardos, Spain,"02/13, 16:40","02/15, 10:37",1d 17h
 9750672,Sabetta, Russia,"02/24, 19:55","02/25, 17:48",21h 53m
 9750672,Montoir, France,"03/06, 06:20","03/08, 00:31",1d 18h
@@ -3724,6 +4069,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9750696,Dunkerque, France,"05/04, 19:58","05/05, 20:39",1d
 9750696,Sabetta, Russia,"05/12, 22:47","05/15, 13:22",2d 14h
 9750696,Zeebrugge, Belgium,"05/22, 17:05","05/24, 05:50",1d 12h
+9750696,Sabetta, Russia,"06/03, 19:01","06/06, 07:53",2d 12h
 9750701,Zeebrugge, Belgium,"03/09, 12:38","03/11, 19:11",2d 6h
 9750701,Sabetta, Russia,"03/18, 21:44","03/20, 02:22",1d 4h
 9750701,Zeebrugge, Belgium,"03/28, 14:07","03/29, 14:36",1d
@@ -3734,6 +4080,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9750701,Montoir, France,"04/28, 03:54","04/29, 05:13",1d 1h
 9750701,Sabetta, Russia,"05/08, 11:18","05/10, 02:53",1d 15h
 9750701,Thamesport, United Kingdom (UK),"05/18, 01:59","05/19, 03:02",1d 1h
+9750701,Bilbao Anch., Spain,"06/06, 21:17","06/08, 04:32",1d 7h
+9750701,Bilbao, Spain,"06/08, 04:34","06/09, 05:37",1d 1h
 9750713,Montoir, France,"03/04, 06:58","03/05, 15:45",1d 8h
 9750713,Zeebrugge, Belgium,"03/23, 09:46","03/24, 10:37",1d
 9750713,Sabetta, Russia,"04/01, 16:42","04/02, 21:22",1d 4h
@@ -3744,6 +4092,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9750713,Sabetta, Russia,"05/12, 15:27","05/14, 05:33",1d 14h
 9750713,Bilbao, Spain,"05/22, 17:11",,
 9750713,Sabetta, Russia,"05/31, 16:38","06/02, 10:09",1d 17h
+9750713,Rotterdam Maasvlakte, Netherlands,"06/08, 21:04","06/09, 19:34",22h 30m
 9750725,As Suways (Suez) Anch., Egypt,"02/17, 09:56","02/18, 04:52",18h 56m
 9750725,Brest, France,"02/26, 11:42","03/14, 17:33",16d 5h
 9750725,Sabetta, Russia,"03/25, 01:25","03/27, 22:07",2d 20h
@@ -3760,6 +4109,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9750737,Murmansk, Russia,"04/28, 09:18","05/02, 19:06",4d 9h
 9750737,Murmansk, Russia,"05/22, 07:12",,
 9750737,Sabetta, Russia,"06/01, 00:20","06/03, 16:27",2d 16h
+9750737,Montoir, France,"06/12, 04:33","06/13, 13:08",1d 8h
 9750749,Zeebrugge, Belgium,"03/08, 03:42","03/09, 05:38",1d 1h
 9750749,Sabetta, Russia,"03/16, 15:04","03/17, 17:51",1d 2h
 9750749,Sabetta, Russia,"04/01, 03:49","04/01, 04:48",58m
@@ -3770,6 +4120,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9750749,Sabetta, Russia,"05/10, 19:41","05/12, 20:29",2d
 9750749,Rotterdam Maasvlakte, Netherlands,"05/20, 02:09","05/21, 00:54",22h 44m
 9750749,Sabetta, Russia,"05/30, 16:39","05/31, 22:26",1d 5h
+9750749,Thamesport, United Kingdom (UK),"06/09, 22:04","06/10, 21:32",23h 28m
 9752565,Darwin, Australia,"03/24, 07:45","03/25, 16:27",1d 8h
 9752565,Hitachi, Japan,"04/02, 00:21","04/03, 06:31",1d 6h
 9752565,Withnell Bay, Australia,"05/03, 00:46","05/04, 03:16",1d 2h
@@ -3781,6 +4132,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9753014,Sabine, United States (USA),"04/06, 08:31","04/07, 13:54",1d 5h
 9753014,Mina' al Ahmadi, Kuwait,"05/06, 10:39","05/08, 05:38",1d 18h
 9753014,Al Fujayrah Anch., United Arab Emirates (UAE),"05/09, 19:03","05/11, 06:24",1d 11h
+9753014,Bonny, Nigeria,"06/04, 07:11","06/05, 12:47",1d 5h
 9753026,Withnell Bay, Australia,"02/13, 07:20","02/14, 15:40",1d 8h
 9753026,Withnell Bay, Australia,"03/18, 08:45","03/21, 03:01",2d 18h
 9753026,Withnell Bay, Australia,"03/22, 07:04","03/22, 23:05",16h
@@ -3788,6 +4140,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9753026,Wheatstone LNG Term., Australia,"04/13, 16:20","04/14, 13:03",20h 42m
 9753026,Nagoya, Japan,"04/27, 01:12","04/28, 02:15",1d 1h
 9753026,Singapore Anch. 3, Singapore,"05/04, 21:59","05/05, 23:08",1d 1h
+9753026,Port Arthur Anch., United States (USA),"06/06, 12:17","06/07, 21:16",1d 8h
+9753026,Sabine, United States (USA),"06/07, 22:36","06/09, 02:11",1d 3h
 9756389,Niigata, Japan,"02/27, 01:14","02/28, 01:31",1d
 9756389,Kisarazu, Japan,"03/15, 03:51","03/16, 21:16",1d 17h
 9756389,Niigata, Japan,"04/11, 01:09","04/12, 01:28",1d
@@ -3800,6 +4154,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9758064,Panama Canal Anch. Atlantic, Panama,"04/17, 19:27","04/17, 19:52",25m
 9758064,Pyeongtaek, Korea,"05/10, 06:10","05/11, 05:23",23h 12m
 9758064,Panama Canal Anch. Pacific, Panama,"06/01, 03:28","06/02, 07:06",1d 3h
+9758064,Port Arthur Anch., United States (USA),"06/09, 11:27","06/10, 04:50",17h 23m
+9758064,Sabine, United States (USA),"06/10, 07:17","06/11, 13:50",1d 6h
 9758076,Port Arthur Anch., United States (USA),"02/27, 21:50","02/28, 22:44",1d
 9758076,Lake Charles, United States (USA),"03/18, 15:35","03/20, 19:03",2d 3h
 9758076,Lake Charles, United States (USA),"05/20, 17:39","05/21, 18:20",1d
@@ -3821,6 +4177,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9759240,Dunkerque, France,"04/10, 07:46","04/11, 11:21",1d 3h
 9759240,Lake Charles, United States (USA),"04/24, 21:27","04/25, 21:01",23h 34m
 9759240,Sakaide Anch., Japan,"06/04, 06:52",,
+9759240,Sakaide, Japan,"06/06, 01:17",,
 9759252,Milford Haven, United Kingdom (UK),"02/15, 09:48","02/16, 13:14",1d 3h
 9759252,Cove Point, United States (USA),"04/10, 11:30","04/10, 12:56",1h 26m
 9759252,Cove Point, United States (USA),"04/10, 20:12","04/13, 03:15",2d 7h
@@ -3840,6 +4197,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9760770,Panama Canal Anch. Pacific, Panama,"04/13, 21:50","04/14, 02:33",4h 43m
 9760770,Tianjin Anch., China,"05/12, 22:25","05/13, 22:45",1d
 9760770,Tianjin Xingang, China,"05/14, 00:37","05/15, 07:28",1d 6h
+9760770,Panama Canal Anch. Pacific, Panama,"06/04, 22:37","06/06, 07:27",1d 8h
+9760770,Panama Canal Anch. Atlantic, Panama,"06/06, 19:39","06/13, 17:02",6d 21h
 9760782,Panama Canal Anch. Pacific, Panama,"03/03, 05:08","03/07, 08:10",4d 3h
 9760782,Panama Canal Anch. Atlantic, Panama,"03/07, 19:34","03/10, 18:34",2d 22h
 9760782,Lake Charles, United States (USA),"03/15, 15:58","03/16, 19:42",1d 3h
@@ -3847,6 +4206,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9760782,Boryeong, Korea,"04/15, 08:38","04/16, 19:55",1d 11h
 9760782,Panama Canal Anch. Pacific, Panama,"05/15, 12:22","05/20, 08:29",4d 20h
 9760782,Lake Charles, United States (USA),"05/31, 14:58","06/01, 17:04",1d 2h
+9760782,Panama Canal Anch. Atlantic, Panama,"06/05, 13:55","06/08, 09:36",2d 19h
 9761243,Fos sur mer, France,"03/18, 22:57","03/19, 20:32",21h 34m
 9761243,Arzew Anch., Algeria,"03/21, 09:38","03/27, 11:21",6d 1h
 9761243,Arzew, Algeria,"03/27, 11:54","03/29, 12:37",2d
@@ -3864,6 +4224,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9761243,Thamesport, United Kingdom (UK),"05/25, 08:39","05/26, 09:56",1d 1h
 9761243,Arzew Anch., Algeria,"05/31, 07:39","05/31, 10:34",2h 54m
 9761243,Arzew, Algeria,"05/31, 10:43","06/02, 06:47",1d 20h
+9761243,Thamesport, United Kingdom (UK),"06/08, 08:53","06/09, 08:55",1d
 9761267,Arzew Anch., Algeria,"03/07, 11:53","03/07, 13:05",1h 12m
 9761267,Arzew, Algeria,"03/07, 16:38","03/08, 15:16",22h 38m
 9761267,Fos sur mer, France,"03/11, 11:16","03/12, 18:13",1d 6h
@@ -3880,6 +4241,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9761267,Arzew Anch., Algeria,"05/29, 06:54","05/29, 09:38",2h 44m
 9761267,Arzew, Algeria,"05/29, 11:54","05/30, 16:03",1d 4h
 9761267,Nemrut, Turkey,"06/03, 07:33","06/04, 17:46",1d 10h
+9761267,Arzew, Algeria,"06/08, 17:55","06/12, 06:44",3d 12h
 9761827,Ingleside, United States (USA),"03/04, 18:47","03/06, 02:43",1d 7h
 9761827,Panama Canal Anch. Atlantic, Panama,"03/10, 13:28","03/11, 10:48",21h 19m
 9761827,Anjeong, Korea,"04/02, 03:45","04/03, 02:12",22h 26m
@@ -3887,12 +4249,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9761827,Sabine, United States (USA),"05/02, 14:17","05/04, 13:29",1d 23h
 9761827,Panama Canal Anch. Atlantic, Panama,"05/08, 12:34","05/09, 11:01",22h 27m
 9761827,Pyeongtaek, Korea,"05/31, 22:24","06/01, 23:35",1d 1h
+9761827,Okpo Anch., Korea,"06/03, 00:45","06/07, 06:53",4d 6h
 9761839,Anjeong, Korea,"03/02, 00:51","03/02, 20:05",19h 13m
 9761839,Okpo Anch., Korea,"03/03, 02:45","03/04, 10:17",1d 7h
 9761839,Panama Canal Anch. Pacific, Panama,"03/27, 13:39","03/28, 07:14",17h 35m
 9761839,Sabine, United States (USA),"04/17, 19:16","04/19, 02:06",1d 6h
 9761839,Panama Canal Anch. Atlantic, Panama,"04/23, 13:20","04/24, 10:01",20h 40m
 9761839,Okpo Anch., Korea,"05/17, 22:11","05/19, 06:25",1d 8h
+9761839,Panama Canal Anch. Pacific, Panama,"06/09, 16:09","06/12, 07:00",2d 14h
 9761841,Okpo Anch., Korea,"02/24, 03:24","02/25, 07:56",1d 4h
 9761841,Panama Canal Anch. Pacific, Panama,"03/17, 13:49","03/23, 08:06",5d 18h
 9761841,Panama Canal Anch. Atlantic, Panama,"03/23, 19:37","03/31, 18:45",7d 23h
@@ -3900,6 +4264,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9761841,Panama Canal Anch. Atlantic, Panama,"04/09, 23:32","04/13, 09:05",3d 9h
 9761841,Incheon, Korea,"05/06, 04:47","05/07, 06:13",1d 1h
 9761841,Okpo Anch., Korea,"05/08, 06:23","05/08, 08:18",1h 55m
+9761841,Sabine, United States (USA),"06/08, 19:42","06/10, 01:39",1d 5h
 9761853,Panama Canal Anch. Pacific, Panama,"03/10, 12:59","03/12, 07:53",1d 18h
 9761853,Port Arthur Anch., United States (USA),"03/16, 10:55","03/16, 17:43",6h 48m
 9761853,Sabine, United States (USA),"03/16, 20:03","03/18, 09:10",1d 13h
@@ -3925,6 +4290,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9762273,Dampier Anch., Australia,"04/27, 13:06","04/28, 12:57",23h 50m
 9762273,Yokkaichi, Japan,"05/11, 01:28","05/12, 03:04",1d 1h
 9762273,Singapore Anch. 1, Singapore,"05/22, 08:24","05/25, 15:26",3d 7h
+9762273,Dampier Anch., Australia,"06/04, 09:05","06/08, 01:54",3d 16h
 9766530,Chaguaramas Anch., Trinidad & Tobago,"03/09, 07:04","03/09, 13:51",6h 47m
 9766530,Point Fortin, Trinidad & Tobago,"03/19, 10:07","03/20, 12:18",1d 2h
 9766530,Freeport Anch., United States (USA),"03/29, 21:38","04/01, 13:19",2d 15h
@@ -3949,6 +4315,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9766554,Barcelona Anch., Spain,"05/14, 08:03","05/14, 16:13",8h 10m
 9766554,Gibraltar West Anch., Gibraltar,"05/16, 09:03","05/16, 17:51",8h 47m
 9766554,Sabine, United States (USA),"06/02, 13:50","06/03, 16:54",1d 3h
+9766554,Port Arthur Anch., United States (USA),"06/03, 19:09","06/05, 14:21",1d 19h
 9766566,Port-of-Spain Anch., Trinidad & Tobago,"03/01, 22:26","03/03, 23:14",2d
 9766566,Rotterdam, Netherlands,"03/13, 19:42","03/14, 23:59",1d 4h
 9766566,Rotterdam Maasvlakte, Netherlands,"03/15, 01:07","03/16, 00:23",23h 15m
@@ -3959,6 +4326,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9766566,Recalada Anch., Argentina,"04/24, 10:53",,
 9766566,Ingleside, United States (USA),"05/11, 12:48","05/12, 17:50",1d 5h
 9766566,Montevideo Anch., Uruguay,"06/04, 08:38","06/04, 10:38",1h 59m
+9766566,Escobar LNG LNG Term., Argentina,"06/05, 02:47","06/06, 10:22",1d 7h
 9766578,Sakai, Japan,"03/01, 01:41","03/02, 05:57",1d 4h
 9766578,Withnell Bay, Australia,"03/11, 04:29","03/12, 09:29",1d 4h
 9766578,Kisarazu, Japan,"03/22, 00:12","03/23, 03:44",1d 3h
@@ -3966,6 +4334,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9766578,Freeport Anch., United States (USA),"05/07, 20:19","05/07, 23:28",3h 9m
 9766578,Panama Canal Anch. Atlantic, Panama,"05/11, 22:33","05/15, 09:34",3d 11h
 9766578,Panama Canal Anch. Pacific, Panama,"05/15, 23:16","05/18, 01:56",2d 2h
+9766578,Kisarazu, Japan,"06/07, 23:51","06/09, 04:12",1d 4h
 9766580,Freeport Anch., United States (USA),"02/24, 23:57","02/25, 18:05",18h 8m
 9766580,Freeport, United States (USA),"02/25, 19:19","03/01, 18:02",3d 22h
 9766580,Gibraltar East Anch., Gibraltar,"03/27, 03:45","03/27, 19:41",15h 55m
@@ -3981,6 +4350,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9766889,Ingleside, United States (USA),"05/04, 12:55","05/05, 15:01",1d 2h
 9766889,Sines, Portugal,"05/22, 05:30","05/23, 06:32",1d 1h
 9766889,Dumyat, Egypt,"05/31, 04:07","06/01, 08:47",1d 4h
+9766889,Port Said Anch., Egypt,"06/05, 07:28","06/06, 04:35",21h 7m
 9767950,Withnell Bay, Australia,"03/03, 01:34","03/04, 06:33",1d 4h
 9767950,Incheon, Korea,"03/13, 03:39","03/14, 22:30",1d 18h
 9767950,Barrow Island, Australia,"03/26, 22:23","03/28, 00:06",1d 1h
@@ -3988,6 +4358,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9767950,Barrow Island, Australia,"04/08, 22:11","04/09, 22:06",23h 55m
 9767950,Gibraltar West Anch., Gibraltar,"05/23, 04:00","05/23, 22:50",18h 49m
 9767950,Mugardos, Spain,"05/27, 16:09","05/28, 16:22",1d
+9767950,Port Arthur Anch., United States (USA),"06/10, 14:57","06/11, 10:47",19h 50m
+9767950,Sabine, United States (USA),"06/11, 12:30","06/12, 21:07",1d 8h
 9767962,Tianjin Xingang, China,"02/14, 02:26","02/16, 00:29",1d 22h
 9767962,Gladstone, Australia,"03/02, 16:08","03/04, 00:09",1d 8h
 9767962,Dongjiakou, China,"03/16, 05:21","03/17, 06:05",1d
@@ -4006,6 +4378,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9768368,Sabetta, Russia,"05/16, 15:27","05/18, 11:27",1d 19h
 9768368,Antwerpen Anch., Belgium,"05/26, 03:04",,
 9768368,Zeebrugge, Belgium,"05/28, 22:05","05/30, 06:25",1d 8h
+9768368,Sabetta, Russia,"06/06, 09:51","06/07, 16:35",1d 6h
 9768370,Zeebrugge, Belgium,"03/11, 21:26","03/12, 21:19",23h 52m
 9768370,Sabetta, Russia,"03/21, 07:47","03/21, 09:42",1h 55m
 9768370,Dunkerque, France,"03/30, 21:09","03/31, 21:44",1d
@@ -4027,6 +4400,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9768382,Sabetta, Russia,"05/09, 11:40","05/11, 10:34",1d 22h
 9768382,Zeebrugge, Belgium,"05/18, 18:46","05/19, 21:42",1d 2h
 9768382,Sabetta, Russia,"05/28, 23:24","05/30, 07:26",1d 8h
+9768382,Antwerpen Anch., Belgium,"06/06, 09:22","06/08, 16:16",2d 6h
+9768382,Zeebrugge, Belgium,"06/08, 19:41","06/09, 20:40",1d
 9768394,Sabetta, Russia,"03/05, 18:24","03/06, 19:13",1d
 9768394,Thamesport, United Kingdom (UK),"03/14, 23:43","03/16, 01:39",1d 1h
 9768394,Sabetta, Russia,"03/23, 05:55","03/24, 07:51",1d 1h
@@ -4036,6 +4411,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9768394,Mugardos, Spain,"05/14, 17:04","05/16, 05:41",1d 12h
 9768394,Sabetta, Russia,"05/24, 02:19","05/25, 08:53",1d 6h
 9768394,Dunkerque, France,"06/02, 19:26","06/03, 19:12",23h 46m
+9768394,Sabetta, Russia,"06/10, 10:00","06/11, 18:29",1d 8h
 9768526,Sabetta, Russia,"02/20, 18:23","03/04, 23:19",12d 4h
 9768526,Montoir, France,"03/15, 03:05","03/16, 05:30",1d 2h
 9768526,Sabetta, Russia,"03/24, 18:58","03/25, 19:51",1d
@@ -4046,6 +4422,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9768526,Sines, Portugal,"05/07, 13:59",,
 9768526,Sabetta, Russia,"05/17, 04:05","05/20, 00:25",2d 20h
 9768526,Thamesport, United Kingdom (UK),"05/29, 00:28","05/30, 01:02",1d
+9768526,Sabetta, Russia,"06/07, 21:23","06/09, 23:45",2d 2h
 9769855,Yangpu, China,"03/26, 02:42","03/27, 06:54",1d 4h
 9769855,Yangpu Anch., China,"03/27, 08:12","04/02, 08:17",6d
 9769855,Yangpu, China,"04/02, 08:56","04/03, 05:38",20h 42m
@@ -4058,6 +4435,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9769855,Dongguan, China,"05/25, 04:14","05/26, 05:19",1d 1h
 9769855,Singapore Anch. 1, Singapore,"05/30, 22:26","05/31, 23:35",1d 1h
 9769855,"Bintulu,Sarawak", Malaysia,"06/04, 07:01","06/05, 06:33",23h 31m
+9769855,Dongguan, China,"06/09, 04:12","06/10, 05:18",1d 1h
 9770438,Lake Charles, United States (USA),"02/24, 18:36","02/26, 18:02",1d 23h
 9770438,Yokohama, Japan,"03/24, 01:00","03/25, 04:20",1d 3h
 9770438,Panama Canal Anch. Pacific, Panama,"04/20, 01:24","04/20, 07:17",5h 53m
@@ -4079,6 +4457,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9770921,Port Arthur Anch., United States (USA),"04/26, 05:08","05/01, 13:06",5d 7h
 9770921,Sabine, United States (USA),"05/01, 16:59","05/03, 08:22",1d 15h
 9770921,Quintero, Chile,"06/02, 12:40","06/03, 15:14",1d 2h
+9770921,Pisco Anch., Peru,"06/07, 08:00","06/07, 10:33",2h 33m
+9770921,Pampa Melchorita, Peru,"06/07, 13:57","06/08, 18:18",1d 4h
 9770933,Darwin Anch., Australia,"02/16, 20:03","02/18, 12:18",1d 16h
 9770933,Prelude Term., Australia,"02/20, 05:21","02/22, 00:22",1d 19h
 9770933,Prelude Term., Australia,"03/22, 04:59","03/23, 17:13",1d 12h
@@ -4087,6 +4467,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9770933,Incheon, Korea,"05/02, 02:41","05/03, 01:41",23h
 9770933,Gladstone Anch., Australia,"05/20, 05:38","05/21, 08:13",1d 2h
 9770933,Gladstone, Australia,"05/21, 10:46","05/22, 18:53",1d 8h
+9770933,Ningbo, China,"06/04, 06:37","06/06, 06:08",1d 23h
 9770945,Al Fujayrah Anch., United Arab Emirates (UAE),"03/03, 15:07","03/04, 03:46",12h 38m
 9770945,La Brea (Brighton) Anch., Trinidad & Tobago,"03/29, 16:12","04/02, 08:55",3d 16h
 9770945,Point Fortin, Trinidad & Tobago,"04/02, 10:41","04/03, 16:17",1d 5h
@@ -4130,6 +4511,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9779226,Kisarazu, Japan,"03/29, 03:00","03/30, 05:28",1d 2h
 9779226,Panama Canal Anch. Pacific, Panama,"04/21, 15:23","04/25, 07:36",3d 16h
 9779226,Lake Charles, United States (USA),"05/01, 18:10","05/03, 08:04",1d 13h
+9779226,Kisarazu, Japan,"06/11, 01:53","06/12, 05:36",1d 3h
 9779238,Kisarazu, Japan,"02/25, 03:06","02/26, 10:15",1d 7h
 9779238,Sasebo, Japan,"03/05, 22:37","03/23, 05:04",17d 6h
 9779238,Panama Canal Anch. Pacific, Panama,"04/20, 14:54","04/21, 07:46",16h 52m
@@ -4144,6 +4526,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9781918,As Suways (Suez) Anch., Egypt,"05/04, 05:46","05/05, 04:49",23h 3m
 9781918,Freeport, United States (USA),"05/20, 18:46","05/21, 21:58",1d 3h
 9781918,Freeport Anch., United States (USA),"05/21, 22:30","05/22, 03:57",5h 26m
+9781918,Port Said Anch., Egypt,"06/06, 18:41","06/07, 04:01",9h 20m
 9781920,Port Said Anch., Egypt,"02/12, 04:11","02/12, 04:11",
 9781920,Yangkou, China,"03/07, 02:44","03/08, 06:07",1d 3h
 9781920,As Suways (Suez) Anch., Egypt,"03/25, 14:01","03/26, 20:01",1d 6h
@@ -4151,6 +4534,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9781920,Zeebrugge, Belgium,"04/22, 10:08","04/23, 23:03",1d 12h
 9781920,Port Said Anch., Egypt,"05/01, 08:29","05/02, 03:32",19h 2m
 9781920,Pyeongtaek, Korea,"05/19, 23:58","05/20, 23:44",23h 45m
+9781920,As Suways (Suez) Anch., Egypt,"06/06, 16:48","06/07, 04:21",11h 32m
 9783124,Brofjorden, Sweden,"03/26, 11:39","03/27, 06:58",19h 18m
 9783124,Vysotsk, Russia,"03/29, 12:51","03/31, 07:33",1d 18h
 9783124,Roytta, Finland,"04/02, 09:11","04/03, 06:41",21h 30m
@@ -4170,6 +4554,10 @@ IMO,Port,Country,Arrival,Departure,In Port
 9783124,Nynashamn, Sweden,"05/24, 04:18","05/24, 15:30",11h 11m
 9783124,Brofjorden, Sweden,"05/26, 12:48","05/27, 06:47",17h 58m
 9783124,Vysotsk, Russia,"06/01, 19:24","06/02, 16:45",21h 20m
+9783124,Roytta, Finland,"06/04, 18:52","06/05, 13:16",18h 23m
+9783124,Vysotsk, Russia,"06/07, 21:26","06/08, 18:53",21h 26m
+9783124,Pori, Finland,"06/10, 00:27","06/10, 13:14",12h 47m
+9783124,Nynashamn, Sweden,"06/11, 07:42","06/11, 19:15",11h 33m
 9785158,Tianjin Anch., China,"03/14, 00:08","03/14, 06:10",6h 2m
 9785158,Tianjin Xingang, China,"03/14, 07:32","03/16, 00:43",1d 17h
 9785158,Singapore Anch. 1, Singapore,"03/27, 04:34","03/27, 23:28",18h 54m
@@ -4204,12 +4592,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9796781,Panama Canal Anch. Atlantic, Panama,"04/25, 19:25","04/28, 10:25",2d 15h
 9796781,Nagoya, Japan,"05/20, 01:18","05/21, 01:30",1d
 9796781,Wheatstone LNG Term., Australia,"06/01, 09:08","06/02, 07:48",22h 40m
+9796781,Kawasaki, Japan,"06/12, 00:58","06/13, 02:11",1d 1h
 9796793,Freeport Anch., United States (USA),"03/25, 10:47","03/25, 14:17",3h 30m
 9796793,Freeport, United States (USA),"03/25, 16:36","03/26, 22:07",1d 5h
 9796793,Panama Canal Anch. Atlantic, Panama,"03/31, 21:02","04/02, 09:16",1d 12h
 9796793,Yangkou, China,"04/25, 04:12","04/26, 22:29",1d 18h
 9796793,Panama Canal Anch. Pacific, Panama,"05/24, 14:36","05/25, 08:31",17h 54m
 9796793,Freeport, United States (USA),"06/02, 12:55","06/03, 20:39",1d 7h
+9796793,Panama Canal Anch. Atlantic, Panama,"06/07, 18:11","06/08, 10:41",16h 29m
 9810020,Balboa, Panama,"02/28, 08:39",,
 9810020,Lake Charles, United States (USA),"03/09, 17:22","03/10, 20:35",1d 3h
 9810020,Panama Canal Anch. Atlantic, Panama,"03/15, 17:43","03/16, 09:49",16h 6m
@@ -4217,6 +4607,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9810020,Panama Canal Anch. Pacific, Panama,"05/01, 16:00","05/02, 09:27",17h 26m
 9810020,Lake Charles, United States (USA),"05/08, 11:01","05/09, 12:10",1d 1h
 9810020,Thamesport, United Kingdom (UK),"05/22, 05:41","05/23, 06:22",1d
+9810020,Lake Charles, United States (USA),"06/10, 17:30","06/11, 18:44",1d 1h
 9810367,Kisarazu, Japan,"02/26, 02:13","02/27, 03:41",1d 1h
 9810367,Wheatstone LNG Term., Australia,"03/09, 02:10","03/10, 00:52",22h 42m
 9810367,Yokkaichi, Japan,"03/19, 01:18","03/20, 03:05",1d 1h
@@ -4235,11 +4626,13 @@ IMO,Port,Country,Arrival,Departure,In Port
 9810549,Port Arthur Anch., United States (USA),"03/20, 19:52","03/25, 19:13",4d 23h
 9810549,Corpus Christi Anch., United States (USA),"03/26, 19:45","03/30, 01:04",3d 5h
 9810549,Ingleside, United States (USA),"03/30, 04:48","04/01, 00:25",1d 19h
+9810549,Yung An, Taiwan,"05/11, 00:13","05/11, 23:34",23h 21m
 9810549,Ciwandan Anch., Indonesia,"05/18, 00:29","05/18, 03:54",3h 24m
 9810551,Panama Canal Anch. Atlantic, Panama,"02/13, 20:06","02/14, 09:59",13h 52m
 9810551,Boryeong, Korea,"03/10, 05:15","03/11, 05:48",1d
 9810551,Freeport, United States (USA),"04/23, 00:05","04/24, 12:45",1d 12h
 9810551,Swinoujscie, Poland,"05/14, 06:40","05/15, 09:13",1d 2h
+9810551,Freeport Anch., United States (USA),"06/05, 21:44","06/12, 15:35",6d 17h
 9816763,Pyeongtaek, Korea,"02/13, 22:49","02/14, 22:55",1d
 9816763,Panama Canal Anch. Pacific, Panama,"03/08, 17:04","03/13, 08:57",4d 15h
 9816763,Corpus Christi Anch., United States (USA),"03/18, 15:35","03/21, 22:37",3d 7h
@@ -4263,6 +4656,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9825427,Singapore Anch. 3, Singapore,"04/15, 01:23","04/15, 23:33",22h 10m
 9825427,Barrow Island, Australia,"04/26, 03:05","04/27, 04:09",1d 1h
 9825427,Kisarazu, Japan,"05/06, 00:13","05/07, 01:07",1d
+9825427,Bonny, Nigeria,"06/12, 00:39","06/13, 07:41",1d 7h
 9825439,Manzanillo, Mexico,"02/19, 13:58","02/20, 15:33",1d 1h
 9825439,Panama Canal Anch. Pacific, Panama,"02/24, 17:46","02/27, 07:24",2d 13h
 9825439,Panama Canal Anch. Atlantic, Panama,"02/27, 18:10","03/18, 13:15",18d 19h
@@ -4272,6 +4666,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9825439,Sakai, Japan,"05/07, 02:00","05/08, 07:13",1d 5h
 9825439,Panama Canal Anch. Pacific, Panama,"05/28, 12:19","05/29, 07:34",19h 14m
 9825439,Sabine, United States (USA),"06/03, 02:29","06/04, 11:29",1d 9h
+9825439,Panama Canal Anch. Atlantic, Panama,"06/08, 16:12","06/09, 10:05",17h 53m
 9825568,Corpus Christi Anch., United States (USA),"03/15, 00:36","03/15, 19:07",18h 30m
 9825568,Corpus Christi Anch., United States (USA),"03/15, 19:34","03/16, 21:22",1d 1h
 9825568,Ingleside, United States (USA),"03/16, 23:14","03/18, 05:30",1d 6h
@@ -4315,6 +4710,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9834325,Anjeong, Korea,"04/29, 04:15","04/30, 02:41",22h 25m
 9834325,As Suways (Suez) Anch., Egypt,"05/17, 10:37","05/18, 04:25",17h 48m
 9834325,Zeebrugge, Belgium,"05/29, 04:15","05/30, 10:16",1d 6h
+9834325,Port Said Anch., Egypt,"06/07, 09:58","06/08, 03:27",17h 29m
 9844863,Withnell Bay, Australia,"02/19, 01:27","02/20, 07:49",1d 6h
 9844863,Busan Anch., Korea,"03/05, 00:21","03/06, 04:50",1d 4h
 9844863,Withnell Bay, Australia,"03/28, 02:13","03/29, 05:05",1d 2h
@@ -4354,12 +4750,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9845788,Pyeongtaek, Korea,"04/18, 00:56","04/19, 00:18",23h 22m
 9845788,Panama Canal Anch. Pacific, Panama,"05/12, 00:14","05/15, 09:13",3d 8h
 9845788,Houston Anch., United States (USA),"06/01, 16:35",,
+9845788,Freeport, United States (USA),"06/11, 12:43","06/12, 23:49",1d 11h
 9849887,Altamira Anch., Mexico,"03/05, 16:19","03/11, 15:48",5d 23h
 9849887,Altamira Anch., Mexico,"03/11, 17:10","03/12, 17:52",1d
 9849887,Fos sur mer, France,"03/31, 07:58","04/01, 14:25",1d 6h
 9849887,Sabine, United States (USA),"04/16, 10:22","04/17, 12:59",1d 2h
 9849887,Rotterdam Maasvlakte, Netherlands,"05/05, 00:43","05/06, 02:07",1d 1h
 9849887,Lake Charles, United States (USA),"05/19, 18:52","05/20, 20:54",1d 2h
+9849887,Port Said Anch., Egypt,"06/05, 15:47","06/06, 04:49",13h 1m
 9850666,Panama Canal Anch. Pacific, Panama,"03/08, 18:09","03/11, 07:33",2d 13h
 9850666,Panama Canal Anch. Atlantic, Panama,"03/11, 21:13","03/31, 15:18",19d 18h
 9850666,Freeport Anch., United States (USA),"04/04, 13:33","04/05, 11:49",22h 15m
@@ -4395,6 +4793,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9851787,Port Arthur Anch., United States (USA),"05/06, 10:57","05/07, 10:41",23h 44m
 9851787,Sabine, United States (USA),"05/07, 13:31","05/09, 01:36",1d 12h
 9851787,Panama Canal Anch. Atlantic, Panama,"05/14, 02:40","05/14, 10:36",7h 56m
+9851787,Pyeongtaek, Korea,"06/09, 05:06","06/10, 05:51",1d
 9852975,Corpus Christi Anch., United States (USA),"03/01, 22:34","03/02, 23:18",1d
 9852975,Ingleside, United States (USA),"03/03, 00:44","03/05, 01:27",2d
 9852975,Dunkerque, France,"03/19, 12:19","03/20, 12:41",1d
@@ -4413,6 +4812,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9853137,Freeport Anch., United States (USA),"04/25, 12:58","04/29, 21:36",4d 8h
 9853137,Freeport, United States (USA),"04/29, 22:32","05/01, 01:33",1d 3h
 9853137,Adriatic LNG LNG Term., Italy,"05/20, 07:46","05/21, 07:32",23h 46m
+9853137,Ingleside, United States (USA),"06/11, 18:38","06/12, 21:43",1d 3h
 9854363,Port Arthur Anch., United States (USA),"03/23, 11:17","03/23, 17:12",5h 54m
 9854363,Sabine, United States (USA),"03/23, 19:33","03/25, 20:42",2d 1h
 9854363,Panama Canal Anch. Atlantic, Panama,"03/30, 05:52","03/31, 08:21",1d 2h
@@ -4421,6 +4821,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9854363,Port Arthur Anch., United States (USA),"05/02, 13:56","05/05, 18:08",3d 4h
 9854363,Sabine, United States (USA),"05/05, 20:50","05/07, 02:24",1d 5h
 9854363,Port Said Anch., Egypt,"05/24, 14:26","05/25, 04:36",14h 9m
+9854363,Dahej, India,"06/09, 21:38","06/11, 06:21",1d 8h
 9854612,Yung An, Taiwan,"03/12, 00:03","03/13, 00:07",1d
 9854612,Sabine, United States (USA),"04/18, 19:17","04/20, 01:36",1d 6h
 9854612,Cape Town Anch., South Africa,"05/09, 10:15",,
@@ -4429,12 +4830,14 @@ IMO,Port,Country,Arrival,Departure,In Port
 9854624,Panama Canal Anch. Atlantic, Panama,"03/25, 17:45","03/27, 09:43",1d 15h
 9854624,Pyeongtaek, Korea,"04/18, 23:50","04/19, 23:36",23h 46m
 9854624,Panama Canal Anch. Pacific, Panama,"05/11, 08:35","05/12, 07:45",23h 10m
+9854624,Ingleside, United States (USA),"06/06, 11:05","06/08, 21:29",2d 10h
 9854765,Lake Charles, United States (USA),"02/20, 13:44","02/21, 18:36",1d 4h
 9854765,Huelva, Spain,"03/04, 16:37","03/05, 18:21",1d 1h
 9854765,Ingleside, United States (USA),"03/18, 18:00","03/20, 08:30",1d 14h
 9854765,Ingleside, United States (USA),"03/20, 08:35","04/28, 03:34",38d 18h
 9854765,Huelva, Spain,"05/09, 23:50","05/11, 02:16",1d 2h
 9854765,Ingleside, United States (USA),"05/24, 16:10","05/25, 16:48",1d
+9854765,Rotterdam Maasvlakte, Netherlands,"06/07, 00:37","06/07, 23:50",23h 13m
 9855812,Thamesport, United Kingdom (UK),"02/21, 03:20","02/22, 04:03",1d
 9855812,Lake Charles, United States (USA),"03/11, 21:31","03/12, 21:32",1d
 9855812,Rotterdam Maasvlakte, Netherlands,"03/27, 09:59","03/28, 18:31",1d 8h
@@ -4464,6 +4867,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9857377,Caofeidian Anch., China,"05/11, 21:53","05/14, 01:42",2d 3h
 9857377,Caofeidian, China,"05/14, 03:34","05/16, 03:27",1d 23h
 9857377,Wheatstone LNG Term., Australia,"05/29, 08:59","05/30, 08:04",23h 5m
+9857377,Shimizu, Japan,"06/13, 00:26",,
 9859739,Gwangyang, Korea,"04/08, 23:32","04/10, 07:41",1d 8h
 9859739,Okpo Anch., Korea,"04/10, 23:12","04/13, 08:15",2d 9h
 9859739,Okpo Anch., Korea,"04/14, 23:45","04/15, 01:59",2h 14m
@@ -4486,6 +4890,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9859753,Anegasaki, Japan,"05/04, 03:16","05/05, 10:06",1d 6h
 9859753,Withnell Bay, Australia,"05/15, 07:41","05/16, 10:19",1d 2h
 9859753,Dapeng, China,"05/28, 08:34","05/29, 08:44",1d
+9859753,Withnell Bay, Australia,"06/12, 00:39","06/13, 05:47",1d 5h
 9861031,"Bintulu,Sarawak", Malaysia,"02/18, 13:43","02/18, 20:13",6h 29m
 9861031,Xiuyu, China,"02/23, 07:18","02/25, 01:12",1d 17h
 9861031,As Suways (Suez) Anch., Egypt,"03/14, 10:39","03/15, 05:47",19h 8m
@@ -4506,6 +4911,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9862308,Tianjin Xingang, China,"05/07, 00:55","05/09, 00:40",1d 23h
 9862308,Darwin Anch., Australia,"05/18, 01:08","05/24, 19:18",6d 18h
 9862308,Darwin, Australia,"05/24, 21:00","05/26, 03:53",1d 6h
+9862308,Tianjin Xingang, China,"06/07, 07:08","06/09, 00:39",1d 17h
 9862346,Port Arthur Anch., United States (USA),"02/23, 12:05","02/24, 06:22",18h 17m
 9862346,Sabine, United States (USA),"02/24, 09:30","02/26, 01:07",1d 15h
 9862346,Port Arthur Anch., United States (USA),"03/28, 10:42","03/28, 14:43",4h
@@ -4524,6 +4930,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9862463,Gibraltar West Anch., Gibraltar,"03/27, 10:18","03/27, 22:37",12h 19m
 9862463,Freeport, United States (USA),"04/15, 22:57","04/17, 12:47",1d 13h
 9862463,Escobar LNG LNG Term., Argentina,"05/11, 23:26","05/13, 09:26",1d 9h
+9862463,Houston Anch., United States (USA),"06/12, 12:45","06/13, 01:49",13h 3m
 9862475,Gwangyang, Korea,"03/01, 00:37","03/02, 09:10",1d 8h
 9862475,Daebul/Yeongam-gun, Korea,"03/15, 00:30",,
 9862475,Daebul/Yeongam-gun, Korea,"05/21, 00:35","05/21, 00:35",
@@ -4546,9 +4953,12 @@ IMO,Port,Country,Arrival,Departure,In Port
 9862906,Experience FPSO, Brazil,"05/08, 11:26","05/11, 13:18",3d 1h
 9862906,Freeport Anch., United States (USA),"05/26, 11:18","05/27, 11:33",1d
 9862906,Freeport, United States (USA),"05/27, 12:39","05/28, 16:06",1d 3h
+9862906,Experience FPSO, Brazil,"06/09, 12:12","06/10, 15:31",1d 3h
 9862918,Ulsan, Korea,"04/12, 00:56",,
+9862918,Ulsan, Korea,"05/05, 02:04","05/05, 02:04",
 9862918,Gwangyang, Korea,"05/06, 05:40","05/07, 08:36",1d 2h
 9862918,Gwangyang, Korea,"05/15, 06:46","05/15, 22:45",15h 58m
+9862918,Ulsan, Korea,"05/24, 01:17","06/08, 14:48",15d 13h
 9863182,Tianjin Xingang, China,"02/19, 00:42","02/21, 00:42",2d
 9863182,Gladstone, Australia,"03/06, 08:14","03/07, 08:52",1d
 9863182,Ningbo, China,"03/17, 05:44","03/19, 06:52",2d 1h
@@ -4561,8 +4971,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9864667,As Suways (Suez) Anch., Egypt,"02/21, 18:18","03/21, 05:09",27d 10h
 9864667,Kali Limenes Term., Greece,"03/22, 20:09","03/23, 07:39",11h 30m
 9864667,Kali Limenes Term., Greece,"03/23, 08:26","03/27, 06:53",3d 22h
-9864667,Kali Limenes Term., Greece,"03/27, 16:29",,
 9864667,Port Rashid, Egypt,"04/07, 05:18","04/08, 05:14",23h 56m
+9864667,Houston Anch., United States (USA),"05/26, 09:53","05/28, 06:51",1d 20h
 9864667,Freeport Anch., United States (USA),"05/28, 10:31","05/28, 15:48",5h 16m
 9864667,Freeport, United States (USA),"05/28, 17:19","05/30, 01:39",1d 8h
 9864746,Punta Europa, Equatorial Guinea,"02/24, 06:02","02/25, 12:24",1d 6h
@@ -4581,6 +4991,9 @@ IMO,Port,Country,Arrival,Departure,In Port
 9864784,Tianjin Anch., China,"05/04, 21:53","05/04, 23:50",1h 57m
 9864784,Tianjin Xingang, China,"05/05, 01:14","05/06, 07:01",1d 5h
 9864784,Panama Canal Anch. Pacific, Panama,"05/26, 10:56","05/28, 09:26",1d 22h
+9864784,Port Arthur Anch., United States (USA),"06/02, 19:09","06/06, 02:17",3d 7h
+9864784,Sabine, United States (USA),"06/06, 03:54","06/07, 14:32",1d 10h
+9864784,Panama Canal Anch. Pacific, Panama,"06/11, 21:12","06/13, 08:08",1d 10h
 9864796,Corpus Christi Anch., United States (USA),"03/11, 13:34","03/11, 20:21",6h 46m
 9864796,Corpus Christi Anch., United States (USA),"03/11, 23:15","03/16, 14:20",4d 15h
 9864796,Corpus Christi Anch., United States (USA),"03/20, 19:17","03/23, 10:26",2d 15h
@@ -4603,6 +5016,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9864928,Corpus Christi Anch., United States (USA),"04/29, 16:44","05/08, 06:25",8d 13h
 9864928,Ingleside, United States (USA),"05/08, 08:28","05/09, 14:04",1d 5h
 9864928,Port Said Anch., Egypt,"05/28, 13:59","05/29, 04:04",14h 4m
+9864928,Dahej, India,"06/10, 22:12","06/12, 07:00",1d 8h
 9869265,Kitakyushu, Japan,"02/20, 00:08","02/23, 02:17",3d 2h
 9869265,Lake Charles, United States (USA),"04/15, 15:29","04/16, 19:47",1d 4h
 9869265,Ennore, India,"05/18, 01:22","05/19, 06:45",1d 5h
@@ -4622,6 +5036,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9869942,Barrow Island, Australia,"05/04, 02:21","05/05, 03:20",1d
 9869942,Yangkou, China,"05/17, 07:14","05/18, 22:43",1d 15h
 9869942,Barrow Island, Australia,"05/27, 09:05","05/28, 10:05",1d 1h
+9869942,Yangkou, China,"06/07, 02:21","06/08, 04:07",1d 1h
 9870159,Okpo Anch., Korea,"02/25, 00:06","02/25, 01:16",1h 9m
 9870159,Gwangyang, Korea,"02/27, 23:32","02/28, 12:09",12h 36m
 9870159,Okpo Anch., Korea,"03/02, 02:04","03/03, 19:58",1d 17h
@@ -4655,6 +5070,8 @@ IMO,Port,Country,Arrival,Departure,In Port
 9872949,Dampier Anch., Australia,"05/20, 03:52","05/25, 05:28",5d 1h
 9872949,Dampier Anch., Australia,"05/25, 09:52","05/26, 06:27",20h 35m
 9872949,Withnell Bay, Australia,"05/26, 08:19","05/27, 12:50",1d 4h
+9872949,Jintang Anch., China,"06/07, 17:28","06/09, 19:12",2d 1h
+9872949,Tianjin Xingang, China,"06/10, 01:37","06/12, 00:29",1d 22h
 9872987,Daebul/Yeongam-gun, Korea,"03/28, 23:08","04/01, 03:53",3d 4h
 9872987,Gwangyang, Korea,"04/02, 04:53","04/04, 10:15",2d 5h
 9872987,Singapore Anch. 1, Singapore,"04/11, 01:00","04/11, 18:39",17h 38m
@@ -4667,6 +5084,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9873840,Dampier Anch., Australia,"05/10, 21:12","05/11, 03:20",6h 7m
 9873840,Withnell Bay, Australia,"05/11, 05:32","05/12, 13:00",1d 7h
 9873840,Shikama, Japan,"05/21, 01:27","05/22, 04:50",1d 3h
+9873840,Withnell Bay, Australia,"06/06, 07:26","06/08, 06:31",1d 23h
 9873852,Okpo, Korea,"04/18, 06:22","04/18, 06:22",
 9873852,Okpo Anch., Korea,"04/20, 23:04","04/21, 01:25",2h 20m
 9873852,Okpo, Korea,"04/26, 09:39","05/29, 02:39",32d 17h
@@ -4675,6 +5093,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9874454,Gwangyang, Korea,"04/12, 05:41","04/13, 23:25",1d 17h
 9874454,Gwangyang, Korea,"04/21, 22:40","04/22, 10:13",11h 32m
 9874454,Daebul/Yeongam-gun, Korea,"04/27, 00:25","05/31, 23:49",34d 23h
+9874454,Kitakyushu, Japan,"06/03, 02:11","06/06, 02:27",3d
 9874466,Gwangyang, Korea,"05/22, 01:39","05/23, 23:09",1d 21h
 9874466,Gwangyang, Korea,"05/31, 05:06","05/31, 23:36",18h 30m
 9874820,Okpo Anch., Korea,"05/14, 04:53","05/14, 06:29",1h 35m
@@ -4692,6 +5111,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9875800,Gladstone, Australia,"05/15, 16:16","05/17, 01:13",1d 8h
 9875800,Ningbo Anch., China,"05/28, 20:59","05/29, 02:28",5h 29m
 9875800,Ningbo, China,"05/29, 05:04","05/31, 07:07",2d 2h
+9875800,Dampier Anch., Australia,"06/10, 03:27","06/12, 21:12",2d 17h
 9876660,Gohyeon Anch., Korea,"04/19, 02:30","04/23, 01:01",3d 22h
 9876660,Gohyeon Anch., Korea,"04/23, 01:36","04/30, 05:06",7d 3h
 9876660,Gohyeon, Korea,"04/30, 05:30","05/06, 02:46",5d 21h
@@ -4705,6 +5125,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9877133,Freeport Anch., United States (USA),"04/02, 13:28","04/11, 17:48",9d 4h
 9877133,Freeport, United States (USA),"04/11, 18:38","04/14, 12:44",2d 18h
 9877133,Dongjiakou, China,"05/21, 23:31","05/23, 00:48",1d 1h
+9877133,As Suways (Suez) Anch., Egypt,"06/11, 08:43","06/12, 04:55",20h 11m
 9877145,Singapore Anch. 3, Singapore,"02/16, 08:26","02/17, 19:20",1d 10h
 9877145,Mina' 'Abd Allah Anch., Kuwait,"04/29, 13:55","04/30, 20:28",1d 6h
 9877145,Mina' al Ahmadi, Kuwait,"04/30, 21:29","05/03, 04:35",2d 7h
@@ -4719,6 +5140,7 @@ IMO,Port,Country,Arrival,Departure,In Port
 9878711,Gwangyang, Korea,"05/01, 23:38","05/02, 12:47",13h 9m
 9878711,Okpo Anch., Korea,"05/02, 20:54","05/04, 04:41",1d 7h
 9878711,Gohyeon Anch., Korea,"05/05, 10:23","05/06, 04:46",18h 23m
+9878723,Gohyeon Anch., Korea,"06/05, 00:45","06/10, 03:31",5d 2h
 9878876,Yangshan Port, China,"04/27, 05:25",,
 9880192,Gwangyang, Korea,"03/15, 23:46","03/16, 13:51",14h 4m
 9880192,Okpo Anch., Korea,"03/17, 00:57","03/19, 20:56",2d 19h
