@@ -22,10 +22,10 @@ for i in range(len(countries_list)):
         countries_list[i]="Cote d'Ivoire"
 
 countries = pandas.DataFrame(0,columns=['Net GHG balance'],index=countries_list)
-countries['Prod']=False
+countries['Productor']=False
 
 
-prod=['United States',
+prod=['United States (USA)',
         'Canada',
         'Norway',
         'Russia',
@@ -39,7 +39,7 @@ prod=['United States',
 for l in prod:
         countries.loc[l,'Productor']=True
 
-prodNB = {'United States': 0.48,
+prodNB = {'United States (USA)': 0.48,
         'Canada': 0.15 ,
         'Norway':0.21,
         'Russia':0.3,
