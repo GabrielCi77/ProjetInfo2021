@@ -70,7 +70,7 @@ def changeDate(date_str):
 
 
 def loadTripsAndPriceData():
-    df_trips = pd.read_csv('./Data/Portcalls/voyages.csv')
+    df_trips = pd.read_csv('../Data/Portcalls/voyages.csv')
     # On ajoute des colonnes avec les codes des pays de départ et d'arrivée
     for continent in price_of_country.keys():
         df_trips[f'D_{continent}'] = df_trips['Dcountry'].apply(convertNameToCode, args=(continent,))
@@ -80,21 +80,21 @@ def loadTripsAndPriceData():
     df_trips['Atime'] = df_trips['Atime'].apply(changeDate)
 
     # On charge les prix spots de l'Europe
-    df_eur_price = pd.read_csv('./Data/SpotEur.csv', index_col='Date')
+    df_eur_price = pd.read_csv('../Data/SpotEur.csv', index_col='Date')
     # On ajoute les prix de l'Europe quand le bateau arrive et on normalise
     df_trips['Eur_Price'] = df_trips['Dtime'].apply(lambda x: df_eur_price.loc[x, 'Prix'])
     max_price_eur = df_trips['Eur_Price'].max()
     df_trips['Eur_Price'] = df_trips['Eur_Price'].apply(lambda x: x/max_price_eur)
 
     # On charge les prix spot des US
-    df_us_spot = pd.read_csv('./Data/SpotUS.csv', index_col='Date')
-    df_trips['US_Price'] = df_trips['Dtime'].apply(mergeUSPrice, args=(df_trips, df_us_spot,))
+    df_us_spot = pd.read_csv('../Data/SpotUS.csv', index_col='Date')
+    df_trips['US_Price'] = df_trips['Dtime'].apply(mergeUSPrice, args=(df_us_spot,))
     max_price_us = df_trips['Eur_Price'].max()
     df_trips['US_Price'] = df_trips['US_Price'].apply(lambda x: x/max_price_us)
     return df_trips
 
 
-def mergeUSPrice(date_str, df_trips, df_price):
+def mergeUSPrice(date_str, df_price):
     i = 0
     while date_str not in df_price.index.values:
         date = datetime.strptime(date_str, "%Y-%m-%d").date()
