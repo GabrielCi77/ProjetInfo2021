@@ -7,14 +7,6 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 from datetime import datetime
 
-'''
-Commentaires E-CUBE (Marwane):
-- Commenter les grandes étapes du code (toutes les deux ou trois rows)
-- Eviter d'entrer en dur plusieurs fois les mêmes choses (ex. : 'Month', 'Prior Settle' et 'Update date' en l.38 et 46)
-- Un dataframe n'est pas fait pour grossir au fur et à mesure (ajout ligne par ligne avec append) : c'est non-optimisé et
- chronophage. Je suggère plutôt de créer autant de dataframes que d'éléments dans "rows", puis de les concaténer d'un coup
- avec pd.concat([element de tous les dataframes]).
-'''
 
 """TOUTES LES OPTIONS UTILES POUR CHROMEDRIVER"""
 options = webdriver.ChromeOptions()
@@ -32,49 +24,89 @@ options.add_argument("--disable-browser-side-navigation")  # https://stackoverfl
 options.add_argument("--disable-gpu")  # https://stackoverflow.com/questions/51959986/how-to-solve-selenium-chromedriver-timed-out-receiving-message-from-renderer-exc
 
 
-def changeDateOfMonth(x):
+def changeDateOfMonth(x:str):
+    """Change le format de la date du mois
+
+    Paramètres
+    ----------
+    x : string
+
+    Retours
+    -------
+    x : string
+
+    Exemples
+    -------
+    changeDateOfMonth('JUL 2021') -> '2021-07'"""
+
     try:
         return datetime.strptime(x, "%b %Y").strftime("%Y-%m")
     except ValueError:
         return x
 
 
-def changeDateOfUpdate(x):
+def changeDateOfUpdate(x:str):
+    """Change le format de la date de mise à jour :
+
+    Paramètres
+    ----------
+    x : string
+
+    Retours
+    -------
+    x : string
+    
+    Exemples
+    -------
+    changeDateOfMonth('6:00:00 CT\\r\\n13 Jun 2021') -> 2021-06-13"""
+
     try:
         return datetime.strptime(x, "%H:%M:%S CT\r\n%d %b %Y").strftime("%Y-%m-%d")
     except ValueError:
         return x
     
 
-def extractInfos(list_data, row):
-    # Toutes les données sont stockées dans le tableau element
+def extractInfos(list_data:list, row):
+    """
+    Permet d'ajouter les éléments d'une ligne du tableau à notre liste de données
+
+    Paramètres
+    ----------
+    list_data : list
+    row : WebElement
+    """
+    # Toutes les données d'une ligne sont stockées dans la liste python element
     element = row.find_elements_by_tag_name('td')
     # On met à jour la liste de données
     list_data.append((changeDateOfMonth(element[0].text), element[4].text, changeDateOfUpdate(element[-1].text)))
 
 
-# Connexion à la page des futures Asie par chromedriver pour charger les données du tableau des prix
-url_asia_price = 'https://www.cmegroup.com/trading/energy/natural-gas/lng-japan-korea-marker-platts-swap.html'
-driver = webdriver.Chrome(options=options)
-driver.get(url_asia_price)
+def getAndSaveAsiaFutures():
+    # Connexion à la page des futures Asie par chromedriver pour charger les données du tableau des prix
+    url_asia_price = 'https://www.cmegroup.com/trading/energy/natural-gas/lng-japan-korea-marker-platts-swap.html'
+    driver = webdriver.Chrome(options=options)
+    driver.get(url_asia_price)
 
-# Création de trois listes vides qui contiendrons nos trois colonnes
-list_data = []
-# On attend que la table soit chargé pour extraire les informations
-table = Dwait(driver, 10).until(EC.presence_of_element_located((By.ID, "quotesFuturesProductTable1")))
-rows = table.find_element_by_tag_name('tbody').find_elements_by_tag_name('tr')
-for row in rows:
-    extractInfos(list_data, row)
+    # Création de la liste qui contiendra toutes nos données
+    list_data = []
+    # On attend que la table soit chargé pour extraire les informations
+    table = Dwait(driver, 10).until(EC.presence_of_element_located((By.ID, "quotesFuturesProductTable1")))
+    # Liste python de toutes les lignes du tableau du site web
+    rows = table.find_element_by_tag_name('tbody').find_elements_by_tag_name('tr')
+    # On itère sur ces lignes pour transformer cette liste en liste de données
+    for row in rows:
+        extractInfos(list_data, row)
+    driver.quit()
 
-driver.quit()
-# Stockage des informations dans le fichier FuturesAsie.csv
-df_columns = ['Month', 'Prior Settle', 'Update date (CT)']
-df_price = pd.DataFrame(data=list_data, columns=df_columns)
-df_price.to_csv('../Data/FuturesAsie.csv', mode='a', header=False, index=False)
+    # Stockage des informations dans le fichier FuturesAsie.csv
+    df_columns = ['Month', 'Prior Settle', 'Update date (CT)']
+    df_price = pd.DataFrame(data=list_data, columns=df_columns)
+    df_price.to_csv('../Data/FuturesAsie.csv', mode='a', header=False, index=False)
 
+    #Suppression des doublons
+    df_all_price = pd.read_csv('../Data/FuturesAsie.csv')
+    df_all_price = df_all_price.drop_duplicates()
+    df_all_price.to_csv('../Data/FuturesAsie.csv', header=True, index=False)
 
-#Suppression des doublons
-df_all_price = pd.read_csv('../Data/FuturesAsie.csv')
-df_all_price = df_all_price.drop_duplicates()
-print(df_all_price)
-df_all_price.to_csv('../Data/FuturesAsie.csv', header=True, index=False)
+if __name__ == '__main__':
+    getAndSaveAsiaFutures()
