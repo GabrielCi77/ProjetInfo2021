@@ -130,7 +130,7 @@ def trainAndPlot(df_data, k=5):
     X_train = standard_scaler.transform(X_train)
     X_test = standard_scaler.transform(X_test)
 
-    # On entraine une régression linéaire
+    # On entraine une méthode des plus proches voisins
     predictor = neighbors.KNeighborsClassifier(k)
     predictor.fit(X_train, y_train)
 
