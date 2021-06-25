@@ -4,6 +4,7 @@ from sklearn.model_selection import KFold
 from sklearn.linear_model import LinearRegression as LR
 from sklearn import preprocessing
 from sklearn import metrics
+from sklearn.metrics import r2_score, mean_squared_error
 import matplotlib.pyplot as plt
 
 
@@ -44,7 +45,7 @@ def trainAndPlotAll(df_data):
         y_pred = predictor.predict(X_test)
         
         # measure performance
-        r2_score_ridge_test = r2_score(y_test, y_pred) # problème
+        r2_score_ridge_test = r2_score(y_test, y_pred)
         print("R2: {0:0.2f}".format(r2_score_ridge_test))
         r2_scores.append(r2_score_ridge_test)
         rmse_ridge_test = mean_squared_error(y_test, y_pred, squared=False)

@@ -1,9 +1,8 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import KFold, cross_validate, GridSearchCV
+from sklearn.model_selection import KFold
 from sklearn.linear_model import LinearRegression, Ridge, Lasso
-from sklearn import preprocessing
-from sklearn import metrics
+from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_squared_error
 import matplotlib.pyplot as plt
 
@@ -68,7 +67,7 @@ def trainAndPlotAll(df_data):
         plt.scatter(y_test, y_pred)
         plt.xlabel("Nombre réel")
         plt.ylabel("Nombre prédit")
-        plt.title(f'Lasso : nombre de navires arrivant en Europe (RMSE = {metrics.mean_squared_error(y_test, y_pred, squared=False)})')
+        plt.title(f'Lasso : nombre de navires arrivant en Europe (RMSE = {mean_squared_error(y_test, y_pred, squared=False)})')
         axis_min = np.min([np.min(y_test), np.min(y_pred)])-1 # Mêmes valeurs sur les deux axes
         axis_max = np.max([np.max(y_test), np.max(y_pred)])+1
         plt.xlim(axis_min, axis_max)
@@ -83,7 +82,7 @@ def trainAndPlotAll(df_data):
         plt.xlabel("Temps")
         plt.ylabel("Nombre de navires arrivant en Europe")
         plt.legend(('Evolution réelle', 'Evolution prédite (lasso)'), loc='upper right')
-        plt.title("RMSE : %.2f" % metrics.mean_squared_error(y_test, y_pred, squared=False))
+        plt.title("RMSE : %.2f" % mean_squared_error(y_test, y_pred, squared=False))
         plt.savefig(f'../figure/B22_Lasso_vesselsperday_{i}.png')
         plt.show()
 

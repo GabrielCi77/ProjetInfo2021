@@ -5,10 +5,43 @@ from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_squared_error
 import matplotlib.pyplot as plt
+from B23_Lasso_grid import findBestLassoCoeff
 
 
+dict_reg = {
+    'none': 'Regression linéaire',
+    'l1' : 'Lasso',
+    'l2' : 'Ridge'
+    }
+dict_reg_file = {
+    'none': 'LR',
+    'l1' : 'Lasso',
+    'l2' : 'Ridge'
+    }
 
-def trainAndPlotAll(df_data):
+
+def trainAndPlotAll(df_data, area, penalty = 'none'):
+    """ Apprentissage par régression linéaire avec possibilité d'ajouter une régularisation (l1 ou l2)
+
+    Paramètres
+    ----------
+    df_data : pandas.dataframe
+        dictionnaire des paramètres
+    area : string
+        région d'arrivée étudiée (Europe, Amérique du Nord ou Asie)
+    penalty : string
+        option d'ajout de régularisation
+        'none', 'l1' ou 'l2'
+        par défaut : pas de régularisation
+
+    Retours
+    ----------
+    Crée et enregistre les figures
+    Affiche les performances
+    """
+    penalty_name = dict_reg[penalty]
+    penalty_filename = dict_reg_file[penalty]
+    
     # On ne garde que les jours où au moins 3 arrivées sont enregistrées
     df_data = df_data[(df_data['A_EU'] + df_data['A_NA'] + df_data['A_AS'] >= 3)]
     
@@ -28,7 +61,7 @@ def trainAndPlotAll(df_data):
     for i, (train_index, test_index) in enumerate(kf.split(X)):
         print("fold: {0} | nb_train: {1} | nb_test: {2}".format(i, len(train_index), len(test_index)))
 
-        # get train and validation dataset
+        # On sélectionne les jeux d'entraînement et de test
         X_train = X[train_index]
         X_test = X[test_index]
         y_train = y[train_index]
@@ -36,30 +69,44 @@ def trainAndPlotAll(df_data):
 
         list_dates_train = list_dates[train_index]
         list_dates_test = list_dates[test_index]
+
+        # On applique un prétraitement aux données afin qu'elles soient centrées réduites
+        standard_scaler = StandardScaler()
+        standard_scaler.fit(X_train)
+        X_train = standard_scaler.transform(X_train)
+        X_test = standard_scaler.transform(X_test)
         
-        # train model
-        ridge = Ridge(alpha=0.01, random_state=13)
-        ridge.fit(X_train, y_train)
+        # On sélectionne le modèle
+        if penalty == 'l1' :
+            best_alpha = findBestLassoCoeff(df_data, True)
+            predictor = Lasso(alpha=best_alpha, random_state=13)
+        elif penalty == 'l2' :
+            predictor = Ridge(alpha=0.01, random_state=13)
+        else :
+            predictor = LinearRegression()
 
-        y_pred = ridge.predict(X_test)
+        # On entraîne le modèle
+        predictor.fit(X_train, y_train)
+        # On réalise la prédiction sur le jeu de test
+        y_pred = predictor.predict(X_test)
 
-        # measure performance
-        r2_score_ridge_test = r2_score(y_test, y_pred)
-        print("R2: {0:0.2f}".format(r2_score_ridge_test))
-        r2_scores.append(r2_score_ridge_test)
-        rmse_ridge_test = mean_squared_error(y_test, y_pred, squared=False)
-        print("RMSE : {0:0.2f}".format(rmse_ridge_test))
-        rmse_scores.append(rmse_ridge_test)
+        # On mesure la performance
+        r2_score_test = r2_score(y_test, y_pred)
+        print("R2: {0:0.2f}".format(r2_score_test))
+        r2_scores.append(r2_score_test)
+        rmse_test = mean_squared_error(y_test, y_pred, squared=False)
+        print("RMSE : {0:0.2f}".format(rmse_test))
+        rmse_scores.append(rmse_test)
 
         # On regarde les coefficients des différentes variables
         num_features = X_train.shape[1]
         feature_names = df_data.drop(columns=['A_EU']).columns
-        plt.scatter(range(num_features), np.abs(ridge.coef_))
+        plt.scatter(range(num_features), np.abs(predictor.coef_))
         plt.xlabel('Variables')
         tmp = plt.xticks(range(num_features), feature_names, rotation=90)
         tmp = plt.ylabel('Coefficients')
-        plt.title("Coefficients avec ridge")
-        plt.savefig(f'../figure/B22_Ridge_coeff_{i}.png')
+        plt.title(f'Coefficients avec {penalty_name}')
+        plt.savefig(f'../figure/B22_{penalty_filename}_coeff_{i}.png')
         plt.show()
 
         # On compare les prédictions aux valeurs réelles
@@ -67,23 +114,23 @@ def trainAndPlotAll(df_data):
         plt.scatter(y_test, y_pred)
         plt.xlabel("Nombre réel")
         plt.ylabel("Nombre prédit")
-        plt.title(f'Ridge : nombre de navires arrivant en Europe (RMSE = {mean_squared_error(y_test, y_pred, squared=False)})')
+        plt.title(f'{penalty_name} : nombre de navires arrivant en Europe (RMSE = {mean_squared_error(y_test, y_pred, squared=False)})')
         axis_min = np.min([np.min(y_test), np.min(y_pred)])-1 # Mêmes valeurs sur les deux axes
         axis_max = np.max([np.max(y_test), np.max(y_pred)])+1
         plt.xlim(axis_min, axis_max)
         plt.ylim(axis_min, axis_max)
         plt.plot([axis_min, axis_max], [axis_min, axis_max], 'k-') # Diagonale y=x
-        plt.savefig(f'../figure/B22_Ridge_diag_{i}.png')
+        plt.savefig(f'../figure/B22_{penalty_filename}_diag_{i}.png')
         plt.show()
 
-        # Evolution temporelle
+        # On regarde l'évolution temporelle
         plt.plot(list_dates, y, 'b')
         plt.plot(list_dates_test, y_pred, 'r')
         plt.xlabel("Temps")
         plt.ylabel("Nombre de navires arrivant en Europe")
-        plt.legend(('Evolution réelle', 'Evolution prédite (ridge)'), loc='upper right')
+        plt.legend((f'Evolution réelle', 'Evolution prédite ({penalty_name})'), loc='upper right')
         plt.title("RMSE : %.2f" % mean_squared_error(y_test, y_pred, squared=False))
-        plt.savefig(f'../figure/B22_Ridge_vesselsperday_{i}.png')
+        plt.savefig(f'../figure/B22_{penalty_filename}_vesselsperday_{i}.png')
         plt.show()
 
 
@@ -101,5 +148,5 @@ def trainAndPlotAll(df_data):
 
 
 if __name__ == '__main__':
-    df_trips = pd.read_csv('../data/loadAll_agg_all.csv')
-    trainAndPlotAll(df_trips)
+    df_trips = pd.read_csv('../data/loadAll_extended_agg_All_diff.csv')
+    trainAndPlotAll(df_trips, 'Europe', 'l1')
