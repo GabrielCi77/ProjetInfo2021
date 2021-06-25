@@ -5,9 +5,13 @@ from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_squared_error
 import matplotlib.pyplot as plt
-from B23_Lasso_grid import findBestLassoCoeff
+from B31_findCoeff import findBestCoeff2
 
 
+dict_area ={
+    'EU' : 'Europe',
+    'NA' : 'North America'
+}
 dict_reg = {
     'none': 'Regression linéaire',
     'l1' : 'Lasso',
@@ -20,7 +24,7 @@ dict_reg_file = {
     }
 
 
-def trainAndPlotAll(df_data, area, penalty = 'none'):
+def trainAndPlotAll(df_data, area = 'EU', penalty = 'none', shuffle = False, departures = False):
     """ Apprentissage par régression linéaire avec possibilité d'ajouter une régularisation (l1 ou l2)
 
     Paramètres
@@ -29,16 +33,24 @@ def trainAndPlotAll(df_data, area, penalty = 'none'):
         dictionnaire des paramètres
     area : string
         région d'arrivée étudiée (Europe, Amérique du Nord ou Asie)
+        'EU' ou 'NA'
+        par défaut : Europe
     penalty : string
         option d'ajout de régularisation
         'none', 'l1' ou 'l2'
         par défaut : pas de régularisation
+    shuffle : boolean
+        option pour la création des échantillons
+    departures : boolean
+        si True, on prend les départs comme variables
 
     Retours
     ----------
     Crée et enregistre les figures
     Affiche les performances
     """
+
+    area_name = dict_area[area]
     penalty_name = dict_reg[penalty]
     penalty_filename = dict_reg_file[penalty]
     
@@ -47,17 +59,41 @@ def trainAndPlotAll(df_data, area, penalty = 'none'):
     
     # On enlève les colonnes non utilisées pour le machine learning
     list_dates = np.array(df_data['Atime'])
-    df_data = df_data.drop(columns=['Atime', 'A_AS', 'A_NA'])
+    df_data = df_data.drop(columns=['Atime'])
+    df_data = df_data.drop(
+        columns=['Eur_Spot_12', 'Eur_Spot_9', 'Eur_Spot_6', 'Eur_Spot_3', 'Eur_Spot_0', 'Eur_Spot_-3', 'Eur_Spot_-6', 'Eur_Spot_-9', 'Eur_Spot_-12', 'Eur_Spot_-15', 'Eur_Spot_-18', 'Eur_Spot_-21',
+        'US_Spot_12', 'US_Spot_9', 'US_Spot_6', 'US_Spot_3', 'US_Spot_0', 'US_Spot_-3', 'US_Spot_-6', 'US_Spot_-9', 'US_Spot_-12', 'US_Spot_-15', 'US_Spot_-18','US_Spot_-21',
+        'Asia_Fut_12', 'Asia_Fut_9', 'Asia_Fut_6', 'Asia_Fut_3', 'Asia_Fut_0', 'Asia_Fut_-3', 'Asia_Fut_-6', 'Asia_Fut_-9', 'Asia_Fut_-12', 'Asia_Fut_-15', 'Asia_Fut_-18', 'Asia_Fut_-21']
+        )
 
-    X = np.array(df_data.drop(columns=['A_EU']))
-    y = np.array(df_data['A_EU'])
+    if departures == True :
+        pass
+    else :
+        df_data = df_data.drop(columns=['D_EU', 'D_AS', 'D_NA'])
 
-    kf = KFold(n_splits=5, shuffle=True, random_state=13)
+    # On adapte au choix de la région
+    if area == 'EU' :
+        df_data = df_data.drop(columns=['A_AS', 'A_NA'])
+        X = np.array(df_data.drop(columns=['A_EU']))
+        y = np.array(df_data['A_EU'])
+    elif area == 'NA' :
+        df_data = df_data.drop(columns=['A_AS', 'A_EU'])
+        X = np.array(df_data.drop(columns=['A_NA']))
+        y = np.array(df_data['A_NA'])
+    else :
+        print("Area unvalid: choose between 'EU' (for Europe) and 'NA' (for North America)")
+        return None
+
+    # On crée les échantillons
+    if shuffle :
+        kf = KFold(n_splits=5, shuffle=True, random_state=13)
+    else :
+        kf = KFold(n_splits=5, shuffle=False)
 
     r2_scores = []
     rmse_scores = []
 
-    # loop over the different folds
+    # Boucle sur les différents échantillons
     for i, (train_index, test_index) in enumerate(kf.split(X)):
         print("fold: {0} | nb_train: {1} | nb_test: {2}".format(i, len(train_index), len(test_index)))
 
@@ -78,10 +114,11 @@ def trainAndPlotAll(df_data, area, penalty = 'none'):
         
         # On sélectionne le modèle
         if penalty == 'l1' :
-            best_alpha = findBestLassoCoeff(df_data, True)
+            best_alpha = findBestCoeff2(X, y, penalty)
             predictor = Lasso(alpha=best_alpha, random_state=13)
         elif penalty == 'l2' :
-            predictor = Ridge(alpha=0.01, random_state=13)
+            best_alpha = findBestCoeff2(X, y, penalty)
+            predictor = Ridge(alpha=best_alpha, random_state=13)
         else :
             predictor = LinearRegression()
 
@@ -106,7 +143,7 @@ def trainAndPlotAll(df_data, area, penalty = 'none'):
         tmp = plt.xticks(range(num_features), feature_names, rotation=90)
         tmp = plt.ylabel('Coefficients')
         plt.title(f'Coefficients avec {penalty_name}')
-        plt.savefig(f'../figure/B22_{penalty_filename}_coeff_{i}.png')
+        plt.savefig(f'../figure/B3_noD_{penalty_filename}_coeff_{i}.png')
         plt.show()
 
         # On compare les prédictions aux valeurs réelles
@@ -120,7 +157,7 @@ def trainAndPlotAll(df_data, area, penalty = 'none'):
         plt.xlim(axis_min, axis_max)
         plt.ylim(axis_min, axis_max)
         plt.plot([axis_min, axis_max], [axis_min, axis_max], 'k-') # Diagonale y=x
-        plt.savefig(f'../figure/B22_{penalty_filename}_diag_{i}.png')
+        plt.savefig(f'../figure/B3_noD_{penalty_filename}_diag_{i}.png')
         plt.show()
 
         # On regarde l'évolution temporelle
@@ -128,9 +165,9 @@ def trainAndPlotAll(df_data, area, penalty = 'none'):
         plt.plot(list_dates_test, y_pred, 'r')
         plt.xlabel("Temps")
         plt.ylabel("Nombre de navires arrivant en Europe")
-        plt.legend((f'Evolution réelle', 'Evolution prédite ({penalty_name})'), loc='upper right')
+        plt.legend(('Evolution réelle', f'Evolution prédite ({penalty_name})'), loc='upper right')
         plt.title("RMSE : %.2f" % mean_squared_error(y_test, y_pred, squared=False))
-        plt.savefig(f'../figure/B22_{penalty_filename}_vesselsperday_{i}.png')
+        plt.savefig(f'../figure/B3_noD_{penalty_filename}_vesselsperday_{i}.png')
         plt.show()
 
 
@@ -149,4 +186,4 @@ def trainAndPlotAll(df_data, area, penalty = 'none'):
 
 if __name__ == '__main__':
     df_trips = pd.read_csv('../data/loadAll_extended_agg_All_diff.csv')
-    trainAndPlotAll(df_trips, 'Europe', 'l1')
+    trainAndPlotAll(df_trips, 'EU', 'l2', False, False)
