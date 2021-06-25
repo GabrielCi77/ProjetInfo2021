@@ -1,9 +1,10 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import KFold
-from sklearn.linear_model import LinearRegression as LR
+from sklearn.model_selection import KFold, cross_validate, GridSearchCV
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn import preprocessing
 from sklearn import metrics
+from sklearn.metrics import r2_score, mean_squared_error
 import matplotlib.pyplot as plt
 
 
@@ -38,62 +39,54 @@ def trainAndPlotAll(df_data):
         list_dates_test = list_dates[test_index]
         
         # train model
-        predictor = LR()
-        predictor.fit(X_train, y_train)
+        lasso = Lasso(alpha=0.01, random_state=13)
+        lasso.fit(X_train, y_train)
 
-        y_pred = predictor.predict(X_test)
-        
+        y_pred = lasso.predict(X_test)
+
         # measure performance
-        r2_score_ridge_test = r2_score(y_test, y_pred) # problème
-        print("R2: {0:0.2f}".format(r2_score_ridge_test))
-        r2_scores.append(r2_score_ridge_test)
-        rmse_ridge_test = mean_squared_error(y_test, y_pred, squared=False)
-        print("RMSE : {0:0.2f}".format(rmse_ridge_test))
-        rmse_scores.append(rmse_ridge_test)
+        r2_score_lasso_test = r2_score(y_test, y_pred)
+        print("R2: {0:0.2f}".format(r2_score_lasso_test))
+        r2_scores.append(r2_score_lasso_test)
+        rmse_lasso_test = mean_squared_error(y_test, y_pred, squared=False)
+        print("RMSE : {0:0.2f}".format(rmse_lasso_test))
+        rmse_scores.append(rmse_lasso_test)
 
         # On regarde les coefficients des différentes variables
         num_features = X_train.shape[1]
         feature_names = df_data.drop(columns=['A_EU']).columns
-        plt.scatter(range(num_features), np.abs(predictor.coef_))
+        plt.scatter(range(num_features), np.abs(lasso.coef_))
         plt.xlabel('Variables')
         tmp = plt.xticks(range(num_features), feature_names, rotation=90)
         tmp = plt.ylabel('Coefficients')
-        plt.title("Coefficients de la régression linéaire")
-        # plt.savefig(f'../figure/B22_LR_time_coeff_{i}.png')
+        plt.title("Coefficients avec lasso")
+        plt.savefig(f'../figure/B22_Lasso_coeff_{i}.png')
         plt.show()
 
         # On compare les prédictions aux valeurs réelles
         fig = plt.figure(figsize=(5, 5))
         plt.scatter(y_test, y_pred)
-
         plt.xlabel("Nombre réel")
         plt.ylabel("Nombre prédit")
-        plt.title(f'Régression linéaire : nombre de navires arrivant en Europe (RMSE = {metrics.mean_squared_error(y_test, y_pred, squared=False)})')
-
-        # Mêmes valeurs sur les deux axes
-        axis_min = np.min([np.min(y_test), np.min(y_pred)])-1
+        plt.title(f'Lasso : nombre de navires arrivant en Europe (RMSE = {metrics.mean_squared_error(y_test, y_pred, squared=False)})')
+        axis_min = np.min([np.min(y_test), np.min(y_pred)])-1 # Mêmes valeurs sur les deux axes
         axis_max = np.max([np.max(y_test), np.max(y_pred)])+1
         plt.xlim(axis_min, axis_max)
         plt.ylim(axis_min, axis_max)
-        
-        # Diagonale y=x
-        plt.plot([axis_min, axis_max], [axis_min, axis_max], 'k-')
-        # plt.savefig(f'../figure/B22_LR_time_diag_{i}.png')
+        plt.plot([axis_min, axis_max], [axis_min, axis_max], 'k-') # Diagonale y=x
+        plt.savefig(f'../figure/B22_Lasso_diag_{i}.png')
         plt.show()
-
 
         # Evolution temporelle
-        fig, ax = plt.subplots()
-        ax.xaxis_date()
-        ax.plot(list_dates, y, 'b')
-        ax.scatter(list_dates_test, y_pred, 'r')
+        plt.plot(list_dates, y, 'b')
+        plt.plot(list_dates_test, y_pred, 'r')
         plt.xlabel("Temps")
         plt.ylabel("Nombre de navires arrivant en Europe")
-        plt.legend(('Evolution réelle', 'Evolution prédite'), loc='upper right')
+        plt.legend(('Evolution réelle', 'Evolution prédite (lasso)'), loc='upper right')
         plt.title("RMSE : %.2f" % metrics.mean_squared_error(y_test, y_pred, squared=False))
-        # plt.savefig(f'../figure/B22_LR_time_vesselsperday_{i}.png')
-        plt.autofmt_xdate()
+        plt.savefig(f'../figure/B22_Lasso_vesselsperday_{i}.png')
         plt.show()
+
 
     print()
     

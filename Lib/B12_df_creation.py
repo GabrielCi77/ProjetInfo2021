@@ -269,19 +269,19 @@ def loadFuturesAsia(df_global: pd.DataFrame, date='Dtime', delta=0):
 
 basic_param = {
     'SpotEur': True,
-    'Delta_SE': [0, -3, -6, -9, -12],
+    'Delta_SE': [12, 9, 6, 3, 0, -3, -6, -9, -12, -15, -18, -21],
     'Date_SE': 'Dtime',
 
     'SpotUS': True,
-    'Delta_SU': [0, -3, -6, -9, -12],
+    'Delta_SU': [12, 9, 6, 3, 0, -3, -6, -9, -12, -15, -18, -21],
     'Date_SU': 'Dtime',
 
     'FuturesAsia': True,
-    'Delta_FA': [0, -3, -6, -9, -12],
+    'Delta_FA': [12, 9, 6, 3, 0, -3, -6, -9, -12, -15, -18, -21],
     'Date_FA': 'Dtime',
 
     'FuturesEur': True,
-    'Delta_FE': [0, -3, -6, -9, -12],
+    'Delta_FE': [12, 9, 6, 3, 0, -3, -6, -9, -12, -15, -18, -21],
     'Date_FE': 'Dtime',
 
     'Save': True,
@@ -334,7 +334,7 @@ def loadAll(param=basic_param):
     t2 = time()
     print(f"Fini en {round(t2-t1,1)} secondes")
     if param['Save']:
-        df_global.to_csv('../data/loadAll.csv')
+        df_global.to_csv('../data/loadAll_extended.csv')
     if param['Return']:
         return df_global
 

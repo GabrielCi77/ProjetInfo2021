@@ -4,7 +4,6 @@ from sklearn import model_selection
 from sklearn.linear_model import LinearRegression as LR
 from sklearn import preprocessing
 from sklearn import metrics
-from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 
 
