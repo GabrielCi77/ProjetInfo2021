@@ -1,5 +1,6 @@
 import awoc
-import pandas
+from bokeh.models.mappers import LogColorMapper
+import pandas as pd
 import numpy as np 
 from csv import reader
 import scipy.special
@@ -22,9 +23,9 @@ for i in range(len(countries_list)):
     if countries_list[i]=="Ivory Coast":
         countries_list[i]="Cote d'Ivoire"
 
-countries = pandas.DataFrame(0,columns=['Net GHG balance'],index=countries_list)
+countries = pd.DataFrame(0.0,columns=['Net GHG balance'],index=countries_list)
 countries['Productor']=False
-
+countries = countries.astype({"Net GHG balance": float})
 
 prod=['United States (USA)',
         'Canada',
@@ -51,7 +52,7 @@ prodNB = {'United States (USA)': 0.48,
         'Indonesia':0.3,
         'Oman':0.28}
 
-boatList = pandas.read_csv("./Data/donnees-navires/list-vessels-2021-06-01.csv",index_col=1)
+boatList = pd.read_csv("./Data/donnees-navires/list-vessels-2021-06-01.csv",index_col=1)
 boatList.loc[7390181,'GT']=0                  
 with open('./Data/PortCalls/voyages.csv', 'r') as csv_file:
     csv_reader = reader(csv_file)
@@ -85,50 +86,105 @@ with open('./Data/PortCalls/voyages.csv', 'r') as csv_file:
                 nbT=0
 
 coun2=countries[countries['Net GHG balance']!=0]
+coun2=coun2.astype({"Net GHG balance":float})
 print(coun2)
 
 import geopandas as gpd
+def changecountry (a):
+    if a=='South Korea':
+        a='Korea'
+    if a=='United Arab Emirates':
+        a='United Arab Emirates (UAE)'
+    if a=='Trinidad and Tobago':   
+        a='Trinidad & Tobago'
+    if a=='United States of America':
+        a='United States (USA)'
+    if a=='United Kingdom':
+        a='United Kingdom (UK)'
+    if a=="Ivory Coast":
+        a="Cote d'Ivoire"
+    if a=="United Republic of Tanzania":
+        a="Tanzania"
+    return a
+
+def change (a):
+    return -a
 
 shapefile = 'Data/countries_110m/ne_110m_admin_0_countries.shp'
 #Read shapefile using Geopandas
 gdf = gpd.read_file(shapefile)[['ADMIN', 'ADM0_A3', 'geometry']]
-#Rename columns.
+#Rename columns
 gdf.columns = ['country', 'country_code', 'geometry']
-merged = gdf.merge(countries, left_on = 'country_code', right_on = 'code')
-merged.to_csv("./test.csv")        
+gdf['country']=gdf['country'].apply(changecountry)
+merged = gdf.merge(countries, left_on = 'country', right_index=True)
+merged=merged.astype({"Net GHG balance":float})
 import json
 #Read data to json.
-merged_json = json.loads(merged.to_json())
-#Convert to String like object.
-json_data = json.dumps(merged_json)
+mg1=merged[merged['Net GHG balance']>0]
+mg2=merged[merged['Net GHG balance']<0]
+mg3=merged[merged['Net GHG balance']==0]
+mg2['Net GHG balance']=mg2['Net GHG balance'].apply(change)
+merged_json1 = json.loads(mg1.to_json())
+merged_json2 = json.loads(mg2.to_json())
+merged_json3 = json.loads(mg3.to_json())
 
-from bokeh.io import output_notebook, show, output_file
+#Convert to String like object.
+json_data1 = json.dumps(merged_json1)
+json_data2 = json.dumps(merged_json2)
+json_data3 = json.dumps(merged_json3)
+
+from bokeh.io import export, show,export_png
 from bokeh.plotting import figure
 from bokeh.models import GeoJSONDataSource, LinearColorMapper, ColorBar
 from bokeh.palettes import brewer
 #Input GeoJSON source that contains features for plotting.
-geosource = GeoJSONDataSource(geojson = json_data)
+geosource1 = GeoJSONDataSource(geojson = json_data1)
+geosource2 = GeoJSONDataSource(geojson = json_data2)
+geosource3 = GeoJSONDataSource(geojson = json_data3)
+
 #Define a sequential multi-hue color palette.
-palette = brewer['YlGnBu'][8]
+palette1 = brewer['BuGn'][8]
+palette2 = brewer['YlOrBr'][8]
 #Reverse color order so that dark blue is highest obesity.
-palette = palette[::-1]
+palette1=palette1[::-1]
+palette2=palette2[::-1]
+
+max1=mg1['Net GHG balance'].max()
+max2=mg2['Net GHG balance'].max()
+min1=mg1['Net GHG balance'].min()
+min2=mg2['Net GHG balance'].min()
+
 #Instantiate LinearColorMapper that linearly maps numbers in a range, into a sequence of colors.
-color_mapper = LinearColorMapper(palette = palette, low = 0, high = 40)
+color_mapper1 = LogColorMapper(palette = palette1, low = min1, high = max1)
+color_mapper2 = LogColorMapper(palette = palette2, low = min2, high = max2)
+
 #Define custom tick labels for color bar.
-tick_labels = {'-40000': '<-30000kg', '-10000': '10000kg', '-5000':'-5000kg', '-2000':'-2000kg', '-1000':'1000', '0':'0', '1000':'1000kg','2000':'2000kg', '4000': '4000kg','6000':'6000kg'}
+tick_labels1 = {str(min1): str(min1), '5': '5%', '10':'10%', '15':'15%', '20':'20%', '25':'25%', '30':'30%','35':'35%', str(max1):  str(max1)}
+tick_labels2 = {str(min2): str(min2), '5': '5%', '10':'10%', '15':'15%', '20':'20%', '25':'25%', '30':'30%','35':'35%', str(max2):  str(max2)}
+
 #Create color bar. 
-color_bar = ColorBar(color_mapper=color_mapper, label_standoff=8,width = 500, height = 20,
-border_line_color=None,location = (0,0), orientation = 'horizontal', major_label_overrides = tick_labels)
+color_bar1 = ColorBar(color_mapper=color_mapper1, label_standoff=8,width = 500, height = 20,
+border_line_color=None,location = (0,0), orientation = 'horizontal')
+color_bar2 = ColorBar(color_mapper=color_mapper2, label_standoff=8,width = 500, height = 20,
+border_line_color=None,location = (0,0), orientation = 'horizontal')
+
 #Create figure object.
 p = figure(title = 'Weight of CO2 displaced by LNG tankers', plot_height = 600 , plot_width = 950, toolbar_location = None)
 p.xgrid.grid_line_color = None
 p.ygrid.grid_line_color = None
+
 #Add patch renderer to figure. 
-p.patches('xs','ys', source = geosource,fill_color = {'field' :'kilogram_CO2', 'transform' : color_mapper},
+p.patches('xs','ys', source = geosource1,fill_color = {'field' :'Net GHG balance', 'transform' : color_mapper1},
           line_color = 'black', line_width = 0.25, fill_alpha = 1)
+p.patches('xs','ys', source = geosource2,fill_color = {'field' :'Net GHG balance', 'transform' : color_mapper2},
+          line_color = 'black', line_width = 0.25, fill_alpha = 1)
+p.patches('xs','ys', source = geosource3,fill_color='white',
+          line_color = 'black', line_width = 0.25, fill_alpha = 1)
+
 #Specify figure layout.
-p.add_layout(color_bar, 'below')
-#Display figure inline in Jupyter Notebook.
-output_file()
+p.add_layout(color_bar1, 'below')
+p.add_layout(color_bar2, 'below')
+
 #Display figure.
+export_png(p)
 show(p)
