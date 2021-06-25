@@ -69,7 +69,7 @@ def loadTrips():
         Dataframe contenant les voyages
     """
 
-    df_trips = pd.read_csv('./Data/Portcalls/voyages.csv')
+    df_trips = pd.read_csv('../data/PortCalls/voyages.csv')
     # On ajoute des colonnes avec les codes des pays de départ et d'arrivée
     for continent in continents:
         df_trips[f'D_{continent}'] = df_trips['Dcountry'].apply(isInContinent, args=(continent,))
@@ -130,7 +130,7 @@ def loadSpotEur(df_global: pd.DataFrame, date='Dtime', delta=0):
     if date not in ['Dtime', 'Atime']:
         date = 'Dtime'
     # On charge les prix spots de l'Europe
-    df_eur_price = pd.read_csv('./Data/SpotEur.csv', index_col='Date')
+    df_eur_price = pd.read_csv('../data/SpotEur.csv', index_col='Date')
     # On ajoute la colonne
     df_global[f'Eur_Spot_{delta}'] = df_global[date].apply(
             lambda x: df_eur_price.loc[findNearestDate(x, df_eur_price, delta), 'Prix'])
@@ -152,7 +152,7 @@ def loadSpotUS(df_global: pd.DataFrame, date='Dtime', delta=0):
     """
     if date not in ['Dtime', 'Atime']:
         date = 'Dtime'
-    df_us_spot = pd.read_csv('./Data/SpotUS.csv', index_col='Date')
+    df_us_spot = pd.read_csv('../data/SpotUS.csv', index_col='Date')
     df_global[f'US_Spot_{delta}'] = df_global[date].apply(
         lambda x: df_us_spot.loc[findNearestDate(x, df_us_spot, delta), 'Prix US'])
 
@@ -215,11 +215,11 @@ def loadFutures(df_global: pd.DataFrame, name: str, date='Dtime', delta=0):
     """
     if name == 'Asia':
         mergeFunc = mergeAsiaFutures
-        fut_path = './Data/FuturesAsie.csv'
+        fut_path = '../data/FuturesAsie.csv'
         index_col = 'Update date (CT)'
     elif name == 'Eur':
         mergeFunc = mergeEurFutures
-        fut_path = './Data/FuturesEur.csv'
+        fut_path = '../data/FuturesEur.csv'
         index_col = 'Trading Day'
 
     if date not in ['Dtime', 'Atime']:
@@ -269,19 +269,19 @@ def loadFuturesAsia(df_global: pd.DataFrame, date='Dtime', delta=0):
 
 basic_param = {
     'SpotEur': True,
-    'Delta_SE': [0],
+    'Delta_SE': [12, 9, 6, 3, 0, -3, -6, -9, -12, -15, -18, -21],
     'Date_SE': 'Dtime',
 
-    'SpotUS': False,
-    'Delta_SU': [0],
+    'SpotUS': True,
+    'Delta_SU': [12, 9, 6, 3, 0, -3, -6, -9, -12, -15, -18, -21],
     'Date_SU': 'Dtime',
 
     'FuturesAsia': True,
-    'Delta_FA': [0, -5],
+    'Delta_FA': [12, 9, 6, 3, 0, -3, -6, -9, -12, -15, -18, -21],
     'Date_FA': 'Dtime',
 
     'FuturesEur': True,
-    'Delta_FE': [0, -5, 3],
+    'Delta_FE': [12, 9, 6, 3, 0, -3, -6, -9, -12, -15, -18, -21],
     'Date_FE': 'Dtime',
 
     'Save': True,
@@ -334,7 +334,7 @@ def loadAll(param=basic_param):
     t2 = time()
     print(f"Fini en {round(t2-t1,1)} secondes")
     if param['Save']:
-        df_global.to_csv('./Data/loadAll.csv')
+        df_global.to_csv('../data/loadAll_extended.csv')
     if param['Return']:
         return df_global
 
