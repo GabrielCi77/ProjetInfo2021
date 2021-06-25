@@ -24,7 +24,7 @@ options.add_argument("--disable-browser-side-navigation")  # https://stackoverfl
 options.add_argument("--disable-gpu")  # https://stackoverflow.com/questions/51959986/how-to-solve-selenium-chromedriver-timed-out-receiving-message-from-renderer-exc
 
 
-def changeDateOfMonth(x:str):
+def changeDateOfMonth(x: str):
     """Change le format de la date du mois
 
     Paramètres
@@ -45,7 +45,7 @@ def changeDateOfMonth(x:str):
         return x
 
 
-def changeDateOfUpdate(x:str):
+def changeDateOfUpdate(x: str):
     """Change le format de la date de mise à jour :
 
     Paramètres
@@ -55,7 +55,7 @@ def changeDateOfUpdate(x:str):
     Retours
     -------
     x : string
-    
+
     Exemples
     -------
     changeDateOfMonth('6:00:00 CT\\r\\n13 Jun 2021') -> 2021-06-13"""
@@ -64,9 +64,9 @@ def changeDateOfUpdate(x:str):
         return datetime.strptime(x, "%H:%M:%S CT\r\n%d %b %Y").strftime("%Y-%m-%d")
     except ValueError:
         return x
-    
 
-def extractInfos(list_data:list, row):
+
+def extractInfos(list_data: list, row):
     """
     Permet d'ajouter les éléments d'une ligne du tableau à notre liste de données
 
@@ -78,7 +78,9 @@ def extractInfos(list_data:list, row):
     # Toutes les données d'une ligne sont stockées dans la liste python element
     element = row.find_elements_by_tag_name('td')
     # On met à jour la liste de données
-    list_data.append((changeDateOfMonth(element[0].text), element[4].text, changeDateOfUpdate(element[-1].text)))
+    list_data.append((changeDateOfMonth(element[0].text),
+                      element[4].text,
+                      changeDateOfUpdate(element[-1].text)))
 
 
 def getAndSaveAsiaFutures():
@@ -103,10 +105,11 @@ def getAndSaveAsiaFutures():
     df_price = pd.DataFrame(data=list_data, columns=df_columns)
     df_price.to_csv('../Data/FuturesAsie.csv', mode='a', header=False, index=False)
 
-    #Suppression des doublons
+    # Suppression des doublons
     df_all_price = pd.read_csv('../Data/FuturesAsie.csv')
     df_all_price = df_all_price.drop_duplicates()
     df_all_price.to_csv('../Data/FuturesAsie.csv', header=True, index=False)
+
 
 if __name__ == '__main__':
     getAndSaveAsiaFutures()
