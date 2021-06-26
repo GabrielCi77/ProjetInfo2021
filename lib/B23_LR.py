@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_squared_error
 import matplotlib.pyplot as plt
-from B31_findCoeff import findBestCoeff2
+from B23_findCoeff import findBestCoeff2
 
 
 dict_area ={
