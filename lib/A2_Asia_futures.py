@@ -75,12 +75,14 @@ def extractInfos(list_data: list, row):
     list_data : list
     row : WebElement
     """
-    # Toutes les données d'une ligne sont stockées dans la liste python element
-    element = row.find_elements_by_tag_name('td')
+    date = row.find_element_by_tag_name('span').text.split()  # date = ['AUG', '2021', 'JKMQ1']
+    date = date[0] + ' ' + date[1] # date = AUG 2021
+    price = row.find_elements_by_class_name('table-cell')[5].text
+    update = row.find_elements_by_class_name('table-cell')[-1].text
     # On met à jour la liste de données
-    list_data.append((changeDateOfMonth(element[0].text),
-                      element[4].text,
-                      changeDateOfUpdate(element[-1].text)))
+    list_data.append((changeDateOfMonth(date),
+                      price,
+                      changeDateOfUpdate(update)))
 
 
 def getAndSaveAsiaFutures():
@@ -92,9 +94,10 @@ def getAndSaveAsiaFutures():
     # Création de la liste qui contiendra toutes nos données
     list_data = []
     # On attend que la table soit chargé pour extraire les informations
-    table = Dwait(driver, 10).until(EC.presence_of_element_located((By.ID, "quotesFuturesProductTable1")))
+    rows = Dwait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "table-row-animate")))
     # Liste python de toutes les lignes du tableau du site web
-    rows = table.find_element_by_tag_name('tbody').find_elements_by_tag_name('tr')
+    rows = driver.find_elements_by_class_name('table-row-animate')
+    
     # On itère sur ces lignes pour transformer cette liste en liste de données
     for row in rows:
         extractInfos(list_data, row)
@@ -103,12 +106,12 @@ def getAndSaveAsiaFutures():
     # Stockage des informations dans le fichier FuturesAsie.csv
     df_columns = ['Month', 'Prior Settle', 'Update date (CT)']
     df_price = pd.DataFrame(data=list_data, columns=df_columns)
-    df_price.to_csv('../Data/FuturesAsie.csv', mode='a', header=False, index=False)
+    df_price.to_csv('../data/FuturesAsie.csv', mode='a', header=False, index=False)
 
     # Suppression des doublons
-    df_all_price = pd.read_csv('../Data/FuturesAsie.csv')
+    df_all_price = pd.read_csv('../data/FuturesAsie.csv')
     df_all_price = df_all_price.drop_duplicates()
-    df_all_price.to_csv('../Data/FuturesAsie.csv', header=True, index=False)
+    df_all_price.to_csv('../data/FuturesAsie.csv', header=True, index=False)
 
 
 if __name__ == '__main__':
