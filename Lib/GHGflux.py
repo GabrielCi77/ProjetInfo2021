@@ -1,5 +1,7 @@
 import awoc
-from bokeh.models.mappers import LogColorMapper
+from bokeh.core.property.numeric import Interval
+from bokeh.models.mappers import ContinuousColorMapper, LogColorMapper
+from bokeh.models.tickers import AdaptiveTicker, ContinuousTicker, SingleIntervalTicker
 import pandas as pd
 import numpy as np 
 from csv import reader
@@ -137,8 +139,9 @@ json_data3 = json.dumps(merged_json3)
 
 from bokeh.io import export, show,export_png
 from bokeh.plotting import figure
-from bokeh.models import GeoJSONDataSource, LinearColorMapper, ColorBar
+from bokeh.models import GeoJSONDataSource, LogColorMapper, ColorBar, EqHistColorMapper
 from bokeh.palettes import brewer
+from bokeh.models.tickers import BinnedTicker,LogTicker
 #Input GeoJSON source that contains features for plotting.
 geosource1 = GeoJSONDataSource(geojson = json_data1)
 geosource2 = GeoJSONDataSource(geojson = json_data2)
@@ -164,14 +167,16 @@ color_mapper2 = LogColorMapper(palette = palette2, low = min2, high = max2)
 tick_labels1 = {str(min1): str(min1), '5': '5%', '10':'10%', '15':'15%', '20':'20%', '25':'25%', '30':'30%','35':'35%', str(max1):  str(max1)}
 tick_labels2 = {str(min2): str(min2), '5': '5%', '10':'10%', '15':'15%', '20':'20%', '25':'25%', '30':'30%','35':'35%', str(max2):  str(max2)}
 
-#Create color bar. 
-color_bar1 = ColorBar(color_mapper=color_mapper1, label_standoff=8,width = 500, height = 20,
-border_line_color=None,location = (0,0), orientation = 'horizontal')
-color_bar2 = ColorBar(color_mapper=color_mapper2, label_standoff=8,width = 500, height = 20,
-border_line_color=None,location = (0,0), orientation = 'horizontal')
+#Create color bar
+color_bar1 = ColorBar(color_mapper=color_mapper1, label_standoff=8,width = 1100, height = 10,
+border_line_color=None,location = (0,0), orientation = 'horizontal',ticker=SingleIntervalTicker(interval=100)
+,title='Weight in kgCO2eq of emissions caused by imported GNL liquefaction')
+color_bar2 = ColorBar(color_mapper=color_mapper2, label_standoff=8,width = 1100, height = 10,
+border_line_color=None,location = (0,0), orientation = 'horizontal',ticker=SingleIntervalTicker(interval=300)
+,title="Weight in kgCO2eq of emissions caused by exported GNL liquefaction")
 
 #Create figure object.
-p = figure(title = 'Weight of CO2 displaced by LNG tankers', plot_height = 600 , plot_width = 950, toolbar_location = None)
+p = figure(title = 'Weight of CO2 displaced by LNG tankers', plot_height = 900 , plot_width = 1350, toolbar_location = None)
 p.xgrid.grid_line_color = None
 p.ygrid.grid_line_color = None
 
