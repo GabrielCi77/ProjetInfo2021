@@ -17,3 +17,10 @@ Les différents fichiers sont :
 Il faut respecter l'ordre pour l'exécution : le fichier A12 a besoin du fichier A11 pour être exécuté (ou plus exactement du fichier créé par A11). Idem pour A13 avec A12.
 
 Les fichiers de la phase de machine learning commencent tous par la lettre B.
+Les différents fichiers sont :
+* B11 : premiers formatages de données : `B11_Create_df.py`
+* B12 : formatages finaux : `B12_df_creation.py`, `B12_sum.py`
+
+* B21 : premiers essais de machine learning (classification) : `B21_first.py`, `B21_LR_discrete.py`, `B21_ML_LR.py`, `B21_ML_NN.py`, , `B21_ML_test.py`
+first, ML_, LR_discrete
+* B23 : versions finales : `B23_Arima.py`, `B23_LR.py`, `B23_findCoeff.py`

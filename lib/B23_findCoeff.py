@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 
 
 
+# Fonction qu'on peut tester (toute seule) avec ce fichier
+
 def findBestCoeff(df_data, model, print_results=False):
     """ Trouve le meilleur coefficient pour le lasso
 
@@ -81,6 +83,7 @@ def findBestCoeff(df_data, model, print_results=False):
 
 
 
+# Fonction utilisée dans B23_LR.property
 
 def findBestCoeff2(X, y, model):
     """ Trouve le meilleur coefficient pour le lasso
@@ -121,7 +124,7 @@ def findBestCoeff2(X, y, model):
     # define gridsearch
     tuned_parameters = [{'alpha': alphas}]
     nb_folds = 5
-    grid = GridSearchCV(lasso, tuned_parameters, cv=nb_folds, refit=False, verbose=0)
+    grid = GridSearchCV(predictor, tuned_parameters, cv=nb_folds, refit=False, verbose=0)
 
     # run gridsearch 
     grid.fit(X_train, y_train)
