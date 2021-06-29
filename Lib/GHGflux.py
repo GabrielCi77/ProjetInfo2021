@@ -36,7 +36,8 @@ prod=['United States (USA)',
         'Mozambique',
         'Qatar',
         'Indonesia',
-        'Oman']
+        'Oman',
+        'Australia']
 
 for l in prod:
         countries.loc[l,'Productor']=True
@@ -50,7 +51,8 @@ prodNB = {'United States (USA)': 0.48,
         'Mozambique':0.3,
         'Qatar':0.39,
         'Indonesia':0.3,
-        'Oman':0.28}
+        'Oman':0.28,
+        'Australia':0.3}
 
 boatList = pd.read_csv("./Data/donnees-navires/list-vessels-2021-06-01.csv",index_col=1)
 boatList.loc[7390181,'GT']=0                  
@@ -110,7 +112,7 @@ def changecountry (a):
 def change (a):
     return -a
 
-shapefile = 'Data/countries_110m/ne_110m_admin_0_countries.shp'
+shapefile = './Data/countries_110m/ne_110m_admin_0_countries.shp'
 #Read shapefile using Geopandas
 gdf = gpd.read_file(shapefile)[['ADMIN', 'ADM0_A3', 'geometry']]
 #Rename columns
@@ -186,5 +188,5 @@ p.add_layout(color_bar1, 'below')
 p.add_layout(color_bar2, 'below')
 
 #Display figure.
-export_png(p, filename='../figure/GHGflux.png')
+export_png(p, filename='./figure/GHGflux.png')
 show(p)
