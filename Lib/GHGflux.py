@@ -186,5 +186,5 @@ p.add_layout(color_bar1, 'below')
 p.add_layout(color_bar2, 'below')
 
 #Display figure.
-export_png(p)
+export_png(p, filename='../figure/GHGflux.png')
 show(p)
