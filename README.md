@@ -23,5 +23,4 @@ Les différents fichiers sont :
 
 * B21 : premiers essais de machine learning (classification) : `B21_first.py`, `B21_LR_discrete.py`, `B21_ML_LR.py`, `B21_ML_NN.py`, , `B21_ML_test.py`
 first, ML_, LR_discrete
-* B22 : essais avec évolution temporelle (variable continue) : `B22_LR.py`, `B22_LR_time1.py`, `B22_LR_time.py`, `B22_Lasso.py`, `B22_Ridge.py`
 * B23 : versions finales : `B23_Arima.py`, `B23_LR.py`, `B23_findCoeff.py`
