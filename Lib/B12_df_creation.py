@@ -334,7 +334,7 @@ def loadAll(param=basic_param):
     t2 = time()
     print(f"Fini en {round(t2-t1,1)} secondes")
     if param['Save']:
-        df_global.to_csv('../data/loadAll_extended_D.csv')
+        df_global.to_csv('../data/loadAll_extended_A.csv')
     if param['Return']:
         return df_global
 

@@ -12,7 +12,7 @@ import os
 dict_area ={
     'EU' : 'Europe',
     'NA' : 'North America'
-}
+    }
 dict_reg = {
     'none': 'Regression linéaire',
     'l1' : 'Lasso',
