@@ -56,9 +56,9 @@ prodNB = {'United States (USA)': 0.48,
         'Oman':0.28,
         'Australia':0.3}
 
-boatList = pd.read_csv("./Data/donnees-navires/list-vessels-2021-06-01.csv",index_col=1)
+boatList = pd.read_csv("../Data/donnees-navires/list-vessels-2021-06-01.csv",index_col=1)
 boatList.loc[7390181,'GT']=0                  
-with open('./Data/PortCalls/voyages.csv', 'r') as csv_file:
+with open('../Data/PortCalls/voyages.csv', 'r') as csv_file:
     csv_reader = reader(csv_file)
     # Passing the cav_reader object to list() to get a list of lists
     voyages = list(csv_reader)
@@ -114,7 +114,7 @@ def changecountry (a):
 def change (a):
     return -a
 
-shapefile = './Data/countries_110m/ne_110m_admin_0_countries.shp'
+shapefile = '../Data/countries_110m/ne_110m_admin_0_countries.shp'
 #Read shapefile using Geopandas
 gdf = gpd.read_file(shapefile)[['ADMIN', 'ADM0_A3', 'geometry']]
 #Rename columns
@@ -163,20 +163,16 @@ min2=mg2['Net GHG balance'].min()
 color_mapper1 = LogColorMapper(palette = palette1, low = min1, high = max1)
 color_mapper2 = LogColorMapper(palette = palette2, low = min2, high = max2)
 
-#Define custom tick labels for color bar.
-tick_labels1 = {str(min1): str(min1), '5': '5%', '10':'10%', '15':'15%', '20':'20%', '25':'25%', '30':'30%','35':'35%', str(max1):  str(max1)}
-tick_labels2 = {str(min2): str(min2), '5': '5%', '10':'10%', '15':'15%', '20':'20%', '25':'25%', '30':'30%','35':'35%', str(max2):  str(max2)}
-
 #Create color bar
-color_bar1 = ColorBar(color_mapper=color_mapper1, label_standoff=8,width = 1100, height = 10,
+color_bar1 = ColorBar(color_mapper=color_mapper1, label_standoff=8,width = 1300, height = 20,
 border_line_color=None,location = (0,0), orientation = 'horizontal',ticker=SingleIntervalTicker(interval=100)
 ,title='Weight in kgCO2eq of emissions caused by imported GNL liquefaction')
-color_bar2 = ColorBar(color_mapper=color_mapper2, label_standoff=8,width = 1100, height = 10,
+color_bar2 = ColorBar(color_mapper=color_mapper2, label_standoff=8,width = 1300, height = 20,
 border_line_color=None,location = (0,0), orientation = 'horizontal',ticker=SingleIntervalTicker(interval=300)
 ,title="Weight in kgCO2eq of emissions caused by exported GNL liquefaction")
 
 #Create figure object.
-p = figure(title = 'Weight of CO2 displaced by LNG tankers', plot_height = 900 , plot_width = 1350, toolbar_location = None)
+p = figure(title = 'Weight of CO2 displaced by LNG tankers', plot_height = 925 , plot_width = 1350, toolbar_location = None)
 p.xgrid.grid_line_color = None
 p.ygrid.grid_line_color = None
 
@@ -193,5 +189,5 @@ p.add_layout(color_bar1, 'below')
 p.add_layout(color_bar2, 'below')
 
 #Display figure.
-export_png(p, filename='./figure/GHGflux.png')
+export_png(p, filename='../figure/GHGflux.png')
 show(p)
