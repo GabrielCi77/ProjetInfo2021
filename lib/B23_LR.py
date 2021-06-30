@@ -147,7 +147,7 @@ def trainAndPlotAll(df_data, area = 'EU', penalty = 'none', shuffle = False, dep
         tmp = plt.xticks(range(num_features), feature_names, rotation=90)
         tmp = plt.ylabel('Coefficients')
         plt.title(f'Coefficients avec {penalty_name}')
-        plt.savefig(f'../figure/A_prices/{area_name}_{penalty_filename}/B3_noD_{penalty_filename}_coeff_{i}.png')
+        # plt.savefig(f'../figure/A_prices/{area_name}_{penalty_filename}/B3_noD_{penalty_filename}_coeff_{i}.png')
         plt.show()
 
         # On compare les prédictions aux valeurs réelles
@@ -161,7 +161,7 @@ def trainAndPlotAll(df_data, area = 'EU', penalty = 'none', shuffle = False, dep
         plt.xlim(axis_min, axis_max)
         plt.ylim(axis_min, axis_max)
         plt.plot([axis_min, axis_max], [axis_min, axis_max], 'k-') # Diagonale y=x
-        plt.savefig(f'../figure/A_prices/{area_name}_{penalty_filename}/B3_noD_{penalty_filename}_diag_{i}.png')
+        # plt.savefig(f'../figure/A_prices/{area_name}_{penalty_filename}/B3_noD_{penalty_filename}_diag_{i}.png')
         plt.show()
 
         # On regarde l'évolution temporelle
@@ -171,7 +171,7 @@ def trainAndPlotAll(df_data, area = 'EU', penalty = 'none', shuffle = False, dep
         plt.ylabel("Nombre de navires arrivant en Europe")
         plt.legend(('Evolution réelle', f'Evolution prédite ({penalty_name})'), loc='upper right')
         plt.title("RMSE : %.2f" % mean_squared_error(y_test, y_pred, squared=False))
-        plt.savefig(f'../figure/A_prices/{area_name}_{penalty_filename}/B3_noD_{penalty_filename}_vesselsperday_{i}.png')
+        # plt.savefig(f'../figure/A_prices/{area_name}_{penalty_filename}/B3_noD_{penalty_filename}_vesselsperday_{i}.png')
         plt.show()
 
 
@@ -189,5 +189,5 @@ def trainAndPlotAll(df_data, area = 'EU', penalty = 'none', shuffle = False, dep
 
 
 if __name__ == '__main__':
-    df_trips = pd.read_csv('../data/loadAll_extended_A_agg_All.csv')
-    trainAndPlotAll(df_trips, 'EU', 'l2', False, False)
+    df_trips = pd.read_csv('../data/loadAll_extended_A2_agg_All.csv')
+    trainAndPlotAll(df_trips, 'EU', 'none', False, False)
